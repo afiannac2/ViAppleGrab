@@ -462,7 +462,7 @@ namespace ViAppleGrab
                             Score += 1;
 
                         //Trigger the target collected event
-                        if (TargetCollected != null) TargetCollected();
+                        //if (TargetCollected != null) TargetCollected();
 
                         if (_settings.TIMED_GAME)
                         {
@@ -501,11 +501,10 @@ namespace ViAppleGrab
                         //Trigger the target collecting event
                         if (TargetCollecting != null) TargetCollecting();
 
-                        //Stop the rumbles during the collection gesture
-                        _input.Controllers.StopRumbles();
-
                         //Detect the collection gesture and alter the score accordingly
                         _input.DetectCollectionGesture(_input.Controllers.CurrController);
+
+                        TargetCollected();
                     }
                     else if (_input.Controllers.IsTargetFound) //Have any of the controllers found the target?
                     {

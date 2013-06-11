@@ -593,16 +593,35 @@ namespace ViAppleGrab
                     || Controllers[ControllerIndex.RightHand].TriggerState == InputButtonState.StillPressed)
                 {
                     //ci = ControllerIndex.RightHand;
+                    if (Settings.Default.SIMULTANEOUS_TARGETS)
+                    {
+                        Controllers.StopRumble(ControllerIndex.RightHand, RumbleStates.Off);
+                    }
+                    else
+                    {
+                        Controllers.StopRumbles();
+                    }
+
                     Controllers[ControllerIndex.RightHand].Target.WasCollected = true;
                 }
                 else
                 {
                     //ci = ControllerIndex.LeftHand;
+                    if (Settings.Default.SIMULTANEOUS_TARGETS)
+                    {
+                        Controllers.StopRumble(ControllerIndex.LeftHand, RumbleStates.Off);
+                    }
+                    else
+                    {
+                        Controllers.StopRumbles();
+                    }
+
                     Controllers[ControllerIndex.LeftHand].Target.WasCollected = true;
                 }
             }
             else
             {
+                Controllers.StopRumbles();
                 Controllers[ci].Target.WasCollected = true;
             }
 

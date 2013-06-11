@@ -391,7 +391,7 @@ namespace ViAppleGrab.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool QUICK_CALIBRATION {
             get {
                 return ((bool)(this["QUICK_CALIBRATION"]));
@@ -527,6 +527,18 @@ namespace ViAppleGrab.Properties {
             }
             set {
                 this["HIDE_OUTPUT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool SIMULTANEOUS_TARGETS {
+            get {
+                return ((bool)(this["SIMULTANEOUS_TARGETS"]));
+            }
+            set {
+                this["SIMULTANEOUS_TARGETS"] = value;
             }
         }
     }

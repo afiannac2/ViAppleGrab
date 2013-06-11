@@ -40,3 +40,9 @@ C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViToolkit\obj\x8
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViToolkit\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViToolkit\obj\x86\Debug\ViToolkit.dll
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViToolkit\obj\x86\Debug\ViToolkit.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\bin\x86\Debug\ViToolkit.dll
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\bin\x86\Debug\ViToolkit.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Debug\ViToolkit.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Debug\ViToolkit.dll
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Debug\ViToolkit.pdb

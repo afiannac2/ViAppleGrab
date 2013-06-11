@@ -158,7 +158,7 @@ namespace ViAppleGrab.Collections
                 else
                 {
                     return (_controllers[(int)ControllerIndex.LeftHand].Target.WasCollected
-                        || _controllers[(int)ControllerIndex.RightHand].Target.WasCollected);
+                        && _controllers[(int)ControllerIndex.RightHand].Target.WasCollected);
                 }
             }
         }

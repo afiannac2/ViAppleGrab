@@ -72,7 +72,7 @@ namespace ViAppleGrab
             _logic.TimeIsLowAlert += new ViAppleGrabLogic.TimeIsLowAlertEvent(TimeIsLowAlert);
             _logic.GameCalibrating += new ViAppleGrabLogic.GameCalibratingEventHandler(GameCalibrating);
             //_logic.TargetCollecting += new ViAppleGrabLogic.TargetCollectingEventHandler(TargetCollecting);
-            //_logic.TargetCollected += new ViAppleGrabLogic.TargetCollectedEventHandler(TargetCollected);
+            _logic.TargetCollected += new ViAppleGrabLogic.TargetCollectedEventHandler(TargetCollected);
             //_logic.TargetFound += new ViAppleGrabLogic.TargetFoundEventHandler(TargetFound);
             //_logic.TargetLost += new ViAppleGrabLogic.TargetLostEventHandler(TargetLost);
             _logic.TargetMissed += new ViAppleGrabLogic.TargetMissedEventHandler(TargetMissed);
@@ -109,7 +109,7 @@ namespace ViAppleGrab
             _timeAlertSound = new Sound(@"GameEvents\3Beeps", Game.Content, _defaultVol);
             _scoreDecreasedSound = new Sound(@"GameEvents\NegativeBeep", Game.Content, _defaultVol);
             _scoreIncreasedSound = new Sound(@"GameEvents\AppleCrunch3", Game.Content, _defaultVol);
-            _targetCollected = new Sound(@"GameEvents\WayToGo", Game.Content, _defaultVol);
+            _targetCollected = new Sound(@"GameEvents\AppleCrunch3", Game.Content, _defaultVol);
             _targetFound = new Sound(@"GameEvents\TargetFound", Game.Content, _defaultVol);
             _rottenFound = new Sound(@"GameEvents\YuckItsRotten", Game.Content, _defaultVol);
             _targetLost = new Sound(@"GameEvents\SadWhistle", Game.Content, _defaultVol);
@@ -248,7 +248,7 @@ namespace ViAppleGrab
             if (_backgroundSound != null)
                 _backgroundSound.Volume = _backgroundVolLow;
 
-            _scoreIncreasedSound.BlockPlay();
+            //_scoreIncreasedSound.BlockPlay();
 
             Speech.Speak(100, increase.ToString() + " points");
 
@@ -270,21 +270,23 @@ namespace ViAppleGrab
         {
             //Play the target collected sound
 
-            if (rand.Next(5) % 4 == 0)
-            {
-                if (_backgroundSound != null)
-                {
-                    float prevVol = _backgroundSound.Volume;
+            //if (rand.Next(5) % 4 == 0)
+            //{
+            //    if (_backgroundSound != null)
+            //    {
+            //        float prevVol = _backgroundSound.Volume;
 
-                    _backgroundSound.Volume = _backgroundVolLow;
-                }
+            //        _backgroundSound.Volume = _backgroundVolLow;
+            //    }
 
-                _targetCollected.BlockPlay();
+            //    _targetCollected.BlockPlay();
 
-                if (_backgroundSound != null)
-                    _backgroundSound.Volume = _backgroundVolHigh;
-            }
+            //    if (_backgroundSound != null)
+            //        _backgroundSound.Volume = _backgroundVolHigh;
+            //}
 
+            watcher = new Thread(new ParameterizedThreadStart(WatcherCallback));
+            watcher.Start(_targetCollected);
 
             _canPlayTargetLost = false;
             _canPlayTargetFound = true;
