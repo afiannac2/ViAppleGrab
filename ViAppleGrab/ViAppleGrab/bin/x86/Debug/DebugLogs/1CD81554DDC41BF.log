@@ -1,0 +1,155 @@
+[Start Time] - 8/23/2012 10:32:44 AM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-780 Y:596}
+Calibration: LowerLeft - {X:-669 Y:-469}
+Calibration: UpperRight - {X:800 Y:672}
+Calibration: LowerRight - {X:814 Y:-402}
+Calibration: RightShoulder - {X:167 Y:154}
+Level 1 background music is now playing
+
+[New Target] - 0 - Right Hand - 8/23/2012 10:34:19 AM
+Score increased sound played.
+Score: 1
+
+[New Target] - 1 - Left Hand - 8/23/2012 10:34:58 AM
+Score increased sound played.
+Score: 4
+
+[New Target] - 2 - Right Hand - 8/23/2012 10:35:17 AM
+Score increased sound played.
+Score: 8
+
+[New Target] - 3 - Left Hand - 8/23/2012 10:35:35 AM
+Score increased sound played.
+Score: 14
+
+[New Target] - 4 - Right Hand - 8/23/2012 10:35:49 AM
+Score increased sound played.
+Score: 22
+
+[New Target] - 5 - Left Hand - 8/23/2012 10:35:58 AM
+Score increased sound played.
+Score: 26
+
+[New Target] - 6 - Right Hand - 8/23/2012 10:36:16 AM
+Score increased sound played.
+Score: 35
+
+[New Target] - 7 - Left Hand - 8/23/2012 10:36:24 AM
+Score increased sound played.
+Score: 44
+
+[New Target] - 8 - Right Hand - 8/23/2012 10:36:32 AM
+Score increased sound played.
+Score: 50
+
+[New Target] - 9 - Left Hand - 8/23/2012 10:36:46 AM
+Score increased sound played.
+Score: 59
+Game over
+Sad 'Game Over' music is now playing...
+Score decreased sound played.
+Score: 0
+Level 1 background music is now playing
+
+[New Target] - 0 - Right Hand - 8/23/2012 10:37:19 AM
+Score increased sound played.
+Score: 8
+
+[New Target] - 1 - Left Hand - 8/23/2012 10:37:30 AM
+Score increased sound played.
+Score: 14
+
+[New Target] - 2 - Right Hand - 8/23/2012 10:37:44 AM
+Score increased sound played.
+Score: 23
+
+[New Target] - 3 - Left Hand - 8/23/2012 10:37:51 AM
+Score increased sound played.
+Score: 31
+
+[New Target] - 4 - Right Hand - 8/23/2012 10:38:01 AM
+Score increased sound played.
+Score: 37
+Level 2 background music is now playing
+
+[New Target] - 5 - Left Hand - 8/23/2012 10:38:15 AM
+Score increased sound played.
+Score: 42
+
+[New Target] - 6 - Right Hand - 8/23/2012 10:38:35 AM
+Score increased sound played.
+Score: 46
+
+[New Target] - 7 - Left Hand - 8/23/2012 10:38:54 AM
+Score increased sound played.
+Score: 54
+
+[New Target] - 8 - Right Hand - 8/23/2012 10:39:09 AM
+Score increased sound played.
+Score: 65
+
+[New Target] - 9 - Left Hand - 8/23/2012 10:39:19 AM
+Score increased sound played.
+Score: 80
+Level 3 background music is now playing
+
+[New Target] - 10 - Right Hand - 8/23/2012 10:39:26 AM
+Score increased sound played.
+Score: 91
+
+[New Target] - 11 - Left Hand - 8/23/2012 10:39:41 AM
+Score increased sound played.
+Score: 105
+
+[New Target] - 12 - Right Hand - 8/23/2012 10:39:52 AM
+Score increased sound played.
+Score: 120
+
+[New Target] - 13 - Left Hand - 8/23/2012 10:40:02 AM
+Score increased sound played.
+Score: 136
+
+[New Target] - 14 - Right Hand - 8/23/2012 10:40:11 AM
+Score increased sound played.
+Score: 148
+Level 4 background music is now playing
+
+[New Target] - 15 - Left Hand - 8/23/2012 10:40:26 AM
+Score increased sound played.
+Score: 166
+
+[New Target] - 16 - Right Hand - 8/23/2012 10:40:37 AM
+Score increased sound played.
+Score: 188
+
+[New Target] - 17 - Left Hand - 8/23/2012 10:40:44 AM
+Score increased sound played.
+Score: 211
+
+[New Target] - 18 - Right Hand - 8/23/2012 10:40:51 AM
+Score increased sound played.
+Score: 229
+
+[New Target] - 19 - Left Hand - 8/23/2012 10:41:02 AM
+Score increased sound played.
+Score: 254
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

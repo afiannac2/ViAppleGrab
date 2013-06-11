@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TargetAnalysis.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TOGETHER_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">../../../ViAppleGrab/ViAppleGrab/bin/x86/Debug/Targets_Together.txt</Value>
+    </Setting>
+    <Setting Name="ALTERNATING_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">../../../ViAppleGrab/ViAppleGrab/bin/x86/Debug/Targets_Alternating.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

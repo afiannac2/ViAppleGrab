@@ -1,0 +1,69 @@
+[Start Time] - 5/16/2013 8:47:41 AM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-689 Y:408}
+Calibration: LowerLeft - {X:-702 Y:-600}
+Calibration: UpperRight - {X:726 Y:444}
+Calibration: LowerRight - {X:768 Y:-572}
+Calibration: RightShoulder - {X:116 Y:-41}
+Level 1 background music is now playing
+
+
+[New Target] - 0 - Right Hand - 5/16/2013 8:51:34 AM
+[Duplicate Target] - 0 - Left Hand - 5/16/2013 8:51:34 AM
+Score increased sound played.
+Score: 7
+
+
+[New Target] - 1 - Right Hand - 5/16/2013 8:51:47 AM
+[Duplicate Target] - 1 - Left Hand - 5/16/2013 8:51:47 AM
+Score increased sound played.
+Score: 14
+
+
+[New Target] - 2 - Right Hand - 5/16/2013 8:52:00 AM
+[Duplicate Target] - 2 - Left Hand - 5/16/2013 8:52:00 AM
+Score increased sound played.
+Score: 15
+
+
+[New Target] - 3 - Right Hand - 5/16/2013 8:52:23 AM
+[Duplicate Target] - 3 - Left Hand - 5/16/2013 8:52:23 AM
+Score increased sound played.
+Score: 20
+
+
+[New Target] - 4 - Right Hand - 5/16/2013 8:52:38 AM
+[Duplicate Target] - 4 - Left Hand - 5/16/2013 8:52:38 AM
+Score increased sound played.
+Score: 27
+Level 2 background music is now playing
+
+
+[New Target] - 5 - Right Hand - 5/16/2013 8:52:52 AM
+[Duplicate Target] - 5 - Left Hand - 5/16/2013 8:52:52 AM
+Score increased sound played.
+Score: 35
+
+
+[New Target] - 6 - Right Hand - 5/16/2013 8:53:06 AM
+[Duplicate Target] - 6 - Left Hand - 5/16/2013 8:53:06 AM
+The background music is now paused...
+'Game Paused' music is now playing...
+Score decreased sound played.
+Score: 0
+Score: 0
+Game over
+Sad 'Game Over' music is now playing...

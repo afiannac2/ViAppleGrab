@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Fonts\OutputFont.spritefont</Source>
+      <Name>Fonts\OutputFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Fonts\OutputFont.xnb</Output>
+      <Time>2012-07-17T14:21:13-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\OutputFontLarge.spritefont</Source>
+      <Name>Fonts\OutputFontLarge</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Fonts\OutputFontLarge.xnb</Output>
+      <Time>2012-07-23T11:26:55-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\RottenApple.png</Source>
+      <Name>Graphics\RottenApple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Graphics\RottenApple.xnb</Output>
+      <Time>2012-07-18T11:05:51-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\Apple.png</Source>
+      <Name>Graphics\Apple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Graphics\Apple.xnb</Output>
+      <Time>2012-07-18T11:07:29-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\LeftHand.png</Source>
+      <Name>Graphics\LeftHand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Graphics\LeftHand.xnb</Output>
+      <Time>2012-07-18T12:39:10-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\RightHand.png</Source>
+      <Name>Graphics\RightHand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Graphics\RightHand.xnb</Output>
+      <Time>2012-07-18T12:39:32-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Graphics\Cross.png</Source>
+      <Name>Graphics\Cross</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Graphics\Cross.xnb</Output>
+      <Time>2012-07-24T10:46:38-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\3Beeps.wav</Source>
+      <Name>Audio\GameEvents\3Beeps</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\3Beeps.xnb</Output>
+      <Time>2012-07-19T08:45:57-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\AppleCrunch.wav</Source>
+      <Name>Audio\GameEvents\AppleCrunch</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\AppleCrunch.xnb</Output>
+      <Time>2012-07-19T08:45:57-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\CorkPop.wav</Source>
+      <Name>Audio\GameEvents\CorkPop</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\CorkPop.xnb</Output>
+      <Time>2012-07-19T08:49:53-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\NegativeBeep.wav</Source>
+      <Name>Audio\GameEvents\NegativeBeep</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\NegativeBeep.xnb</Output>
+      <Time>2012-07-19T08:45:57-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\SadWhistle.wav</Source>
+      <Name>Audio\GameEvents\SadWhistle</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\SadWhistle.xnb</Output>
+      <Time>2012-07-19T08:45:57-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Backgrounds\Background1.wav</Source>
+      <Name>Audio\Backgrounds\Background1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Backgrounds\Background1.xnb</Output>
+      <Time>2012-07-19T12:22:28-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Backgrounds\Background2.wav</Source>
+      <Name>Audio\Backgrounds\Background2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Backgrounds\Background2.xnb</Output>
+      <Time>2012-07-19T12:22:28-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Backgrounds\Background3.wav</Source>
+      <Name>Audio\Backgrounds\Background3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Backgrounds\Background3.xnb</Output>
+      <Time>2012-07-19T12:22:28-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Backgrounds\Background4.wav</Source>
+      <Name>Audio\Backgrounds\Background4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Backgrounds\Background4.xnb</Output>
+      <Time>2012-07-19T12:22:28-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\TargetFound.wav</Source>
+      <Name>Audio\GameEvents\TargetFound</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\TargetFound.xnb</Output>
+      <Time>2012-08-01T15:35:22-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\AppleCrunch3.wav</Source>
+      <Name>Audio\GameEvents\AppleCrunch3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\AppleCrunch3.xnb</Output>
+      <Time>2012-08-01T15:43:29-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Calibration\Calibration0.wav</Source>
+      <Name>Audio\Calibration\Calibration0</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Calibration\Calibration0.xnb</Output>
+      <Time>2012-08-02T08:45:38-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Calibration\Calibration1.wav</Source>
+      <Name>Audio\Calibration\Calibration1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Calibration\Calibration1.xnb</Output>
+      <Time>2012-08-02T09:34:29-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Calibration\Calibration2.wav</Source>
+      <Name>Audio\Calibration\Calibration2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Calibration\Calibration2.xnb</Output>
+      <Time>2012-08-02T09:34:54-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Calibration\Calibration3.wav</Source>
+      <Name>Audio\Calibration\Calibration3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Calibration\Calibration3.xnb</Output>
+      <Time>2012-08-02T09:35:23-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Calibration\Calibration4.wav</Source>
+      <Name>Audio\Calibration\Calibration4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Calibration\Calibration4.xnb</Output>
+      <Time>2012-08-02T09:36:14-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Calibration\Calibration6.wav</Source>
+      <Name>Audio\Calibration\Calibration6</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Calibration\Calibration6.xnb</Output>
+      <Time>2012-08-02T09:38:15-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Calibration\Calibration5.wav</Source>
+      <Name>Audio\Calibration\Calibration5</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Calibration\Calibration5.xnb</Output>
+      <Time>2012-08-02T09:37:10-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\GoodJob.wav</Source>
+      <Name>Audio\GameEvents\GoodJob</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\GoodJob.xnb</Output>
+      <Time>2012-08-02T09:07:35-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\WayToGo.wav</Source>
+      <Name>Audio\GameEvents\WayToGo</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\WayToGo.xnb</Output>
+      <Time>2012-08-02T09:07:35-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\YuckItsRotten.wav</Source>
+      <Name>Audio\GameEvents\YuckItsRotten</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\YuckItsRotten.xnb</Output>
+      <Time>2012-08-02T09:07:35-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\WelcomeSequence\Welcome0.wav</Source>
+      <Name>Audio\WelcomeSequence\Welcome0</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\WelcomeSequence\Welcome0.xnb</Output>
+      <Time>2012-08-02T09:07:43-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Levels\Level1.wav</Source>
+      <Name>Audio\Levels\Level1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Levels\Level1.xnb</Output>
+      <Time>2012-08-02T09:32:13-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Levels\Level2.wav</Source>
+      <Name>Audio\Levels\Level2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Levels\Level2.xnb</Output>
+      <Time>2012-08-02T09:32:13-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Levels\Level3.wav</Source>
+      <Name>Audio\Levels\Level3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Levels\Level3.xnb</Output>
+      <Time>2012-08-02T09:32:13-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Levels\Level4.wav</Source>
+      <Name>Audio\Levels\Level4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Levels\Level4.xnb</Output>
+      <Time>2012-08-02T09:32:13-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\WelcomeSequence\Welcome1.wav</Source>
+      <Name>Audio\WelcomeSequence\Welcome1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\WelcomeSequence\Welcome1.xnb</Output>
+      <Time>2012-08-02T09:27:03-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\WelcomeSequence\Welcome2.wav</Source>
+      <Name>Audio\WelcomeSequence\Welcome2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\WelcomeSequence\Welcome2.xnb</Output>
+      <Time>2012-08-02T09:26:49-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\GameEvents\OopsYouMissedIt.wav</Source>
+      <Name>Audio\GameEvents\OopsYouMissedIt</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\GameEvents\OopsYouMissedIt.xnb</Output>
+      <Time>2012-08-02T09:56:13-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Levels\NextTarget.wav</Source>
+      <Name>Audio\Levels\NextTarget</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Levels\NextTarget.xnb</Output>
+      <Time>2012-08-20T13:10:09-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial0.wav</Source>
+      <Name>Audio\Tutorial\Tutorial0</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial0.xnb</Output>
+      <Time>2012-08-06T08:03:19-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial1.wav</Source>
+      <Name>Audio\Tutorial\Tutorial1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial1.xnb</Output>
+      <Time>2012-08-06T08:04:25-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial10.wav</Source>
+      <Name>Audio\Tutorial\Tutorial10</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial10.xnb</Output>
+      <Time>2012-08-06T08:20:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial11.wav</Source>
+      <Name>Audio\Tutorial\Tutorial11</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial11.xnb</Output>
+      <Time>2012-08-06T08:22:12-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial12.wav</Source>
+      <Name>Audio\Tutorial\Tutorial12</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial12.xnb</Output>
+      <Time>2012-08-06T08:23:38-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial13.wav</Source>
+      <Name>Audio\Tutorial\Tutorial13</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial13.xnb</Output>
+      <Time>2012-08-06T08:25:59-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial14.wav</Source>
+      <Name>Audio\Tutorial\Tutorial14</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial14.xnb</Output>
+      <Time>2012-08-06T08:33:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial15.wav</Source>
+      <Name>Audio\Tutorial\Tutorial15</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial15.xnb</Output>
+      <Time>2012-08-06T08:35:21-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial16.wav</Source>
+      <Name>Audio\Tutorial\Tutorial16</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial16.xnb</Output>
+      <Time>2012-08-06T08:36:38-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial17.wav</Source>
+      <Name>Audio\Tutorial\Tutorial17</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial17.xnb</Output>
+      <Time>2012-08-06T08:37:51-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial18.wav</Source>
+      <Name>Audio\Tutorial\Tutorial18</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial18.xnb</Output>
+      <Time>2012-08-06T08:39:22-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial19.wav</Source>
+      <Name>Audio\Tutorial\Tutorial19</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial19.xnb</Output>
+      <Time>2012-08-06T08:42:11-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial2.wav</Source>
+      <Name>Audio\Tutorial\Tutorial2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial2.xnb</Output>
+      <Time>2012-08-06T08:05:54-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial3.wav</Source>
+      <Name>Audio\Tutorial\Tutorial3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial3.xnb</Output>
+      <Time>2012-08-06T08:07:20-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial4.wav</Source>
+      <Name>Audio\Tutorial\Tutorial4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial4.xnb</Output>
+      <Time>2012-08-06T08:08:57-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial5.wav</Source>
+      <Name>Audio\Tutorial\Tutorial5</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial5.xnb</Output>
+      <Time>2012-08-06T08:10:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial6.wav</Source>
+      <Name>Audio\Tutorial\Tutorial6</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial6.xnb</Output>
+      <Time>2012-08-06T08:12:24-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial7.wav</Source>
+      <Name>Audio\Tutorial\Tutorial7</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial7.xnb</Output>
+      <Time>2012-08-06T08:13:29-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial8.wav</Source>
+      <Name>Audio\Tutorial\Tutorial8</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial8.xnb</Output>
+      <Time>2012-08-06T08:16:20-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Tutorial\Tutorial9.wav</Source>
+      <Name>Audio\Tutorial\Tutorial9</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\Tutorial\Tutorial9.xnb</Output>
+      <Time>2012-08-06T08:18:31-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\WelcomeSequence\Welcome3.wav</Source>
+      <Name>Audio\WelcomeSequence\Welcome3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\Audio\WelcomeSequence\Welcome3.xnb</Output>
+      <Time>2012-08-06T08:43:32-07:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{AE55CFB2-CCA1-4ACB-98F3-DDA335B78B13}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrabContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViAppleGrab\ViAppleGrab\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-12-21T09:46:10.9662-08:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

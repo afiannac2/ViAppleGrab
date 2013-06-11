@@ -1,0 +1,150 @@
+[Start Time] - 9/11/2012 1:23:51 PM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-404 Y:348}
+Calibration: LowerLeft - {X:-313 Y:-703}
+Calibration: UpperRight - {X:589 Y:396}
+Calibration: LowerRight - {X:622 Y:-675}
+Calibration: RightShoulder - {X:217 Y:-73}
+Level 1 background music is now playing
+
+
+[New Target] - 0 - Right Hand - 9/11/2012 1:24:22 PM
+[Duplicate Target] - 0 - Left Hand - 9/11/2012 1:24:22 PM
+Score increased sound played.
+Score: 1
+
+
+[New Target] - 1 - Right Hand - 9/11/2012 1:24:53 PM
+[Duplicate Target] - 1 - Left Hand - 9/11/2012 1:24:53 PM
+Score increased sound played.
+Score: 7
+
+
+[New Target] - 2 - Right Hand - 9/11/2012 1:25:06 PM
+[Duplicate Target] - 2 - Left Hand - 9/11/2012 1:25:06 PM
+Score increased sound played.
+Score: 15
+
+
+[New Target] - 3 - Right Hand - 9/11/2012 1:25:15 PM
+[Duplicate Target] - 3 - Left Hand - 9/11/2012 1:25:15 PM
+Score increased sound played.
+Score: 23
+
+
+[New Target] - 4 - Right Hand - 9/11/2012 1:25:25 PM
+[Duplicate Target] - 4 - Left Hand - 9/11/2012 1:25:25 PM
+Score increased sound played.
+Score: 24
+Level 2 background music is now playing
+
+
+[New Target] - 5 - Right Hand - 9/11/2012 1:25:58 PM
+[Duplicate Target] - 5 - Left Hand - 9/11/2012 1:25:58 PM
+Score increased sound played.
+Score: 35
+
+
+[New Target] - 6 - Right Hand - 9/11/2012 1:26:09 PM
+[Duplicate Target] - 6 - Left Hand - 9/11/2012 1:26:09 PM
+Score increased sound played.
+Score: 44
+
+
+[New Target] - 7 - Right Hand - 9/11/2012 1:26:23 PM
+[Duplicate Target] - 7 - Left Hand - 9/11/2012 1:26:23 PM
+Score increased sound played.
+Score: 52
+
+
+[New Target] - 8 - Right Hand - 9/11/2012 1:26:38 PM
+[Duplicate Target] - 8 - Left Hand - 9/11/2012 1:26:38 PM
+Score increased sound played.
+Score: 53
+
+
+[New Target] - 9 - Right Hand - 9/11/2012 1:27:10 PM
+[Duplicate Target] - 9 - Left Hand - 9/11/2012 1:27:10 PM
+Score increased sound played.
+Score: 62
+Level 3 background music is now playing
+
+
+[New Target] - 10 - Right Hand - 9/11/2012 1:27:25 PM
+[Duplicate Target] - 10 - Left Hand - 9/11/2012 1:27:25 PM
+Score increased sound played.
+Score: 77
+
+
+[New Target] - 11 - Right Hand - 9/11/2012 1:27:35 PM
+[Duplicate Target] - 11 - Left Hand - 9/11/2012 1:27:35 PM
+Score increased sound played.
+Score: 93
+
+
+[New Target] - 12 - Right Hand - 9/11/2012 1:27:44 PM
+[Duplicate Target] - 12 - Left Hand - 9/11/2012 1:27:44 PM
+Score increased sound played.
+Score: 96
+
+
+[New Target] - 13 - Right Hand - 9/11/2012 1:28:06 PM
+[Duplicate Target] - 13 - Left Hand - 9/11/2012 1:28:06 PM
+Score increased sound played.
+Score: 107
+
+
+[New Target] - 14 - Right Hand - 9/11/2012 1:28:20 PM
+[Duplicate Target] - 14 - Left Hand - 9/11/2012 1:28:20 PM
+Score increased sound played.
+Score: 117
+Level 4 background music is now playing
+
+
+[New Target] - 15 - Right Hand - 9/11/2012 1:28:36 PM
+[Duplicate Target] - 15 - Left Hand - 9/11/2012 1:28:36 PM
+Score increased sound played.
+Score: 128
+
+
+[New Target] - 16 - Right Hand - 9/11/2012 1:28:53 PM
+[Duplicate Target] - 16 - Left Hand - 9/11/2012 1:28:53 PM
+Score increased sound played.
+Score: 141
+
+
+[New Target] - 17 - Right Hand - 9/11/2012 1:29:08 PM
+[Duplicate Target] - 17 - Left Hand - 9/11/2012 1:29:08 PM
+Score increased sound played.
+Score: 142
+
+
+[New Target] - 18 - Right Hand - 9/11/2012 1:29:34 PM
+[Duplicate Target] - 18 - Left Hand - 9/11/2012 1:29:34 PM
+Score increased sound played.
+Score: 159
+
+
+[New Target] - 19 - Right Hand - 9/11/2012 1:29:45 PM
+[Duplicate Target] - 19 - Left Hand - 9/11/2012 1:29:45 PM
+Score increased sound played.
+Score: 173
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

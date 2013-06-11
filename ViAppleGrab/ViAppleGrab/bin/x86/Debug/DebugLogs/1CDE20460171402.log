@@ -1,0 +1,73 @@
+[Start Time] - 12/24/2012 10:27:48 AM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-711 Y:398}
+Calibration: LowerLeft - {X:-753 Y:-613}
+Calibration: UpperRight - {X:730 Y:453}
+Calibration: LowerRight - {X:642 Y:-769}
+Calibration: RightShoulder - {X:143 Y:-69}
+Level 1 background music is now playing
+
+
+[New Target] - 0 - Right Hand - 12/24/2012 10:28:35 AM
+[Duplicate Target] - 0 - Left Hand - 12/24/2012 10:28:35 AM
+Score increased sound played.
+Score: 6
+
+
+[New Target] - 1 - Right Hand - 12/24/2012 10:28:51 AM
+[Duplicate Target] - 1 - Left Hand - 12/24/2012 10:28:51 AM
+Score increased sound played.
+Score: 7
+
+
+[New Target] - 2 - Right Hand - 12/24/2012 10:29:19 AM
+[Duplicate Target] - 2 - Left Hand - 12/24/2012 10:29:19 AM
+Score increased sound played.
+Score: 10
+
+
+[New Target] - 3 - Right Hand - 12/24/2012 10:29:38 AM
+[Duplicate Target] - 3 - Left Hand - 12/24/2012 10:29:38 AM
+Score increased sound played.
+Score: 17
+
+
+[New Target] - 4 - Right Hand - 12/24/2012 10:29:50 AM
+[Duplicate Target] - 4 - Left Hand - 12/24/2012 10:29:50 AM
+Score increased sound played.
+Score: 23
+
+
+[New Target] - 5 - Right Hand - 12/24/2012 10:30:03 AM
+[Duplicate Target] - 5 - Left Hand - 12/24/2012 10:30:03 AM
+Score increased sound played.
+Score: 30
+
+
+[New Target] - 6 - Right Hand - 12/24/2012 10:30:16 AM
+[Duplicate Target] - 6 - Left Hand - 12/24/2012 10:30:16 AM
+Score increased sound played.
+Score: 35
+
+
+[New Target] - 7 - Right Hand - 12/24/2012 10:30:32 AM
+[Duplicate Target] - 7 - Left Hand - 12/24/2012 10:30:32 AM
+Score increased sound played.
+Score: 43
+
+
+[New Target] - 8 - Right Hand - 12/24/2012 10:30:42 AM
+[Duplicate Target] - 8 - Left Hand - 12/24/2012 10:30:42 AM

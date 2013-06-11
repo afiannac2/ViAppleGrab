@@ -1,0 +1,155 @@
+[Start Time] - 9/11/2012 12:50:01 PM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-703 Y:654}
+Calibration: LowerLeft - {X:-582 Y:-451}
+Calibration: UpperRight - {X:863 Y:668}
+Calibration: LowerRight - {X:649 Y:-525}
+Calibration: RightShoulder - {X:135 Y:221}
+Level 1 background music is now playing
+
+[New Target] - 0 - Right Hand - 9/11/2012 12:50:26 PM
+Score increased sound played.
+Score: 1
+
+[New Target] - 1 - Left Hand - 9/11/2012 12:51:02 PM
+Score increased sound played.
+Score: 2
+
+[New Target] - 2 - Right Hand - 9/11/2012 12:51:28 PM
+Score increased sound played.
+Score: 4
+
+[New Target] - 3 - Left Hand - 9/11/2012 12:51:49 PM
+Score increased sound played.
+Score: 11
+
+[New Target] - 4 - Right Hand - 9/11/2012 12:52:02 PM
+Score increased sound played.
+Score: 12
+
+[New Target] - 5 - Left Hand - 9/11/2012 12:52:27 PM
+Score increased sound played.
+Score: 18
+
+[New Target] - 6 - Right Hand - 9/11/2012 12:52:41 PM
+Score increased sound played.
+Score: 23
+
+[New Target] - 7 - Left Hand - 9/11/2012 12:52:55 PM
+Score increased sound played.
+Score: 26
+
+[New Target] - 8 - Right Hand - 9/11/2012 12:53:15 PM
+Score increased sound played.
+Score: 34
+
+[New Target] - 9 - Left Hand - 9/11/2012 12:53:24 PM
+Score increased sound played.
+Score: 39
+Game over
+Sad 'Game Over' music is now playing...
+Score decreased sound played.
+Score: 0
+Level 1 background music is now playing
+
+[New Target] - 0 - Right Hand - 9/11/2012 12:54:02 PM
+Score increased sound played.
+Score: 3
+
+[New Target] - 1 - Left Hand - 9/11/2012 12:54:22 PM
+Score increased sound played.
+Score: 8
+
+[New Target] - 2 - Right Hand - 9/11/2012 12:54:37 PM
+Score increased sound played.
+Score: 15
+
+[New Target] - 3 - Left Hand - 9/11/2012 12:54:48 PM
+Score increased sound played.
+Score: 20
+
+[New Target] - 4 - Right Hand - 9/11/2012 12:55:03 PM
+Score increased sound played.
+Score: 27
+Level 2 background music is now playing
+
+[New Target] - 5 - Left Hand - 9/11/2012 12:55:15 PM
+Score increased sound played.
+Score: 40
+
+[New Target] - 6 - Right Hand - 9/11/2012 12:55:23 PM
+Score increased sound played.
+Score: 51
+
+[New Target] - 7 - Left Hand - 9/11/2012 12:55:34 PM
+Score increased sound played.
+Score: 53
+
+[New Target] - 8 - Right Hand - 9/11/2012 12:55:56 PM
+Score increased sound played.
+Score: 59
+
+[New Target] - 9 - Left Hand - 9/11/2012 12:56:13 PM
+Score increased sound played.
+Score: 71
+Level 3 background music is now playing
+
+[New Target] - 10 - Right Hand - 9/11/2012 12:56:23 PM
+Score increased sound played.
+Score: 86
+
+[New Target] - 11 - Left Hand - 9/11/2012 12:56:34 PM
+Score increased sound played.
+Score: 102
+
+[New Target] - 12 - Right Hand - 9/11/2012 12:56:43 PM
+Score increased sound played.
+Score: 116
+
+[New Target] - 13 - Left Hand - 9/11/2012 12:56:54 PM
+Score increased sound played.
+Score: 133
+
+[New Target] - 14 - Right Hand - 9/11/2012 12:57:03 PM
+Score increased sound played.
+Score: 145
+Level 4 background music is now playing
+
+[New Target] - 15 - Left Hand - 9/11/2012 12:57:18 PM
+Score increased sound played.
+Score: 167
+
+[New Target] - 16 - Right Hand - 9/11/2012 12:57:26 PM
+Score increased sound played.
+Score: 180
+
+[New Target] - 17 - Left Hand - 9/11/2012 12:57:41 PM
+Score increased sound played.
+Score: 201
+
+[New Target] - 18 - Right Hand - 9/11/2012 12:57:49 PM
+Score increased sound played.
+Score: 224
+
+[New Target] - 19 - Left Hand - 9/11/2012 12:57:56 PM
+Score increased sound played.
+Score: 245
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

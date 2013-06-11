@@ -1,0 +1,45 @@
+[Start Time] - 12/10/2012 8:16:00 AM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-925 Y:321}
+Calibration: LowerLeft - {X:-755 Y:-697}
+Calibration: UpperRight - {X:675 Y:376}
+Calibration: LowerRight - {X:624 Y:-766}
+Calibration: RightShoulder - {X:125 Y:-116}
+Level 1 background music is now playing
+
+[New Target] - 0 - Right Hand - 12/10/2012 8:17:26 AM
+Score increased sound played.
+Score: 8
+
+[New Target] - 1 - Left Hand - 12/10/2012 8:17:39 AM
+Score increased sound played.
+Score: 16
+
+[New Target] - 2 - Right Hand - 12/10/2012 8:17:49 AM
+Score increased sound played.
+Score: 22
+
+[New Target] - 3 - Left Hand - 12/10/2012 8:18:01 AM
+Score increased sound played.
+Score: 27
+
+[New Target] - 4 - Right Hand - 12/10/2012 8:18:17 AM
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

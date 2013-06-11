@@ -1,0 +1,87 @@
+[Start Time] - 9/11/2012 1:14:13 PM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-517 Y:227}
+Calibration: LowerLeft - {X:-323 Y:-756}
+Calibration: UpperRight - {X:685 Y:350}
+Calibration: LowerRight - {X:610 Y:-720}
+Calibration: RightShoulder - {X:244 Y:-36}
+Level 1 background music is now playing
+
+
+[New Target] - 0 - Right Hand - 9/11/2012 1:17:20 PM
+[Duplicate Target] - 0 - Left Hand - 9/11/2012 1:17:20 PM
+Score increased sound played.
+Score: 1
+
+
+[New Target] - 1 - Right Hand - 9/11/2012 1:18:44 PM
+[Duplicate Target] - 1 - Left Hand - 9/11/2012 1:18:44 PM
+Score increased sound played.
+Score: 2
+
+
+[New Target] - 2 - Right Hand - 9/11/2012 1:19:19 PM
+[Duplicate Target] - 2 - Left Hand - 9/11/2012 1:19:19 PM
+Score increased sound played.
+Score: 4
+
+
+[New Target] - 3 - Right Hand - 9/11/2012 1:19:39 PM
+[Duplicate Target] - 3 - Left Hand - 9/11/2012 1:19:39 PM
+Score increased sound played.
+Score: 5
+
+
+[New Target] - 4 - Right Hand - 9/11/2012 1:20:14 PM
+[Duplicate Target] - 4 - Left Hand - 9/11/2012 1:20:14 PM
+Score increased sound played.
+Score: 7
+
+
+[New Target] - 5 - Right Hand - 9/11/2012 1:20:35 PM
+[Duplicate Target] - 5 - Left Hand - 9/11/2012 1:20:35 PM
+Score increased sound played.
+Score: 8
+
+
+[New Target] - 6 - Right Hand - 9/11/2012 1:21:03 PM
+[Duplicate Target] - 6 - Left Hand - 9/11/2012 1:21:03 PM
+Score increased sound played.
+Score: 12
+
+
+[New Target] - 7 - Right Hand - 9/11/2012 1:21:20 PM
+[Duplicate Target] - 7 - Left Hand - 9/11/2012 1:21:20 PM
+Score increased sound played.
+Score: 13
+
+
+[New Target] - 8 - Right Hand - 9/11/2012 1:21:51 PM
+[Duplicate Target] - 8 - Left Hand - 9/11/2012 1:21:51 PM
+Score increased sound played.
+Score: 14
+
+
+[New Target] - 9 - Right Hand - 9/11/2012 1:22:20 PM
+[Duplicate Target] - 9 - Left Hand - 9/11/2012 1:22:20 PM
+Score increased sound played.
+Score: 21
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

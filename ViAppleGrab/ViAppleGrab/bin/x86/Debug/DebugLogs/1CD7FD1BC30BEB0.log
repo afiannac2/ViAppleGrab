@@ -1,0 +1,155 @@
+[Start Time] - 8/21/2012 12:18:24 PM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-789 Y:409}
+Calibration: LowerLeft - {X:-586 Y:-452}
+Calibration: UpperRight - {X:955 Y:386}
+Calibration: LowerRight - {X:723 Y:-442}
+Calibration: RightShoulder - {X:254 Y:112}
+Level 1 background music is now playing
+
+[New Target] - 0 - Right Hand - 8/21/2012 12:19:05 PM
+Score increased sound played.
+Score: 5
+
+[New Target] - 1 - Left Hand - 8/21/2012 12:19:22 PM
+Score increased sound played.
+Score: 10
+
+[New Target] - 2 - Right Hand - 8/21/2012 12:19:38 PM
+Score increased sound played.
+Score: 18
+
+[New Target] - 3 - Left Hand - 8/21/2012 12:19:48 PM
+Score increased sound played.
+Score: 26
+
+[New Target] - 4 - Right Hand - 8/21/2012 12:19:58 PM
+Score increased sound played.
+Score: 32
+
+[New Target] - 5 - Left Hand - 8/21/2012 12:20:12 PM
+Score increased sound played.
+Score: 40
+
+[New Target] - 6 - Right Hand - 8/21/2012 12:20:20 PM
+Score increased sound played.
+Score: 47
+
+[New Target] - 7 - Left Hand - 8/21/2012 12:20:33 PM
+Score increased sound played.
+Score: 53
+
+[New Target] - 8 - Right Hand - 8/21/2012 12:20:46 PM
+Score increased sound played.
+Score: 62
+
+[New Target] - 9 - Left Hand - 8/21/2012 12:20:54 PM
+Score increased sound played.
+Score: 70
+Game over
+Sad 'Game Over' music is now playing...
+Score decreased sound played.
+Score: 0
+Level 1 background music is now playing
+
+[New Target] - 0 - Right Hand - 8/21/2012 12:21:18 PM
+Score increased sound played.
+Score: 9
+
+[New Target] - 1 - Left Hand - 8/21/2012 12:21:26 PM
+Score increased sound played.
+Score: 16
+
+[New Target] - 2 - Right Hand - 8/21/2012 12:21:37 PM
+Score increased sound played.
+Score: 20
+
+[New Target] - 3 - Left Hand - 8/21/2012 12:21:54 PM
+Score increased sound played.
+Score: 28
+
+[New Target] - 4 - Right Hand - 8/21/2012 12:22:04 PM
+Score increased sound played.
+Score: 33
+Level 2 background music is now playing
+
+[New Target] - 5 - Left Hand - 8/21/2012 12:22:20 PM
+Score increased sound played.
+Score: 45
+
+[New Target] - 6 - Right Hand - 8/21/2012 12:22:30 PM
+Score increased sound played.
+Score: 59
+
+[New Target] - 7 - Left Hand - 8/21/2012 12:22:37 PM
+Score increased sound played.
+Score: 71
+
+[New Target] - 8 - Right Hand - 8/21/2012 12:22:46 PM
+Score increased sound played.
+Score: 82
+
+[New Target] - 9 - Left Hand - 8/21/2012 12:22:57 PM
+Score increased sound played.
+Score: 93
+Level 3 background music is now playing
+
+[New Target] - 10 - Right Hand - 8/21/2012 12:23:08 PM
+Score increased sound played.
+Score: 103
+
+[New Target] - 11 - Left Hand - 8/21/2012 12:23:23 PM
+Score increased sound played.
+Score: 118
+
+[New Target] - 12 - Right Hand - 8/21/2012 12:23:33 PM
+Score increased sound played.
+Score: 133
+
+[New Target] - 13 - Left Hand - 8/21/2012 12:23:43 PM
+Score increased sound played.
+Score: 149
+
+[New Target] - 14 - Right Hand - 8/21/2012 12:23:52 PM
+Score increased sound played.
+Score: 167
+Level 4 background music is now playing
+
+[New Target] - 15 - Left Hand - 8/21/2012 12:24:01 PM
+Score increased sound played.
+Score: 189
+
+[New Target] - 16 - Right Hand - 8/21/2012 12:24:09 PM
+Score increased sound played.
+Score: 205
+
+[New Target] - 17 - Left Hand - 8/21/2012 12:24:21 PM
+Score increased sound played.
+Score: 224
+
+[New Target] - 18 - Right Hand - 8/21/2012 12:24:31 PM
+Score increased sound played.
+Score: 243
+
+[New Target] - 19 - Left Hand - 8/21/2012 12:24:41 PM
+Score increased sound played.
+Score: 262
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

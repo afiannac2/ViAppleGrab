@@ -1,0 +1,11 @@
+Alternating
+459 103 False
+84 233 False
+353 346 False
+74 395 False
+569 120 False
+298 423 True
+492 180 True
+162 112 True
+342 131 True
+280 214 False

@@ -1,0 +1,11 @@
+Together
+594 291 True
+367 117 False
+72 52 False
+524 348 True
+189 152 True
+512 247 True
+79 207 True
+211 293 False
+182 380 False
+582 146 True

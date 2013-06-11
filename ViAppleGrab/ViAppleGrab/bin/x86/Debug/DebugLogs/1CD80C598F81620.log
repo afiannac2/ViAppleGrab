@@ -1,0 +1,155 @@
+[Start Time] - 8/22/2012 5:24:02 PM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-739 Y:505}
+Calibration: LowerLeft - {X:-599 Y:-488}
+Calibration: UpperRight - {X:764 Y:591}
+Calibration: LowerRight - {X:717 Y:-475}
+Calibration: RightShoulder - {X:181 Y:166}
+Level 1 background music is now playing
+
+[New Target] - 0 - Right Hand - 8/22/2012 5:25:20 PM
+Score increased sound played.
+Score: 1
+
+[New Target] - 1 - Left Hand - 8/22/2012 5:25:43 PM
+Score increased sound played.
+Score: 10
+
+[New Target] - 2 - Right Hand - 8/22/2012 5:25:51 PM
+Score increased sound played.
+Score: 11
+
+[New Target] - 3 - Left Hand - 8/22/2012 5:26:27 PM
+Score increased sound played.
+Score: 16
+
+[New Target] - 4 - Right Hand - 8/22/2012 5:26:44 PM
+Score increased sound played.
+Score: 22
+
+[New Target] - 5 - Left Hand - 8/22/2012 5:26:57 PM
+Score increased sound played.
+Score: 25
+
+[New Target] - 6 - Right Hand - 8/22/2012 5:27:17 PM
+Score increased sound played.
+Score: 33
+
+[New Target] - 7 - Left Hand - 8/22/2012 5:27:26 PM
+Score increased sound played.
+Score: 41
+
+[New Target] - 8 - Right Hand - 8/22/2012 5:27:36 PM
+Score increased sound played.
+Score: 48
+
+[New Target] - 9 - Left Hand - 8/22/2012 5:27:47 PM
+Score increased sound played.
+Score: 52
+Game over
+Sad 'Game Over' music is now playing...
+Score decreased sound played.
+Score: 0
+Level 1 background music is now playing
+
+[New Target] - 0 - Right Hand - 8/22/2012 5:28:28 PM
+Score increased sound played.
+Score: 1
+
+[New Target] - 1 - Left Hand - 8/22/2012 5:28:57 PM
+Score increased sound played.
+Score: 6
+
+[New Target] - 2 - Right Hand - 8/22/2012 5:29:12 PM
+Score increased sound played.
+Score: 11
+
+[New Target] - 3 - Left Hand - 8/22/2012 5:29:27 PM
+Score increased sound played.
+Score: 16
+
+[New Target] - 4 - Right Hand - 8/22/2012 5:29:42 PM
+Score increased sound played.
+Score: 21
+Level 2 background music is now playing
+
+[New Target] - 5 - Left Hand - 8/22/2012 5:29:59 PM
+Score increased sound played.
+Score: 30
+
+[New Target] - 6 - Right Hand - 8/22/2012 5:30:13 PM
+Score increased sound played.
+Score: 39
+
+[New Target] - 7 - Left Hand - 8/22/2012 5:30:26 PM
+Score increased sound played.
+Score: 50
+
+[New Target] - 8 - Right Hand - 8/22/2012 5:30:37 PM
+Score increased sound played.
+Score: 60
+
+[New Target] - 9 - Left Hand - 8/22/2012 5:30:49 PM
+Score increased sound played.
+Score: 72
+Level 3 background music is now playing
+
+[New Target] - 10 - Right Hand - 8/22/2012 5:31:00 PM
+Score increased sound played.
+Score: 88
+
+[New Target] - 11 - Left Hand - 8/22/2012 5:31:10 PM
+Score increased sound played.
+Score: 89
+
+[New Target] - 12 - Right Hand - 8/22/2012 5:31:38 PM
+Score increased sound played.
+Score: 103
+
+[New Target] - 13 - Left Hand - 8/22/2012 5:31:50 PM
+Score increased sound played.
+Score: 117
+
+[New Target] - 14 - Right Hand - 8/22/2012 5:32:01 PM
+Score increased sound played.
+Score: 136
+Level 4 background music is now playing
+
+[New Target] - 15 - Left Hand - 8/22/2012 5:32:09 PM
+Score increased sound played.
+Score: 155
+
+[New Target] - 16 - Right Hand - 8/22/2012 5:32:18 PM
+Score increased sound played.
+Score: 176
+
+[New Target] - 17 - Left Hand - 8/22/2012 5:32:26 PM
+Score increased sound played.
+Score: 196
+
+[New Target] - 18 - Right Hand - 8/22/2012 5:32:35 PM
+Score increased sound played.
+Score: 208
+
+[New Target] - 19 - Left Hand - 8/22/2012 5:32:50 PM
+Score increased sound played.
+Score: 226
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down
