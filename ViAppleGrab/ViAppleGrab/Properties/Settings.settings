@@ -105,7 +105,7 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="QUICK_CALIBRATION" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="SCORE_PER_APPLE_INCREASE" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
@@ -142,6 +142,21 @@
     </Setting>
     <Setting Name="SIMULTANEOUS_TARGETS" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SINGLE_TARGET" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SINGLE_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Targets_Single.txt</Value>
+    </Setting>
+    <Setting Name="SIMULTANEOUS_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Targets_Simultaneous.txt</Value>
+    </Setting>
+    <Setting Name="DOMINANT_ARM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">right</Value>
+    </Setting>
+    <Setting Name="DISPLAY_RESULTS_AT_END" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -21,3 +21,8 @@ C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViToolkit\bin\x8
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViToolkit\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViToolkit\obj\x86\Release\ViToolkit.dll
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\ViToolkit\obj\x86\Release\ViToolkit.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\bin\x86\Release\ViToolkit.dll
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\bin\x86\Release\ViToolkit.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Release\ViToolkit.dll
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Release\ViToolkit.pdb

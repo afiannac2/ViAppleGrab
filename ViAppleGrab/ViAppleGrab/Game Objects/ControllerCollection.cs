@@ -157,8 +157,16 @@ namespace ViAppleGrab.Collections
                 }
                 else
                 {
-                    return (_controllers[(int)ControllerIndex.LeftHand].Target.WasCollected
-                        && _controllers[(int)ControllerIndex.RightHand].Target.WasCollected);
+                    if (Settings.Default.SIMULTANEOUS_TARGETS)
+                    {
+                        return (_controllers[(int)ControllerIndex.LeftHand].Target.WasCollected
+                            && _controllers[(int)ControllerIndex.RightHand].Target.WasCollected);
+                    }
+                    else
+                    {
+                        return (_controllers[(int)ControllerIndex.LeftHand].Target.WasCollected
+                            || _controllers[(int)ControllerIndex.RightHand].Target.WasCollected);
+                    }
                 }
             }
         }
@@ -245,9 +253,18 @@ namespace ViAppleGrab.Collections
 
                     this[ControllerIndex.RightHand].Target.Deactivate();
 
-                    CurrController = ControllerIndex.LeftHand;
+                    //If we are using both controllers
+                    if (!Settings.Default.SINGLE_TARGET)
+                    {
+                        CurrController = ControllerIndex.LeftHand;
 
-                    this[ControllerIndex.LeftHand].NewTarget(this[ControllerIndex.RightHand].Location);
+                        this[ControllerIndex.LeftHand].NewTarget(this[ControllerIndex.RightHand].Location);
+                    }
+                    else
+                    {
+                        //Otherwise
+                        this[ControllerIndex.RightHand].NewTarget(this[ControllerIndex.LeftHand].Location);
+                    }
 
                     //_updateRumble(ControllerIndex.LeftHand);
 
@@ -279,13 +296,26 @@ namespace ViAppleGrab.Collections
                         + this[ControllerIndex.RightHand].Target.ID.ToString() 
                         + " - Right Hand - " + DateTime.Now);
 
-                    this[ControllerIndex.LeftHand].NewTarget(id);
+                    if (!Settings.Default.SIMULTANEOUS_TARGETS)
+                    {
+                        this[ControllerIndex.LeftHand].NewTarget(id);
 
-                    //UpdateRumbles();
+                        //UpdateRumbles();
 
-                    Debug.WriteLine("[Duplicate Target] - "
-                        + this[ControllerIndex.LeftHand].Target.ID.ToString()
-                        + " - Left Hand - " + DateTime.Now);
+                        Debug.WriteLine("[Duplicate Target] - "
+                            + this[ControllerIndex.LeftHand].Target.ID.ToString()
+                            + " - Left Hand - " + DateTime.Now);
+                    }
+                    else
+                    {
+                        this[ControllerIndex.LeftHand].NewTarget(this[ControllerIndex.RightHand].Location);
+
+                        Debug.WriteLine("");
+                        Debug.WriteLine("[New Target] - "
+                            + this[ControllerIndex.LeftHand].Target.ID.ToString()
+                            + " - Left Hand - " + DateTime.Now);
+                    }
+
                     break;
             }
         }

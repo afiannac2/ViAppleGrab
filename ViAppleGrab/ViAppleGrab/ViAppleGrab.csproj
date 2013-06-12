@@ -32,7 +32,7 @@
     <SupportUrl>http://www.eelke.com</SupportUrl>
     <ProductName>ViAppleGrab</ProductName>
     <PublisherName>Player Game Interaction Lab - University of Nevada</PublisherName>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -86,6 +86,7 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -107,6 +108,18 @@
     </Compile>
     <Compile Include="Windows Forms\Camera.Designer.cs">
       <DependentUpon>Camera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows Forms\EditUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows Forms\EditUsers.Designer.cs">
+      <DependentUpon>EditUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows Forms\InitMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows Forms\InitMenu.Designer.cs">
+      <DependentUpon>InitMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Windows Forms\UserInfo.cs">
       <SubType>Form</SubType>
@@ -189,6 +202,12 @@
     <EmbeddedResource Include="Windows Forms\Camera.resx">
       <DependentUpon>Camera.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Windows Forms\EditUsers.resx">
+      <DependentUpon>EditUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows Forms\InitMenu.resx">
+      <DependentUpon>InitMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Windows Forms\UserInfo.resx">
       <DependentUpon>UserInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,12 +218,12 @@
   <ItemGroup>
     <PublishFile Include="Users.xml">
       <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
   </ItemGroup>

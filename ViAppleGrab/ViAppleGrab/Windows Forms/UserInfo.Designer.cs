@@ -237,6 +237,7 @@
             this.Controls.Add(this.tbFirstName);
             this.Name = "UserInfo";
             this.Text = "User Information";
+            this.Load += new System.EventHandler(this.UserInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

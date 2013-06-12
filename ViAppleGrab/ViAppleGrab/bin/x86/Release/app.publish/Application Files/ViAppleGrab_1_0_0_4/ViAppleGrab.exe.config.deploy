@@ -152,6 +152,24 @@
             <setting name="HIDE_OUTPUT" serializeAs="String">
                 <value>False</value>
             </setting>
+            <setting name="SIMULTANEOUS_TARGETS" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="SINGLE_TARGET" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="SINGLE_FILE" serializeAs="String">
+                <value>Targets_Single.txt</value>
+            </setting>
+            <setting name="SIMULTANEOUS_FILE" serializeAs="String">
+                <value>Targets_Simultaneous.txt</value>
+            </setting>
+            <setting name="DOMINANT_ARM" serializeAs="String">
+                <value>right</value>
+            </setting>
+            <setting name="DISPLAY_RESULTS_AT_END" serializeAs="String">
+                <value>False</value>
+            </setting>
         </ViAppleGrab.Properties.Settings>
     </userSettings>
 </configuration>

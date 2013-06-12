@@ -391,7 +391,7 @@ namespace ViAppleGrab.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool QUICK_CALIBRATION {
             get {
                 return ((bool)(this["QUICK_CALIBRATION"]));
@@ -539,6 +539,66 @@ namespace ViAppleGrab.Properties {
             }
             set {
                 this["SIMULTANEOUS_TARGETS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SINGLE_TARGET {
+            get {
+                return ((bool)(this["SINGLE_TARGET"]));
+            }
+            set {
+                this["SINGLE_TARGET"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Targets_Single.txt")]
+        public string SINGLE_FILE {
+            get {
+                return ((string)(this["SINGLE_FILE"]));
+            }
+            set {
+                this["SINGLE_FILE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Targets_Simultaneous.txt")]
+        public string SIMULTANEOUS_FILE {
+            get {
+                return ((string)(this["SIMULTANEOUS_FILE"]));
+            }
+            set {
+                this["SIMULTANEOUS_FILE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("right")]
+        public string DOMINANT_ARM {
+            get {
+                return ((string)(this["DOMINANT_ARM"]));
+            }
+            set {
+                this["DOMINANT_ARM"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DISPLAY_RESULTS_AT_END {
+            get {
+                return ((bool)(this["DISPLAY_RESULTS_AT_END"]));
+            }
+            set {
+                this["DISPLAY_RESULTS_AT_END"] = value;
             }
         }
     }

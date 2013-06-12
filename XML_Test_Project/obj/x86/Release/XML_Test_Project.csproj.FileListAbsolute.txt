@@ -12,3 +12,10 @@ C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\XML_Test_Project
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\XML_Test_Project\obj\x86\Release\XML_Test_Project.csprojResolveAssemblyReference.cache
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\XML_Test_Project\obj\x86\Release\XML_Test_Project.exe
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\XML_Test_Project\obj\x86\Release\XML_Test_Project.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\XML_Test_Project\bin\Release\XML_Test_Project.exe
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\XML_Test_Project\bin\Release\XML_Test_Project.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\XML_Test_Project\bin\Release\ViToolkit.dll
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\XML_Test_Project\bin\Release\ViToolkit.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\XML_Test_Project\obj\x86\Release\XML_Test_Project.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\XML_Test_Project\obj\x86\Release\XML_Test_Project.exe
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\XML_Test_Project\obj\x86\Release\XML_Test_Project.pdb

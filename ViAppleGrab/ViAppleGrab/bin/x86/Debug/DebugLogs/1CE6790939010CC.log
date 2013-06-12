@@ -1,0 +1,74 @@
+[Start Time] - 6/12/2013 10:16:28 AM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-781 Y:381}
+Calibration: LowerLeft - {X:-730 Y:-634}
+Calibration: UpperRight - {X:748 Y:424}
+Calibration: LowerRight - {X:652 Y:-750}
+Calibration: RightShoulder - {X:175 Y:-69}
+Level 1 background music is now playing
+
+
+[New Target] - 0 - Right Hand - 6/12/2013 10:17:00 AM
+
+[New Target] - 1 - Left Hand - 6/12/2013 10:17:00 AM
+Target collected sound played.
+Target collected sound played.
+Score increased sound played.
+Score: 8
+
+
+[New Target] - 2 - Right Hand - 6/12/2013 10:17:10 AM
+
+[New Target] - 3 - Left Hand - 6/12/2013 10:17:10 AM
+Target collected sound played.
+Target collected sound played.
+Target collected sound played.
+Target collected sound played.
+Target collected sound played.
+Target collected sound played.
+Target collected sound played.
+Target collected sound played.
+Score increased sound played.
+Score: 17
+
+
+[New Target] - 4 - Right Hand - 6/12/2013 10:17:17 AM
+
+[New Target] - 5 - Left Hand - 6/12/2013 10:17:17 AM
+Target collected sound played.
+Target collected sound played.
+Score increased sound played.
+Score: 21
+
+
+[New Target] - 6 - Right Hand - 6/12/2013 10:17:37 AM
+
+[New Target] - 7 - Left Hand - 6/12/2013 10:17:37 AM
+Target collected sound played.
+Target collected sound played.
+Score increased sound played.
+Score: 29
+
+
+[New Target] - 8 - Right Hand - 6/12/2013 10:17:44 AM
+
+[New Target] - 9 - Left Hand - 6/12/2013 10:17:44 AM
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

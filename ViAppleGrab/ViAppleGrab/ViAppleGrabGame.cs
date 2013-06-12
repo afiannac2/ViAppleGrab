@@ -493,6 +493,21 @@ namespace ViAppleGrab
                 {
                     spriteBatch.Draw(texApple, new Vector2(x, y), Color.White);
                 }
+
+                if (Settings.Default.SIMULTANEOUS_TARGETS)
+                {
+                    x = _input.Controllers[ControllerIndex.LeftHand].Target.x - targetRadius;
+                    y = _input.Controllers[ControllerIndex.LeftHand].Target.y - targetRadius;
+
+                    if (_input.Controllers[ControllerIndex.LeftHand].Target.IsRotten)
+                    {
+                        spriteBatch.Draw(texRottenApple, new Vector2(x, y), Color.White);
+                    }
+                    else
+                    {
+                        spriteBatch.Draw(texApple, new Vector2(x, y), Color.White);
+                    }
+                }
             }
 
 

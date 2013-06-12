@@ -463,3 +463,4 @@ C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Debug
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Debug\ViAppleGrab.application
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Debug\ViAppleGrab.exe
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Debug\ViAppleGrab.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Debug\ViAppleGrab.Windows_Forms.InitMenu.resources

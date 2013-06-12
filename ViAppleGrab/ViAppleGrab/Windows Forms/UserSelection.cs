@@ -305,5 +305,27 @@ namespace ViAppleGrab
                 Settings.Default.MAX_LEVELS = 4;
             }
         }
+
+        private void cbDisplayResults_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbDisplayResults.Checked)
+                Settings.Default.DISPLAY_RESULTS_AT_END = true;
+            else
+                Settings.Default.DISPLAY_RESULTS_AT_END = false;
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (cbSelectStudy.SelectedItem.ToString() == "Camp Abilities Study")
+            {
+                lblYAxisController.Visible = false;
+                cmbYAxisController.Visible = false;
+            }
+            else
+            {
+                lblYAxisController.Visible = true;
+                cmbYAxisController.Visible = true;
+            }
+        }
     }
 }

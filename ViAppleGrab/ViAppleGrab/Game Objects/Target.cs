@@ -40,16 +40,22 @@ namespace ViAppleGrab
 
         public static void LoadTargets()
         {
-            if ((File.Exists(Settings.Default.ALTERNATING_FILE) && (ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating)
-                || (File.Exists(Settings.Default.TOGETHER_FILE) && (ControlType)Settings.Default.CONTROL_TYPE == ControlType.Together))
+            if ((File.Exists(Settings.Default.ALTERNATING_FILE) && (ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating && !Settings.Default.SINGLE_TARGET)
+                || (File.Exists(Settings.Default.TOGETHER_FILE) && (ControlType)Settings.Default.CONTROL_TYPE == ControlType.Together && !Settings.Default.SIMULTANEOUS_TARGETS)
+                || (File.Exists(Settings.Default.SINGLE_FILE) && Settings.Default.SINGLE_TARGET)
+                || (File.Exists(Settings.Default.SIMULTANEOUS_FILE) && Settings.Default.SIMULTANEOUS_TARGETS))
             {
                 int x, y;
                 bool r;
 
                 TextReader reader;
 
-                if ((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating)
+                if ((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating && !Settings.Default.SINGLE_TARGET)
                     reader = new StreamReader(Settings.Default.ALTERNATING_FILE);
+                else if((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating && Settings.Default.SINGLE_TARGET)
+                    reader = new StreamReader(Settings.Default.SINGLE_FILE);
+                else if(Settings.Default.SIMULTANEOUS_TARGETS)
+                    reader = new StreamReader(Settings.Default.SIMULTANEOUS_FILE);
                 else
                     reader = new StreamReader(Settings.Default.TOGETHER_FILE);
 
@@ -113,19 +119,39 @@ namespace ViAppleGrab
 
             if ((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating)
             {
-                for (int i = 0; i < _totalTargets; i++)
+                if (!Settings.Default.SINGLE_TARGET)
                 {
-                    if (i % 2 == 0) //Start with the right hand by default
+                    for (int i = 0; i < _totalTargets; i++)
                     {
-                        _targetLocations[i] = new Point((int)rand.Next(mid, maxX), (int)rand.Next(minY, maxY));
-                    }
-                    else //then the left hand
-                    {
-                        _targetLocations[i] = new Point((int)rand.Next(minX, mid), (int)rand.Next(minY, maxY));
-                    }
+                        if (i % 2 == 0) //Start with the right hand by default
+                        {
+                            _targetLocations[i] = new Point((int)rand.Next(mid, maxX), (int)rand.Next(minY, maxY));
+                        }
+                        else //then the left hand
+                        {
+                            _targetLocations[i] = new Point((int)rand.Next(minX, mid), (int)rand.Next(minY, maxY));
+                        }
 
-                    //33.3% chance of an apple being rotten
-                    _rottenState[i] = ((int)rand.Next(0, 3) == 2) ? true : false;
+                        //33.3% chance of an apple being rotten
+                        _rottenState[i] = ((int)rand.Next(0, 3) == 2) ? true : false;
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < _totalTargets; i++)
+                    {
+                        if (Settings.Default.DOMINANT_ARM == "right") //Start with the right hand by default
+                        {
+                            _targetLocations[i] = new Point((int)rand.Next(mid, maxX), (int)rand.Next(minY, maxY));
+                        }
+                        else //then the left hand
+                        {
+                            _targetLocations[i] = new Point((int)rand.Next(minX, mid), (int)rand.Next(minY, maxY));
+                        }
+
+                        //33.3% chance of an apple being rotten
+                        _rottenState[i] = ((int)rand.Next(0, 3) == 2) ? true : false;
+                    }
                 }
 
                 using (TextWriter writer = new StreamWriter("Targets_Alternating.txt"))
@@ -142,13 +168,38 @@ namespace ViAppleGrab
             }
             else
             {
-                for (int i = 0; i < _totalTargets; i++)
+                if (Settings.Default.SIMULTANEOUS_TARGETS)
                 {
-                    _targetLocations[i] = new Point((int)rand.Next(minX, maxX), (int)rand.Next(minY, maxY));                    
+                    _totalTargets = 81;
+                    _targetLocations = new Point[_totalTargets];
+                    _rottenState = new bool[_totalTargets];
 
-                    //33.3% chance of an apple being rotten
-                    _rottenState[i] = ((int)rand.Next(0, 3) == 2) ? true : false;
+                    for (int i = 0; i < _totalTargets; i++)
+                    {
+                        if (i % 2 == 0) //Start with the right hand by default
+                        {
+                            _targetLocations[i] = new Point((int)rand.Next(mid, maxX), (int)rand.Next(minY, maxY));
+                        }
+                        else //then the left hand
+                        {
+                            _targetLocations[i] = new Point((int)rand.Next(minX, mid), (int)rand.Next(minY, maxY));
+                        }
+
+                        //33.3% chance of an apple being rotten
+                        _rottenState[i] = ((int)rand.Next(0, 3) == 2) ? true : false;
+                    }
                 }
+                else
+                {
+                    for (int i = 0; i < _totalTargets; i++)
+                    {
+                        _targetLocations[i] = new Point((int)rand.Next(minX, maxX), (int)rand.Next(minY, maxY));
+
+                        //33.3% chance of an apple being rotten
+                        _rottenState[i] = ((int)rand.Next(0, 3) == 2) ? true : false;
+                    }
+                }
+
                 using (TextWriter writer = new StreamWriter("Targets_Together.txt"))
                 {
                     writer.WriteLine(((ControlType)Settings.Default.CONTROL_TYPE).ToString());

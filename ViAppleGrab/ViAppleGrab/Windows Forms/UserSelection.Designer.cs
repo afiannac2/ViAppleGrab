@@ -54,12 +54,16 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblTypeOfPlay = new System.Windows.Forms.Label();
             this.cmbTypeOfPlay = new System.Windows.Forms.ComboBox();
+            this.lblDisplayResults = new System.Windows.Forms.Label();
+            this.cbDisplayResults = new System.Windows.Forms.CheckBox();
+            this.cbSelectStudy = new System.Windows.Forms.ComboBox();
+            this.lblSelectStudy = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStartGame
             // 
-            this.btnStartGame.Location = new System.Drawing.Point(13, 408);
+            this.btnStartGame.Location = new System.Drawing.Point(13, 479);
             this.btnStartGame.Name = "btnStartGame";
             this.btnStartGame.Size = new System.Drawing.Size(220, 23);
             this.btnStartGame.TabIndex = 8;
@@ -70,7 +74,7 @@
             // cmbUsers
             // 
             this.cmbUsers.FormattingEnabled = true;
-            this.cmbUsers.Location = new System.Drawing.Point(13, 62);
+            this.cmbUsers.Location = new System.Drawing.Point(13, 139);
             this.cmbUsers.Name = "cmbUsers";
             this.cmbUsers.Size = new System.Drawing.Size(220, 21);
             this.cmbUsers.TabIndex = 9;
@@ -78,7 +82,7 @@
             // 
             // btnNewUser
             // 
-            this.btnNewUser.Location = new System.Drawing.Point(13, 90);
+            this.btnNewUser.Location = new System.Drawing.Point(13, 167);
             this.btnNewUser.Name = "btnNewUser";
             this.btnNewUser.Size = new System.Drawing.Size(107, 23);
             this.btnNewUser.TabIndex = 10;
@@ -89,7 +93,7 @@
             // btnEditUser
             // 
             this.btnEditUser.Enabled = false;
-            this.btnEditUser.Location = new System.Drawing.Point(126, 90);
+            this.btnEditUser.Location = new System.Drawing.Point(126, 167);
             this.btnEditUser.Name = "btnEditUser";
             this.btnEditUser.Size = new System.Drawing.Size(107, 23);
             this.btnEditUser.TabIndex = 11;
@@ -101,7 +105,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(43, 138);
+            this.label1.Location = new System.Drawing.Point(43, 219);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 16);
             this.label1.TabIndex = 12;
@@ -111,9 +115,7 @@
             // cbQuickCalibration
             // 
             this.cbQuickCalibration.AutoSize = true;
-            this.cbQuickCalibration.Checked = true;
-            this.cbQuickCalibration.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbQuickCalibration.Location = new System.Drawing.Point(109, 202);
+            this.cbQuickCalibration.Location = new System.Drawing.Point(168, 282);
             this.cbQuickCalibration.Name = "cbQuickCalibration";
             this.cbQuickCalibration.Size = new System.Drawing.Size(15, 14);
             this.cbQuickCalibration.TabIndex = 13;
@@ -123,7 +125,7 @@
             // lblGameType
             // 
             this.lblGameType.AutoSize = true;
-            this.lblGameType.Location = new System.Drawing.Point(13, 253);
+            this.lblGameType.Location = new System.Drawing.Point(13, 361);
             this.lblGameType.Name = "lblGameType";
             this.lblGameType.Size = new System.Drawing.Size(65, 13);
             this.lblGameType.TabIndex = 14;
@@ -131,11 +133,12 @@
             // 
             // cmbGameType
             // 
+            this.cmbGameType.Enabled = false;
             this.cmbGameType.FormattingEnabled = true;
             this.cmbGameType.Items.AddRange(new object[] {
             "Apples Only",
             "Apples and Rotten Apples"});
-            this.cmbGameType.Location = new System.Drawing.Point(89, 250);
+            this.cmbGameType.Location = new System.Drawing.Point(89, 358);
             this.cmbGameType.Name = "cmbGameType";
             this.cmbGameType.Size = new System.Drawing.Size(144, 21);
             this.cmbGameType.TabIndex = 15;
@@ -144,7 +147,7 @@
             // lblControlType
             // 
             this.lblControlType.AutoSize = true;
-            this.lblControlType.Location = new System.Drawing.Point(13, 280);
+            this.lblControlType.Location = new System.Drawing.Point(13, 388);
             this.lblControlType.Name = "lblControlType";
             this.lblControlType.Size = new System.Drawing.Size(70, 13);
             this.lblControlType.TabIndex = 16;
@@ -156,7 +159,7 @@
             this.cmbControlType.Items.AddRange(new object[] {
             "Alternating",
             "Together"});
-            this.cmbControlType.Location = new System.Drawing.Point(89, 277);
+            this.cmbControlType.Location = new System.Drawing.Point(89, 385);
             this.cmbControlType.Name = "cmbControlType";
             this.cmbControlType.Size = new System.Drawing.Size(144, 21);
             this.cmbControlType.TabIndex = 17;
@@ -165,7 +168,7 @@
             // lblQuickCalibration
             // 
             this.lblQuickCalibration.AutoSize = true;
-            this.lblQuickCalibration.Location = new System.Drawing.Point(13, 202);
+            this.lblQuickCalibration.Location = new System.Drawing.Point(13, 283);
             this.lblQuickCalibration.Name = "lblQuickCalibration";
             this.lblQuickCalibration.Size = new System.Drawing.Size(90, 13);
             this.lblQuickCalibration.TabIndex = 18;
@@ -174,7 +177,7 @@
             // lblYAxisController
             // 
             this.lblYAxisController.AutoSize = true;
-            this.lblYAxisController.Location = new System.Drawing.Point(13, 307);
+            this.lblYAxisController.Location = new System.Drawing.Point(13, 415);
             this.lblYAxisController.Name = "lblYAxisController";
             this.lblYAxisController.Size = new System.Drawing.Size(38, 13);
             this.lblYAxisController.TabIndex = 19;
@@ -186,7 +189,7 @@
             this.cmbYAxisController.Items.AddRange(new object[] {
             "Right Controller",
             "Left Controller"});
-            this.cmbYAxisController.Location = new System.Drawing.Point(89, 304);
+            this.cmbYAxisController.Location = new System.Drawing.Point(89, 412);
             this.cmbYAxisController.Name = "cmbYAxisController";
             this.cmbYAxisController.Size = new System.Drawing.Size(144, 21);
             this.cmbYAxisController.TabIndex = 20;
@@ -196,7 +199,7 @@
             // 
             this.cbShowCamera.AutoSize = true;
             this.cbShowCamera.Enabled = false;
-            this.cbShowCamera.Location = new System.Drawing.Point(109, 179);
+            this.cbShowCamera.Location = new System.Drawing.Point(168, 259);
             this.cbShowCamera.Name = "cbShowCamera";
             this.cbShowCamera.Size = new System.Drawing.Size(15, 14);
             this.cbShowCamera.TabIndex = 21;
@@ -207,7 +210,7 @@
             // 
             this.lblShowCamera.AutoSize = true;
             this.lblShowCamera.Enabled = false;
-            this.lblShowCamera.Location = new System.Drawing.Point(13, 179);
+            this.lblShowCamera.Location = new System.Drawing.Point(13, 260);
             this.lblShowCamera.Name = "lblShowCamera";
             this.lblShowCamera.Size = new System.Drawing.Size(76, 13);
             this.lblShowCamera.TabIndex = 22;
@@ -217,11 +220,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(65, 27);
+            this.label2.Location = new System.Drawing.Point(65, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 16);
+            this.label2.Size = new System.Drawing.Size(102, 16);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Select A User";
+            this.label2.Text = "Select a User";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmbTestGroup
@@ -230,7 +233,7 @@
             this.cmbTestGroup.Items.AddRange(new object[] {
             "Group A",
             "Group B"});
-            this.cmbTestGroup.Location = new System.Drawing.Point(89, 223);
+            this.cmbTestGroup.Location = new System.Drawing.Point(89, 331);
             this.cmbTestGroup.Name = "cmbTestGroup";
             this.cmbTestGroup.Size = new System.Drawing.Size(144, 21);
             this.cmbTestGroup.TabIndex = 25;
@@ -238,7 +241,7 @@
             // lblTestGroup
             // 
             this.lblTestGroup.AutoSize = true;
-            this.lblTestGroup.Location = new System.Drawing.Point(13, 226);
+            this.lblTestGroup.Location = new System.Drawing.Point(13, 334);
             this.lblTestGroup.Name = "lblTestGroup";
             this.lblTestGroup.Size = new System.Drawing.Size(63, 13);
             this.lblTestGroup.TabIndex = 24;
@@ -296,7 +299,7 @@
             // lblTypeOfPlay
             // 
             this.lblTypeOfPlay.AutoSize = true;
-            this.lblTypeOfPlay.Location = new System.Drawing.Point(10, 364);
+            this.lblTypeOfPlay.Location = new System.Drawing.Point(10, 442);
             this.lblTypeOfPlay.Name = "lblTypeOfPlay";
             this.lblTypeOfPlay.Size = new System.Drawing.Size(65, 13);
             this.lblTypeOfPlay.TabIndex = 27;
@@ -308,17 +311,63 @@
             this.cmbTypeOfPlay.Items.AddRange(new object[] {
             "Warmup",
             "40 Target User Study"});
-            this.cmbTypeOfPlay.Location = new System.Drawing.Point(89, 361);
+            this.cmbTypeOfPlay.Location = new System.Drawing.Point(89, 439);
             this.cmbTypeOfPlay.Name = "cmbTypeOfPlay";
             this.cmbTypeOfPlay.Size = new System.Drawing.Size(144, 21);
             this.cmbTypeOfPlay.TabIndex = 28;
             this.cmbTypeOfPlay.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // lblDisplayResults
+            // 
+            this.lblDisplayResults.AutoSize = true;
+            this.lblDisplayResults.Location = new System.Drawing.Point(13, 307);
+            this.lblDisplayResults.Name = "lblDisplayResults";
+            this.lblDisplayResults.Size = new System.Drawing.Size(149, 13);
+            this.lblDisplayResults.TabIndex = 29;
+            this.lblDisplayResults.Text = "Display Results at Conclusion:";
+            // 
+            // cbDisplayResults
+            // 
+            this.cbDisplayResults.AutoSize = true;
+            this.cbDisplayResults.Location = new System.Drawing.Point(168, 306);
+            this.cbDisplayResults.Name = "cbDisplayResults";
+            this.cbDisplayResults.Size = new System.Drawing.Size(15, 14);
+            this.cbDisplayResults.TabIndex = 30;
+            this.cbDisplayResults.UseVisualStyleBackColor = true;
+            this.cbDisplayResults.CheckedChanged += new System.EventHandler(this.cbDisplayResults_CheckedChanged);
+            // 
+            // cbSelectStudy
+            // 
+            this.cbSelectStudy.FormattingEnabled = true;
+            this.cbSelectStudy.Items.AddRange(new object[] {
+            "Camp Abilities Study",
+            "Original GI 2013 Study"});
+            this.cbSelectStudy.Location = new System.Drawing.Point(13, 60);
+            this.cbSelectStudy.Name = "cbSelectStudy";
+            this.cbSelectStudy.Size = new System.Drawing.Size(220, 21);
+            this.cbSelectStudy.TabIndex = 32;
+            this.cbSelectStudy.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
+            // lblSelectStudy
+            // 
+            this.lblSelectStudy.AutoSize = true;
+            this.lblSelectStudy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectStudy.Location = new System.Drawing.Point(65, 26);
+            this.lblSelectStudy.Name = "lblSelectStudy";
+            this.lblSelectStudy.Size = new System.Drawing.Size(108, 16);
+            this.lblSelectStudy.TabIndex = 33;
+            this.lblSelectStudy.Text = "Select a Study";
+            this.lblSelectStudy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // UserSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(245, 443);
+            this.ClientSize = new System.Drawing.Size(245, 510);
+            this.Controls.Add(this.lblSelectStudy);
+            this.Controls.Add(this.cbSelectStudy);
+            this.Controls.Add(this.cbDisplayResults);
+            this.Controls.Add(this.lblDisplayResults);
             this.Controls.Add(this.cmbTypeOfPlay);
             this.Controls.Add(this.lblTypeOfPlay);
             this.Controls.Add(this.cmbTestGroup);
@@ -378,5 +427,9 @@
         private System.Windows.Forms.ToolStripMenuItem purgeDebugLogsToolStripMenuItem;
         private System.Windows.Forms.Label lblTypeOfPlay;
         private System.Windows.Forms.ComboBox cmbTypeOfPlay;
+        private System.Windows.Forms.Label lblDisplayResults;
+        private System.Windows.Forms.CheckBox cbDisplayResults;
+        private System.Windows.Forms.ComboBox cbSelectStudy;
+        private System.Windows.Forms.Label lblSelectStudy;
     }
 }

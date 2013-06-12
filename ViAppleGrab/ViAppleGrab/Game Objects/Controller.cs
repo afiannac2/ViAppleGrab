@@ -302,7 +302,8 @@ namespace ViAppleGrab
             //feedback (frequency) and the other will give x-axis feedback
             //(pulse delay). Which controller is which can be configured in the
             //setttings file (RIGHT_GIVES_Y_FEEDBACK)
-            if ((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating)
+            if ((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating
+                || ((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Together && Settings.Default.SIMULTANEOUS_TARGETS))
             {
                 _axisOfInterest = HapticFeedbackAxis.xy;
             }
@@ -332,7 +333,8 @@ namespace ViAppleGrab
         public void AssignSpatialLimits(ControllerIndex c)
         {
             //Set up the limits of the display for this controller
-            if ((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating)
+            if ((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating
+                || ((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Together && Settings.Default.SIMULTANEOUS_TARGETS))
             {
                 //Is this the right or left controller?
                 if (c == ControllerIndex.RightHand)
@@ -470,13 +472,20 @@ namespace ViAppleGrab
                         //Update the rumble...
                         _updateRumbleInfo();
                     }
-                    
+
                     if (Target.State == TargetState.Found)
                     {
                         if (_triggerVal > 200)
                         {
                             //The target is being collected
                             Target.IsCollecting = true;
+                        }
+                    }
+                    else
+                    {
+                        if (_triggerVal > 200)
+                        {
+                            //TODO: Play a target missed sound
                         }
                     }
                 }
