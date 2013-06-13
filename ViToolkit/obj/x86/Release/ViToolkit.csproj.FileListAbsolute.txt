@@ -26,3 +26,4 @@ C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\bin\x86\Release\ViToolkit.p
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Release\ViToolkit.dll
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Release\ViToolkit.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViToolkit\obj\x86\Release\ViToolkit.csprojResolveAssemblyReference.cache

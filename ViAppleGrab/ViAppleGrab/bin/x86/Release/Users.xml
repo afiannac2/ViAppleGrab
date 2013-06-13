@@ -1,1 +1,39 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Users><User ID="1" DateCreated="Tuesday, August 14, 2012"><FirstName>Alexander</FirstName><LastName>Fiannaca</LastName><DateOfBirth>Monday, November 06, 1989</DateOfBirth><Disability>None</Disability><TestGroup>A</TestGroup></User><User ID="2" DateCreated="Tuesday, August 14, 2012"><FirstName>Eelke</FirstName><LastName>Folmer</LastName><DateOfBirth>Monday, February 28, 1977</DateOfBirth><Disability>None</Disability><TestGroup>A</TestGroup></User></Users>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User ID="1" DateCreated="Tuesday, August 14, 2012">
+    <FirstName>Alexander</FirstName>
+    <LastName>Fiannaca</LastName>
+    <DateOfBirth>Monday, November 06, 1989</DateOfBirth>
+    <Gender>M</Gender>
+    <Disability>None</Disability>
+    <Study>Camp Abilities Study</Study>
+    <TestGroup>A</TestGroup>
+  </User>
+  <User ID="2" DateCreated="Tuesday, August 14, 2012">
+    <FirstName>Eelke</FirstName>
+    <LastName>Folmer</LastName>
+    <DateOfBirth>Monday, February 28, 1977</DateOfBirth>
+    <Gender>M</Gender>
+    <Disability>None</Disability>
+    <Study>Camp Abilities Study</Study>
+    <TestGroup>A</TestGroup>
+  </User>
+  <User ID="3" DateCreated="Thursday, June 13, 2013">
+    <FirstName>Jane</FirstName>
+    <LastName>Doe</LastName>
+    <DateOfBirth>Tuesday, October 12, 1999</DateOfBirth>
+    <Gender>F</Gender>
+    <Disability>Completely Blind</Disability>
+    <Study>Camp Abilities Study</Study>
+    <TestGroup>A</TestGroup>
+  </User>
+  <User ID="5" DateCreated="Thursday, June 13, 2013">
+    <FirstName>Sally</FirstName>
+    <LastName>Smith</LastName>
+    <DateOfBirth>Wednesday, July 04, 2001</DateOfBirth>
+    <Gender>F</Gender>
+    <Disability>None</Disability>
+    <Study>Camp Abilities Study</Study>
+    <TestGroup>A</TestGroup>
+  </User>
+</Users>

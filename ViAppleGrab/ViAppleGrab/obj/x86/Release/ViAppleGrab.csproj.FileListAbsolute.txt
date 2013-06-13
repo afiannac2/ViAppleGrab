@@ -265,3 +265,4 @@ C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Relea
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Release\ViAppleGrab.application
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Release\ViAppleGrab.exe
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Release\ViAppleGrab.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ViAppleGrab\ViAppleGrab\obj\x86\Release\ViAppleGrab.Windows_Forms.EditUsers.resources

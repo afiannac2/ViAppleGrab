@@ -80,8 +80,8 @@ namespace ViAppleGrab
         {
             if (CameraForm != null)
             {
-                btnEditUser.Enabled = false;
-                btnNewUser.Enabled = false;
+                //btnEditUser.Enabled = false;
+                //btnNewUser.Enabled = false;
                 btnStartGame.Enabled = false;
                 cmbUsers.Enabled = false;
 
@@ -107,7 +107,7 @@ namespace ViAppleGrab
         {
             if (cmbUsers.SelectedIndex != (-1))
             {
-                btnEditUser.Enabled = true;
+                //btnEditUser.Enabled = true;
 
                 XmlNode node = XMLTrace.FindUserInfoNode("Users.xml", cmbUsers.SelectedIndex + 1);
 

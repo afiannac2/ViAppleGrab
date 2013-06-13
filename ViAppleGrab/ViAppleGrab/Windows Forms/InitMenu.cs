@@ -100,7 +100,8 @@ namespace ViAppleGrab.Windows_Forms
 
         private void btnEditUsers_Click(object sender, EventArgs e)
         {
-
+            EditUsers form = new EditUsers();
+            form.ShowDialog();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
