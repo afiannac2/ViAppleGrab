@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using ViAppleGrab.Properties;
 using System.Xml;
+using System.Xml.Linq;
 using ViToolkit.Logging;
 using System.IO;
 using System.Diagnostics;
@@ -18,9 +19,10 @@ namespace ViAppleGrab
     {
         public Camera CameraForm = null;
         private UserInfo UserInfoForm = null;
-        XmlDocument userDoc = null;
-        Dictionary<string, string> userDic = new Dictionary<string, string>();
         ViAppleGrabGame game = null;
+
+        XDocument users;
+        const string usersfile = "Users.xml";
 
         public UserSelection(ViAppleGrabGame g)
         {
@@ -38,34 +40,58 @@ namespace ViAppleGrab
                 CameraForm.FormClosed += delegate { CameraForm = null; };
             }
 
-            _refreshUsers();
+            users = XDocument.Load(usersfile);
+            LoadUsers();
+            cmbTypeOfPlay.SelectedIndex = 0;
         }
 
-        public void _refreshUsers()
+        public void LoadUsers()
         {
             cmbUsers.Items.Clear();
-            userDic.Clear();
 
-            userDoc = new XmlDocument();
-            userDoc.Load("Users.xml");
-            XmlNodeList nodes = userDoc.SelectNodes("//User");
-
-            foreach (XmlNode n in nodes)
+            var q = users.Descendants().Elements("User").Select(user => new
             {
-                userDic.Add(n.Attributes["ID"].Value,
-                            n.SelectSingleNode("LastName").InnerText
-                            + ", " + n.SelectSingleNode("FirstName").InnerText);
-            }
+                ID = user.Attribute("ID").Value,
+                Name = user.Element("LastName").Value + ", " + user.Element("FirstName").Value,
+                FirstName = user.Element("FirstName").Value,
+                LastName = user.Element("LastName").Value,
+                Gender = user.Element("Gender").Value,
+                Date = user.Element("DateOfBirth").Value,
+                Disability = user.Element("Disability").Value,
+                TestGroup = user.Element("TestGroup").Value,
+                Study = user.Element("Study").Value
+            });
 
-            //Add the users to the drop down in the order of their IDs
-            for (int i = 1; i < userDic.Count + 1; i++)
-            {
-                cmbUsers.Items.Add(userDic[i.ToString()]);
-            }
-
-            userDoc = null;
-
+            cmbUsers.DataSource = q.ToList();
+            cmbUsers.DisplayMember = "Name";
+            cmbUsers.ValueMember = "ID";
+            cmbUsers.SelectedIndex = cmbUsers.Items.Count - 1;
             cmbUsers.Update();
+
+            var su = users.Descendants().Elements("User")
+                .Where(u => u.Attribute("ID").Value == cmbUsers.SelectedValue.ToString())
+                .Select(u => new
+                {
+                    ID = u.Attribute("ID").Value,
+                    Name = u.Element("LastName").Value + ", " + u.Element("FirstName").Value,
+                    FirstName = u.Element("FirstName").Value,
+                    LastName = u.Element("LastName").Value,
+                    Gender = u.Element("Gender").Value,
+                    Date = u.Element("DateOfBirth").Value,
+                    Disability = u.Element("Disability").Value,
+                    TestGroup = u.Element("TestGroup").Value,
+                    Study = u.Element("Study").Value
+                })
+                .FirstOrDefault();
+
+            if (su.Study == "Camp Abilities Study")
+            {
+                cbSelectStudy.SelectedIndex = 0;
+            }
+            else
+            {
+                cbSelectStudy.SelectedIndex = 1;
+            }
         }
 
         void UserInformation_FormClosing(object sender, FormClosingEventArgs e)

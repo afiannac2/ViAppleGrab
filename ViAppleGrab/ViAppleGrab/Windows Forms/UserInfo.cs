@@ -189,7 +189,7 @@ namespace ViAppleGrab
                 userDoc.Save(writer);
                 writer.Close();
 
-                parent._refreshUsers();
+                parent.LoadUsers();
                 parent.SetSelectedUser(_userID);
 
                 this.Close();
