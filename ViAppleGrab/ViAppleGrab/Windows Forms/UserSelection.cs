@@ -67,31 +67,6 @@ namespace ViAppleGrab
             cmbUsers.ValueMember = "ID";
             cmbUsers.SelectedIndex = cmbUsers.Items.Count - 1;
             cmbUsers.Update();
-
-            var su = users.Descendants().Elements("User")
-                .Where(u => u.Attribute("ID").Value == cmbUsers.SelectedValue.ToString())
-                .Select(u => new
-                {
-                    ID = u.Attribute("ID").Value,
-                    Name = u.Element("LastName").Value + ", " + u.Element("FirstName").Value,
-                    FirstName = u.Element("FirstName").Value,
-                    LastName = u.Element("LastName").Value,
-                    Gender = u.Element("Gender").Value,
-                    Date = u.Element("DateOfBirth").Value,
-                    Disability = u.Element("Disability").Value,
-                    TestGroup = u.Element("TestGroup").Value,
-                    Study = u.Element("Study").Value
-                })
-                .FirstOrDefault();
-
-            if (su.Study == "Camp Abilities Study")
-            {
-                cbSelectStudy.SelectedIndex = 0;
-            }
-            else
-            {
-                cbSelectStudy.SelectedIndex = 1;
-            }
         }
 
         void UserInformation_FormClosing(object sender, FormClosingEventArgs e)
@@ -134,22 +109,83 @@ namespace ViAppleGrab
             if (cmbUsers.SelectedIndex != (-1))
             {
                 //btnEditUser.Enabled = true;
-
-                XmlNode node = XMLTrace.FindUserInfoNode("Users.xml", cmbUsers.SelectedIndex + 1);
-
-                switch(node.SelectSingleNode("TestGroup").InnerText)
+                var su = users.Descendants().Elements("User")
+                .Where(u => u.Attribute("ID").Value == cmbUsers.SelectedValue.ToString())
+                .Select(u => new
                 {
-                    case "A":
-                        cmbTestGroup.SelectedIndex = 0;
-                        cmbGameType.SelectedIndex = 0;
-                        cmbControlType.SelectedIndex = 0;
-                        break;
+                    ID = u.Attribute("ID").Value,
+                    Name = u.Element("LastName").Value + ", " + u.Element("FirstName").Value,
+                    FirstName = u.Element("FirstName").Value,
+                    LastName = u.Element("LastName").Value,
+                    Gender = u.Element("Gender").Value,
+                    Date = u.Element("DateOfBirth").Value,
+                    Disability = u.Element("Disability").Value,
+                    ArmLength = u.Element("ArmLength").Value,
+                    Height = u.Element("Height").Value,
+                    DominantArm = u.Element("DominantArm").Value,
+                    TestGroup = u.Element("TestGroup").Value,
+                    Study = u.Element("Study").Value
+                })
+                .FirstOrDefault();
 
-                    case "B":
-                        cmbTestGroup.SelectedIndex = 1;
-                        cmbGameType.SelectedIndex = 0;
-                        cmbControlType.SelectedIndex = 1;
-                        break;
+                if (su.Study == "Camp Abilities Study")
+                {
+                    cbSelectStudy.SelectedIndex = 0;
+                    cbSelectStudy.Enabled = false;
+
+                    lblTestGroup.Visible = false;
+                    cmbTestGroup.Visible = false;
+                    lblGameType.Visible = false;
+                    cmbGameType.Visible = false;
+                    lblControlType.Visible = false;
+                    cmbControlType.Visible = false;
+                    lblYAxisController.Visible = false;
+                    cmbYAxisController.Visible = false;
+                    lblTypeOfPlay.Visible = false;
+                    cmbTypeOfPlay.Visible = false;
+
+                    lblDominantArm.Visible = true;
+                    cmbDominantArm.Visible = true;
+                    lblStage.Visible = true;
+                    cmbStage.Visible = true;
+
+                    cmbDominantArm.SelectedIndex = (su.DominantArm == "Left" ? 0 : 1);
+                    cmbStage.SelectedIndex = 0;
+                }
+                else
+                {
+                    cbSelectStudy.SelectedIndex = 1;
+
+                    lblTestGroup.Visible = true;
+                    cmbTestGroup.Visible = true;
+                    lblGameType.Visible = true;
+                    cmbGameType.Visible = true;
+                    lblControlType.Visible = true;
+                    cmbControlType.Visible = true;
+                    lblYAxisController.Visible = true;
+                    cmbYAxisController.Visible = true;
+                    lblTypeOfPlay.Visible = true;
+                    cmbTypeOfPlay.Visible = true;
+
+                    lblDominantArm.Visible = false;
+                    cmbDominantArm.Visible = false;
+                    lblStage.Visible = false;
+                    cmbStage.Visible = false;
+
+                    switch (su.TestGroup)
+                    {
+                        case "A":
+                            cmbTestGroup.SelectedIndex = 0;
+                            cmbGameType.SelectedIndex = 0;
+                            cmbControlType.SelectedIndex = 0;
+                            break;
+
+                        case "B":
+                            cmbTestGroup.SelectedIndex = 1;
+                            cmbGameType.SelectedIndex = 0;
+                            cmbControlType.SelectedIndex = 1;
+                            break;
+                    }
                 }
             }
         }
@@ -340,17 +376,35 @@ namespace ViAppleGrab
                 Settings.Default.DISPLAY_RESULTS_AT_END = false;
         }
 
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void cmbStage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbSelectStudy.SelectedItem.ToString() == "Camp Abilities Study")
+            switch(cmbStage.SelectedIndex)
             {
-                lblYAxisController.Visible = false;
-                cmbYAxisController.Visible = false;
-            }
-            else
-            {
-                lblYAxisController.Visible = true;
-                cmbYAxisController.Visible = true;
+                //Warmup
+                case 0:
+                    Settings.Default.SINGLE_FILE = "Warmup.txt";
+                    Settings.Default.SINGLE_TARGET = true;
+                    Settings.Default.SIMULTANEOUS_TARGETS = false;
+                    Settings.Default.DOMINANT_ARM = (cmbDominantArm.SelectedIndex == 0 ? "left" : "right");
+                    Settings.Default.CONTROL_TYPE = (int)ControlType.Alternating;
+                    break;
+
+                //Single targets (settings: alternating and single)
+                case 1:
+                    Settings.Default.SINGLE_FILE = "Single.txt";
+                    Settings.Default.SINGLE_TARGET = true;
+                    Settings.Default.SIMULTANEOUS_TARGETS = false;
+                    Settings.Default.DOMINANT_ARM = (cmbDominantArm.SelectedIndex == 0 ? "left" : "right");
+                    Settings.Default.CONTROL_TYPE = (int)ControlType.Alternating;
+                    break;
+
+                //simultaneous targets (settings: together and simultaneous)
+                case 2:
+                    Settings.Default.CONTROL_TYPE = (int)ControlType.Together;
+                    Settings.Default.SINGLE_TARGET = false;
+                    Settings.Default.SIMULTANEOUS_TARGETS = true;
+                    Settings.Default.SIMULTANEOUS_FILE = "Simultaneous.txt";
+                    break;
             }
         }
     }

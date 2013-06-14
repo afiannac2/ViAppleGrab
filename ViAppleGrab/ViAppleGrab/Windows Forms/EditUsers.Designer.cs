@@ -59,9 +59,18 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblStatusName = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblArmLength = new System.Windows.Forms.Label();
+            this.lblHeight = new System.Windows.Forms.Label();
+            this.lblArm = new System.Windows.Forms.Label();
+            this.tbArmLength = new System.Windows.Forms.TextBox();
+            this.tbHeight = new System.Windows.Forms.TextBox();
+            this.rbtnRight = new System.Windows.Forms.RadioButton();
+            this.rbtnLeft = new System.Windows.Forms.RadioButton();
+            this.pnlArm = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.pnlGender.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.pnlArm.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbUsers
@@ -71,7 +80,7 @@
             this.lbUsers.ItemHeight = 16;
             this.lbUsers.Location = new System.Drawing.Point(12, 32);
             this.lbUsers.Name = "lbUsers";
-            this.lbUsers.Size = new System.Drawing.Size(260, 420);
+            this.lbUsers.Size = new System.Drawing.Size(260, 580);
             this.lbUsers.TabIndex = 0;
             this.lbUsers.SelectedIndexChanged += new System.EventHandler(this.lbUsers_SelectedIndexChanged);
             // 
@@ -121,7 +130,7 @@
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFirstName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblFirstName.Location = new System.Drawing.Point(278, 239);
+            this.lblFirstName.Location = new System.Drawing.Point(278, 226);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(76, 16);
             this.lblFirstName.TabIndex = 2;
@@ -129,7 +138,7 @@
             // 
             // tbFirstName
             // 
-            this.tbFirstName.Location = new System.Drawing.Point(410, 238);
+            this.tbFirstName.Location = new System.Drawing.Point(410, 225);
             this.tbFirstName.Name = "tbFirstName";
             this.tbFirstName.Size = new System.Drawing.Size(229, 20);
             this.tbFirstName.TabIndex = 3;
@@ -138,7 +147,7 @@
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastName.Location = new System.Drawing.Point(278, 273);
+            this.lblLastName.Location = new System.Drawing.Point(278, 260);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(76, 16);
             this.lblLastName.TabIndex = 4;
@@ -146,7 +155,7 @@
             // 
             // tbLastName
             // 
-            this.tbLastName.Location = new System.Drawing.Point(410, 272);
+            this.tbLastName.Location = new System.Drawing.Point(410, 259);
             this.tbLastName.Name = "tbLastName";
             this.tbLastName.Size = new System.Drawing.Size(229, 20);
             this.tbLastName.TabIndex = 5;
@@ -155,7 +164,7 @@
             // 
             this.lblGender.AutoSize = true;
             this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender.Location = new System.Drawing.Point(278, 308);
+            this.lblGender.Location = new System.Drawing.Point(278, 295);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(56, 16);
             this.lblGender.TabIndex = 6;
@@ -165,7 +174,7 @@
             // 
             this.pnlGender.Controls.Add(this.rbtnFemale);
             this.pnlGender.Controls.Add(this.rbtnMale);
-            this.pnlGender.Location = new System.Drawing.Point(410, 298);
+            this.pnlGender.Location = new System.Drawing.Point(410, 285);
             this.pnlGender.Name = "pnlGender";
             this.pnlGender.Size = new System.Drawing.Size(229, 34);
             this.pnlGender.TabIndex = 7;
@@ -196,7 +205,7 @@
             // 
             this.tbBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBirthDate.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbBirthDate.Location = new System.Drawing.Point(410, 342);
+            this.tbBirthDate.Location = new System.Drawing.Point(410, 329);
             this.tbBirthDate.Name = "tbBirthDate";
             this.tbBirthDate.Size = new System.Drawing.Size(229, 20);
             this.tbBirthDate.TabIndex = 8;
@@ -208,7 +217,7 @@
             // 
             this.lblBirthDate.AutoSize = true;
             this.lblBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBirthDate.Location = new System.Drawing.Point(278, 343);
+            this.lblBirthDate.Location = new System.Drawing.Point(278, 330);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.Size = new System.Drawing.Size(83, 16);
             this.lblBirthDate.TabIndex = 9;
@@ -218,20 +227,21 @@
             // 
             this.lblDisability.AutoSize = true;
             this.lblDisability.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisability.Location = new System.Drawing.Point(278, 377);
+            this.lblDisability.Location = new System.Drawing.Point(279, 478);
             this.lblDisability.Name = "lblDisability";
-            this.lblDisability.Size = new System.Drawing.Size(66, 16);
+            this.lblDisability.Size = new System.Drawing.Size(77, 16);
             this.lblDisability.TabIndex = 10;
-            this.lblDisability.Text = "Disability:";
+            this.lblDisability.Text = "Disabilities:";
             // 
             // tbDisability
             // 
             this.tbDisability.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbDisability.Location = new System.Drawing.Point(410, 376);
+            this.tbDisability.Location = new System.Drawing.Point(411, 477);
+            this.tbDisability.Multiline = true;
             this.tbDisability.Name = "tbDisability";
-            this.tbDisability.Size = new System.Drawing.Size(229, 20);
+            this.tbDisability.Size = new System.Drawing.Size(229, 100);
             this.tbDisability.TabIndex = 11;
-            this.tbDisability.Text = "Describe the level of the user\'s disability...";
+            this.tbDisability.Text = "Describe the level of the user\'s disabilities, both visual and physical...";
             this.tbDisability.Enter += new System.EventHandler(this.tbDisability_Enter);
             this.tbDisability.Leave += new System.EventHandler(this.tbDisability_Leave);
             // 
@@ -241,7 +251,7 @@
             this.cmbStudy.Items.AddRange(new object[] {
             "Camp Abilities Study",
             "Original GI 2013 Study"});
-            this.cmbStudy.Location = new System.Drawing.Point(410, 107);
+            this.cmbStudy.Location = new System.Drawing.Point(410, 103);
             this.cmbStudy.Name = "cmbStudy";
             this.cmbStudy.Size = new System.Drawing.Size(229, 21);
             this.cmbStudy.TabIndex = 12;
@@ -251,7 +261,7 @@
             // 
             this.lblStudy.AutoSize = true;
             this.lblStudy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudy.Location = new System.Drawing.Point(278, 108);
+            this.lblStudy.Location = new System.Drawing.Point(278, 104);
             this.lblStudy.Name = "lblStudy";
             this.lblStudy.Size = new System.Drawing.Size(97, 16);
             this.lblStudy.TabIndex = 13;
@@ -261,7 +271,7 @@
             // 
             this.lblGroup.AutoSize = true;
             this.lblGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGroup.Location = new System.Drawing.Point(278, 137);
+            this.lblGroup.Location = new System.Drawing.Point(278, 133);
             this.lblGroup.Name = "lblGroup";
             this.lblGroup.Size = new System.Drawing.Size(100, 16);
             this.lblGroup.TabIndex = 14;
@@ -271,7 +281,7 @@
             // 
             this.cmbGroup.Enabled = false;
             this.cmbGroup.FormattingEnabled = true;
-            this.cmbGroup.Location = new System.Drawing.Point(410, 136);
+            this.cmbGroup.Location = new System.Drawing.Point(410, 132);
             this.cmbGroup.Name = "cmbGroup";
             this.cmbGroup.Size = new System.Drawing.Size(229, 21);
             this.cmbGroup.TabIndex = 15;
@@ -279,7 +289,7 @@
             // 
             // btnAddUpdate
             // 
-            this.btnAddUpdate.Location = new System.Drawing.Point(281, 429);
+            this.btnAddUpdate.Location = new System.Drawing.Point(281, 589);
             this.btnAddUpdate.Name = "btnAddUpdate";
             this.btnAddUpdate.Size = new System.Drawing.Size(180, 23);
             this.btnAddUpdate.TabIndex = 16;
@@ -299,7 +309,7 @@
             // 
             // btnDone
             // 
-            this.btnDone.Location = new System.Drawing.Point(467, 429);
+            this.btnDone.Location = new System.Drawing.Point(467, 589);
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(172, 23);
             this.btnDone.TabIndex = 18;
@@ -321,7 +331,7 @@
             // 
             this.lblStudyHeader.AutoSize = true;
             this.lblStudyHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudyHeader.Location = new System.Drawing.Point(278, 72);
+            this.lblStudyHeader.Location = new System.Drawing.Point(278, 68);
             this.lblStudyHeader.Name = "lblStudyHeader";
             this.lblStudyHeader.Size = new System.Drawing.Size(152, 20);
             this.lblStudyHeader.TabIndex = 20;
@@ -331,7 +341,7 @@
             // 
             this.lblUserHeader.AutoSize = true;
             this.lblUserHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserHeader.Location = new System.Drawing.Point(278, 200);
+            this.lblUserHeader.Location = new System.Drawing.Point(278, 187);
             this.lblUserHeader.Name = "lblUserHeader";
             this.lblUserHeader.Size = new System.Drawing.Size(176, 20);
             this.lblUserHeader.TabIndex = 21;
@@ -342,7 +352,7 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblStatus,
             this.lblStatusName});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 470);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 619);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(651, 22);
             this.statusStrip1.TabIndex = 22;
@@ -361,11 +371,92 @@
             this.lblStatusName.Name = "lblStatusName";
             this.lblStatusName.Size = new System.Drawing.Size(0, 17);
             // 
+            // lblArmLength
+            // 
+            this.lblArmLength.AutoSize = true;
+            this.lblArmLength.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArmLength.Location = new System.Drawing.Point(279, 367);
+            this.lblArmLength.Name = "lblArmLength";
+            this.lblArmLength.Size = new System.Drawing.Size(131, 16);
+            this.lblArmLength.TabIndex = 23;
+            this.lblArmLength.Text = "Arm Length (inches) :";
+            // 
+            // lblHeight
+            // 
+            this.lblHeight.AutoSize = true;
+            this.lblHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeight.Location = new System.Drawing.Point(279, 405);
+            this.lblHeight.Name = "lblHeight";
+            this.lblHeight.Size = new System.Drawing.Size(103, 16);
+            this.lblHeight.TabIndex = 24;
+            this.lblHeight.Text = "Height (inches) :";
+            // 
+            // lblArm
+            // 
+            this.lblArm.AutoSize = true;
+            this.lblArm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArm.Location = new System.Drawing.Point(279, 441);
+            this.lblArm.Name = "lblArm";
+            this.lblArm.Size = new System.Drawing.Size(95, 16);
+            this.lblArm.TabIndex = 25;
+            this.lblArm.Text = "Dominant Arm:";
+            // 
+            // tbArmLength
+            // 
+            this.tbArmLength.Location = new System.Drawing.Point(410, 368);
+            this.tbArmLength.Name = "tbArmLength";
+            this.tbArmLength.Size = new System.Drawing.Size(229, 20);
+            this.tbArmLength.TabIndex = 26;
+            // 
+            // tbHeight
+            // 
+            this.tbHeight.Location = new System.Drawing.Point(410, 405);
+            this.tbHeight.Name = "tbHeight";
+            this.tbHeight.Size = new System.Drawing.Size(229, 20);
+            this.tbHeight.TabIndex = 27;
+            // 
+            // rbtnRight
+            // 
+            this.rbtnRight.AutoSize = true;
+            this.rbtnRight.Location = new System.Drawing.Point(6, 6);
+            this.rbtnRight.Name = "rbtnRight";
+            this.rbtnRight.Size = new System.Drawing.Size(50, 17);
+            this.rbtnRight.TabIndex = 28;
+            this.rbtnRight.TabStop = true;
+            this.rbtnRight.Text = "Right";
+            this.rbtnRight.UseVisualStyleBackColor = true;
+            // 
+            // rbtnLeft
+            // 
+            this.rbtnLeft.AutoSize = true;
+            this.rbtnLeft.Location = new System.Drawing.Point(62, 5);
+            this.rbtnLeft.Name = "rbtnLeft";
+            this.rbtnLeft.Size = new System.Drawing.Size(43, 17);
+            this.rbtnLeft.TabIndex = 29;
+            this.rbtnLeft.TabStop = true;
+            this.rbtnLeft.Text = "Left";
+            this.rbtnLeft.UseVisualStyleBackColor = true;
+            // 
+            // pnlArm
+            // 
+            this.pnlArm.Controls.Add(this.rbtnLeft);
+            this.pnlArm.Controls.Add(this.rbtnRight);
+            this.pnlArm.Location = new System.Drawing.Point(407, 435);
+            this.pnlArm.Name = "pnlArm";
+            this.pnlArm.Size = new System.Drawing.Size(118, 31);
+            this.pnlArm.TabIndex = 30;
+            // 
             // EditUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 492);
+            this.ClientSize = new System.Drawing.Size(651, 641);
+            this.Controls.Add(this.pnlArm);
+            this.Controls.Add(this.tbHeight);
+            this.Controls.Add(this.tbArmLength);
+            this.Controls.Add(this.lblArm);
+            this.Controls.Add(this.lblHeight);
+            this.Controls.Add(this.lblArmLength);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.lblUserHeader);
             this.Controls.Add(this.lblStudyHeader);
@@ -400,6 +491,8 @@
             this.pnlGender.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.pnlArm.ResumeLayout(false);
+            this.pnlArm.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -438,5 +531,13 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
         private System.Windows.Forms.ToolStripStatusLabel lblStatusName;
+        private System.Windows.Forms.Label lblArmLength;
+        private System.Windows.Forms.Label lblHeight;
+        private System.Windows.Forms.Label lblArm;
+        private System.Windows.Forms.TextBox tbArmLength;
+        private System.Windows.Forms.TextBox tbHeight;
+        private System.Windows.Forms.RadioButton rbtnRight;
+        private System.Windows.Forms.RadioButton rbtnLeft;
+        private System.Windows.Forms.Panel pnlArm;
     }
 }

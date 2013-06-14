@@ -18,6 +18,7 @@ namespace ViAppleGrab.Windows_Forms
         DateTime DOB;
         int CurrentID;
         bool ExitPrompt;
+        bool ValidDOB;
 
         public EditUsers()
         {
@@ -31,6 +32,7 @@ namespace ViAppleGrab.Windows_Forms
 
             RefreshXDoc();
             CurrentID = -1;
+            ValidDOB = false;
             ExitPrompt = true;
         }
 
@@ -45,14 +47,7 @@ namespace ViAppleGrab.Windows_Forms
             var q = users.Descendants().Elements("User").Select(user => new
                 {
                     ID = user.Attribute("ID").Value,
-                    Name = user.Element("LastName").Value + ", " + user.Element("FirstName").Value,
-                    FirstName = user.Element("FirstName").Value,
-                    LastName = user.Element("LastName").Value,
-                    Gender = user.Element("Gender").Value,
-                    Date = user.Element("DateOfBirth").Value,
-                    Disability = user.Element("Disability").Value,
-                    TestGroup = user.Element("TestGroup").Value,
-                    Study = user.Element("Study").Value
+                    Name = user.Element("LastName").Value + ", " + user.Element("FirstName").Value
                 });
 
             lbUsers.DataSource = q.ToList();
@@ -82,7 +77,12 @@ namespace ViAppleGrab.Windows_Forms
             tbDisability.ForeColor = SystemColors.InactiveCaptionText;
             rbtnFemale.Checked = false;
             rbtnMale.Checked = false;
+            tbArmLength.Text = "";
+            tbHeight.Text = "";
+            rbtnRight.Checked = false;
+            rbtnLeft.Checked = false;
             CurrentID = -1;
+            ValidDOB = false;
             lblStatus.Text = "No user is currently selected... Click a name in the list above to make a selection.";
             lblStatusName.Text = "";
         }
@@ -142,11 +142,13 @@ namespace ViAppleGrab.Windows_Forms
                 {
                     tbBirthDate.ForeColor = System.Drawing.Color.Red;
                     lblBirthDate.ForeColor = System.Drawing.Color.Red;
+                    ValidDOB = false;
                 }
                 else
                 {
                     tbBirthDate.ForeColor = SystemColors.WindowText;
                     lblBirthDate.ForeColor = SystemColors.WindowText;
+                    ValidDOB = true;
                 }
             }
         }
@@ -192,7 +194,7 @@ namespace ViAppleGrab.Windows_Forms
 
         private void tbDisability_Enter(object sender, EventArgs e)
         {
-            if (tbDisability.Text == "Describe the level of the user's disability...")
+            if (tbDisability.Text == "Describe the level of the user's disabilities, both visual and physical...")
             {
                 tbDisability.Text = "";
                 tbDisability.ForeColor = SystemColors.WindowText;
@@ -203,7 +205,7 @@ namespace ViAppleGrab.Windows_Forms
         {
             if (tbDisability.Text == "")
             {
-                tbDisability.Text = "Describe the level of the user's disability...";
+                tbDisability.Text = "Describe the level of the user's disabilities, both visual and physical...";
                 tbDisability.ForeColor = SystemColors.InactiveCaptionText;
             }
         }
@@ -219,6 +221,9 @@ namespace ViAppleGrab.Windows_Forms
                     LastName = u.Element("LastName").Value,
                     Gender = u.Element("Gender").Value,
                     Date = u.Element("DateOfBirth").Value,
+                    ArmLength = u.Element("ArmLength").Value,
+                    Height = u.Element("Height").Value,
+                    DominantArm = u.Element("DominantArm").Value,
                     Disability = u.Element("Disability").Value,
                     TestGroup = u.Element("TestGroup").Value,
                     Study = u.Element("Study").Value
@@ -245,13 +250,21 @@ namespace ViAppleGrab.Windows_Forms
             tbLastName.Text = user.LastName;
             tbBirthDate.Text = user.Date;
             tbDisability.Text = user.Disability;
+            tbHeight.Text = user.Height;
+            tbArmLength.Text = user.ArmLength;
 
             if (user.Gender == "M")
                 rbtnMale.Checked = true;
             else
                 rbtnFemale.Checked = true;
 
+            if (user.DominantArm == "Right")
+                rbtnRight.Checked = true;
+            else
+                rbtnLeft.Checked = true;
+
             CurrentID = int.Parse(user.ID);
+            ValidDOB = DateTime.TryParse(tbBirthDate.Text, out DOB);
 
             lblStatus.Text = "Current Selection: ";
             lblStatusName.Text = user.FirstName + " " + user.LastName;
@@ -259,6 +272,27 @@ namespace ViAppleGrab.Windows_Forms
 
         private void btnAddUpdate_Click(object sender, EventArgs e)
         {
+            //Validate the birth date
+            if (!ValidDOB)
+            {
+                MessageBox.Show("Please enter a valid date of birth!");
+                return;
+            }
+
+            //Ensure the form is complete
+            if (!(cmbStudy.SelectedIndex == 0 || cmbStudy.SelectedIndex == 1)
+                || tbFirstName.Text == ""
+                || tbLastName.Text == ""
+                || (!rbtnMale.Checked && !rbtnFemale.Checked)
+                || tbArmLength.Text == ""
+                || tbHeight.Text == ""
+                || (!rbtnLeft.Checked && !rbtnRight.Checked)
+                || tbDisability.Text == "")
+            {
+                MessageBox.Show("All fields are required! Please complete the form to continue!");
+                return;
+            }
+
             if (CurrentID == -1) //Add New
             {
                 var q = users.Descendants().FirstOrDefault();
@@ -277,6 +311,9 @@ namespace ViAppleGrab.Windows_Forms
                 user.Add(new XElement("DateOfBirth", DOB.ToLongDateString()));
                 user.Add(new XElement("Gender", (rbtnMale.Checked ? "M" : "F")));
                 user.Add(new XElement("Disability", tbDisability.Text));
+                user.Add(new XElement("ArmLength", tbArmLength.Text));
+                user.Add(new XElement("Height", tbHeight.Text));
+                user.Add(new XElement("DominantArm", (rbtnLeft.Checked ? "Left" : "Right")));
                 user.Add(new XElement("Study", cmbStudy.SelectedItem.ToString()));
 
                 if (cmbGroup.SelectedItem.ToString() == "Group A: Everyone"
@@ -308,6 +345,9 @@ namespace ViAppleGrab.Windows_Forms
                 user.Element("DateOfBirth").Value = DOB.ToLongDateString();
                 user.Element("Gender").Value = (rbtnMale.Checked ? "M" : "F");
                 user.Element("Disability").Value = tbDisability.Text;
+                user.Element("ArmLength").Value = tbArmLength.Text;
+                user.Element("Height").Value = tbHeight.Text;
+                user.Element("DominantArm").Value = (rbtnLeft.Checked ? "Left" : "Right");
                 user.Element("Study").Value = cmbStudy.SelectedItem.ToString();
 
                 if (cmbGroup.SelectedItem.ToString() == "Group A: Everyone"

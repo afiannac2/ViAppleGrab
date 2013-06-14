@@ -63,8 +63,8 @@
             this.rbA2 = new System.Windows.Forms.RadioButton();
             this.rbA1 = new System.Windows.Forms.RadioButton();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             ((System.ComponentModel.ISupportInitialize)(this.pbTogetherGraph)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlternatingGraph)).BeginInit();
             this.gbCenteredDimensions.SuspendLayout();
@@ -233,7 +233,10 @@
             this.cmbTypeOfTargets.FormattingEnabled = true;
             this.cmbTypeOfTargets.Items.AddRange(new object[] {
             "Warmup",
-            "40 Target User Study"});
+            "40 Target User Study",
+            "CA Warmup",
+            "CA Single",
+            "CA Simultaneous"});
             this.cmbTypeOfTargets.Location = new System.Drawing.Point(501, 13);
             this.cmbTypeOfTargets.Name = "cmbTypeOfTargets";
             this.cmbTypeOfTargets.Size = new System.Drawing.Size(207, 21);
@@ -422,14 +425,6 @@
             this.shapeContainer1.TabIndex = 27;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape1
-            // 
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 3;
-            this.lineShape1.X2 = 716;
-            this.lineShape1.Y1 = 38;
-            this.lineShape1.Y2 = 38;
-            // 
             // lineShape2
             // 
             this.lineShape2.Name = "lineShape2";
@@ -437,6 +432,14 @@
             this.lineShape2.X2 = 715;
             this.lineShape2.Y1 = 405;
             this.lineShape2.Y2 = 405;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 3;
+            this.lineShape1.X2 = 716;
+            this.lineShape1.Y1 = 38;
+            this.lineShape1.Y2 = 38;
             // 
             // TargetAnalysis
             // 

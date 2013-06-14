@@ -6,7 +6,10 @@
     <DateOfBirth>Monday, November 06, 1989</DateOfBirth>
     <Gender>M</Gender>
     <Disability>None</Disability>
-    <Study>Camp Abilities Study</Study>
+    <ArmLength>25</ArmLength>
+    <Height>71</Height>
+    <DominantArm>Right</DominantArm>
+    <Study>Original GI 2013 Study</Study>
     <TestGroup>A</TestGroup>
   </User>
   <User ID="2" DateCreated="Tuesday, August 14, 2012">
@@ -15,6 +18,9 @@
     <DateOfBirth>Monday, February 28, 1977</DateOfBirth>
     <Gender>M</Gender>
     <Disability>None</Disability>
+    <ArmLength>27</ArmLength>
+    <Height>75</Height>
+    <DominantArm>Right</DominantArm>
     <Study>Camp Abilities Study</Study>
     <TestGroup>A</TestGroup>
   </User>
@@ -24,15 +30,21 @@
     <DateOfBirth>Tuesday, October 12, 1999</DateOfBirth>
     <Gender>F</Gender>
     <Disability>Completely Blind</Disability>
+    <ArmLength>24</ArmLength>
+    <Height>69</Height>
+    <DominantArm>Right</DominantArm>
     <Study>Camp Abilities Study</Study>
     <TestGroup>A</TestGroup>
   </User>
   <User ID="4" DateCreated="Thursday, June 13, 2013">
     <FirstName>Sally</FirstName>
     <LastName>Smith</LastName>
-    <DateOfBirth>Wednesday, July 04, 2001</DateOfBirth>
+    <DateOfBirth>Saturday, October 12, 2002</DateOfBirth>
     <Gender>F</Gender>
     <Disability>None</Disability>
+    <ArmLength>25</ArmLength>
+    <Height>70</Height>
+    <DominantArm>Left</DominantArm>
     <Study>Camp Abilities Study</Study>
     <TestGroup>A</TestGroup>
   </User>
