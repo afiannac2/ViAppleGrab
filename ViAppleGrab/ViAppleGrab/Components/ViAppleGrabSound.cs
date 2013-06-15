@@ -90,7 +90,7 @@ namespace ViAppleGrab
         /// </summary>
         public void LoadContent()
         {
-            for (int i = 1; i < Settings.Default.MAX_LEVELS + 1; i++)
+            for (int i = 1; i < 5; i++)
                 _backgrounds.Add(new Sound(@"Backgrounds\Background" + i.ToString(), Game.Content, _backgroundVolHigh));
 
             for (int i = 0; i < 7; i++)

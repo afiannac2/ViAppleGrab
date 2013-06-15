@@ -80,7 +80,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>pnWUNPRJSjp4r3bstBai1mdnvkQ=</dsig:DigestValue>
+        <dsig:DigestValue>wgzeTTfFvEuHa7SyoVnszIhi5pg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -672,13 +672,13 @@
       <dsig:DigestValue>E5/IrXXuIWgxjXI4m6Tz4hPbsVw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ViAppleGrab.exe.config" size="7923">
+  <file name="ViAppleGrab.exe.config" size="7924">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>fiKz3WKE1MQHzogz/ByXQc86vkQ=</dsig:DigestValue>
+      <dsig:DigestValue>Oq0f5v+8LrKcch4xP98LM4QxkME=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

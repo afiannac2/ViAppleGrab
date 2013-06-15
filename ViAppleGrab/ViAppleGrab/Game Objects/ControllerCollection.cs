@@ -30,7 +30,10 @@ namespace ViAppleGrab.Collections
             }
             else
             {
-                CurrController = ControllerIndex.LeftHand; //Default to the right hand - spawning the first apple will make it the right hand
+                if (Settings.Default.SINGLE_TARGET)
+                    CurrController = (Settings.Default.DOMINANT_ARM == "right" ? ControllerIndex.RightHand : ControllerIndex.LeftHand);
+                else
+                    CurrController = ControllerIndex.LeftHand; //Default to the right hand - spawning the first apple will make it the right hand
             }
 
             Count = s;
@@ -192,7 +195,10 @@ namespace ViAppleGrab.Collections
             //Switch the current controller
             if (CurrController == ControllerIndex.BothHands)
             {
-                CurrController = ControllerIndex.LeftHand;
+                if (Settings.Default.SINGLE_TARGET)
+                    CurrController = (Settings.Default.DOMINANT_ARM == "right" ? ControllerIndex.RightHand : ControllerIndex.LeftHand);
+                else
+                    CurrController = ControllerIndex.LeftHand;
             }
             else
                 CurrController = ControllerIndex.BothHands;
@@ -213,7 +219,10 @@ namespace ViAppleGrab.Collections
             //Set the current controller
             if ((ControlType)Settings.Default.CONTROL_TYPE == ControlType.Alternating)
             {
-                CurrController = ControllerIndex.LeftHand;
+                if (Settings.Default.SINGLE_TARGET)
+                    CurrController = (Settings.Default.DOMINANT_ARM == "right" ? ControllerIndex.RightHand : ControllerIndex.LeftHand);
+                else
+                    CurrController = ControllerIndex.LeftHand;
             }
             else
                 CurrController = ControllerIndex.BothHands;
@@ -278,9 +287,16 @@ namespace ViAppleGrab.Collections
 
                     this[ControllerIndex.LeftHand].Target.Deactivate();
 
-                    CurrController = ControllerIndex.RightHand;
+                    if (!Settings.Default.SINGLE_TARGET)
+                    {
+                        CurrController = ControllerIndex.RightHand;
 
-                    this[ControllerIndex.RightHand].NewTarget(this[ControllerIndex.LeftHand].Location);
+                        this[ControllerIndex.RightHand].NewTarget(this[ControllerIndex.LeftHand].Location);
+                    }
+                    else
+                    {
+                        this[ControllerIndex.LeftHand].NewTarget(this[ControllerIndex.RightHand].Location);
+                    }
 
                     //_updateRumble(ControllerIndex.RightHand);
                     Debug.WriteLine("[New Target] - " 

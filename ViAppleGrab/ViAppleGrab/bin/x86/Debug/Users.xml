@@ -4,119 +4,48 @@
     <FirstName>Alexander</FirstName>
     <LastName>Fiannaca</LastName>
     <DateOfBirth>Monday, November 06, 1989</DateOfBirth>
+    <Gender>M</Gender>
     <Disability>None</Disability>
-    <TestGroup>B</TestGroup>
+    <ArmLength>25</ArmLength>
+    <Height>71</Height>
+    <DominantArm>Right</DominantArm>
+    <Study>Camp Abilities Study</Study>
+    <TestGroup>A</TestGroup>
   </User>
   <User ID="2" DateCreated="Tuesday, August 14, 2012">
     <FirstName>Eelke</FirstName>
     <LastName>Folmer</LastName>
     <DateOfBirth>Monday, February 28, 1977</DateOfBirth>
+    <Gender>M</Gender>
     <Disability>None</Disability>
-    <TestGroup>B</TestGroup>
-  </User>
-  <User ID="3" DateCreated="Tuesday, August 21, 2012">
-    <FirstName>Ilias</FirstName>
-    <LastName>Apostolopoulos</LastName>
-    <DateOfBirth>Thursday, April 05, 1984</DateOfBirth>
-    <Disability>None</Disability>
+    <ArmLength>27</ArmLength>
+    <Height>75</Height>
+    <DominantArm>Right</DominantArm>
+    <Study>Camp Abilities Study</Study>
     <TestGroup>A</TestGroup>
   </User>
-  <User ID="4" DateCreated="Tuesday, August 21, 2012">
-    <FirstName>Vinitha</FirstName>
-    <LastName>Khambadkar</LastName>
-    <DateOfBirth>Friday, May 13, 1983</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>B</TestGroup>
-  </User>
-  <User ID="5" DateCreated="Tuesday, August 21, 2012">
-    <FirstName>Burkay</FirstName>
-    <LastName>Sucu</LastName>
-    <DateOfBirth>Saturday, August 01, 1987</DateOfBirth>
-    <Disability>None</Disability>
+  <User ID="3" DateCreated="Thursday, June 13, 2013">
+    <FirstName>Jane</FirstName>
+    <LastName>Doe</LastName>
+    <DateOfBirth>Tuesday, October 12, 1999</DateOfBirth>
+    <Gender>F</Gender>
+    <Disability>Completely Blind</Disability>
+    <ArmLength>24</ArmLength>
+    <Height>69</Height>
+    <DominantArm>Right</DominantArm>
+    <Study>Camp Abilities Study</Study>
     <TestGroup>A</TestGroup>
   </User>
-  <User ID="6" DateCreated="Wednesday, August 22, 2012">
-    <FirstName>Adrienne</FirstName>
-    <LastName>Petersen</LastName>
-    <DateOfBirth>Thursday, November 04, 1982</DateOfBirth>
+  <User ID="4" DateCreated="Thursday, June 13, 2013">
+    <FirstName>Sally</FirstName>
+    <LastName>Smith</LastName>
+    <DateOfBirth>Saturday, October 12, 2002</DateOfBirth>
+    <Gender>F</Gender>
     <Disability>None</Disability>
-    <TestGroup>B</TestGroup>
-  </User>
-  <User ID="7" DateCreated="Wednesday, August 22, 2012">
-    <FirstName>Kim</FirstName>
-    <LastName>Prokosch</LastName>
-    <DateOfBirth>Sunday, May 19, 1985</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>A</TestGroup>
-  </User>
-  <User ID="8" DateCreated="Wednesday, August 22, 2012">
-    <FirstName>Tony</FirstName>
-    <LastName>Fiannaca</LastName>
-    <DateOfBirth>Friday, November 22, 1985</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>B</TestGroup>
-  </User>
-  <User ID="9" DateCreated="Thursday, August 23, 2012">
-    <FirstName>Ben</FirstName>
-    <LastName>Seelbinder</LastName>
-    <DateOfBirth>Friday, October 02, 1987</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>A</TestGroup>
-  </User>
-  <User ID="10" DateCreated="Monday, August 27, 2012">
-    <FirstName>Soohyun</FirstName>
-    <LastName>Yoon</LastName>
-    <DateOfBirth>Wednesday, March 08, 1989</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>B</TestGroup>
-  </User>
-  <User ID="11" DateCreated="Monday, August 27, 2012">
-    <FirstName>Christopher</FirstName>
-    <LastName>Ginac</LastName>
-    <DateOfBirth>Saturday, January 23, 1988</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>A</TestGroup>
-  </User>
-  <User ID="12" DateCreated="Monday, August 27, 2012">
-    <FirstName>Jake</FirstName>
-    <LastName>Sells</LastName>
-    <DateOfBirth>Wednesday, April 29, 1992</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>B</TestGroup>
-  </User>
-  <User ID="13" DateCreated="Monday, August 27, 2012">
-    <FirstName>Denver</FirstName>
-    <LastName>Liu</LastName>
-    <DateOfBirth>Monday, July 25, 1988</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>A</TestGroup>
-  </User>
-  <User ID="14" DateCreated="Tuesday, September 11, 2012">
-    <FirstName>Nitish </FirstName>
-    <LastName>Narala</LastName>
-    <DateOfBirth>Tuesday, August 28, 1990</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>B</TestGroup>
-  </User>
-  <User ID="15" DateCreated="Tuesday, September 11, 2012">
-    <FirstName>Alex </FirstName>
-    <LastName>Jones</LastName>
-    <DateOfBirth>Sunday, September 16, 1990</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>A</TestGroup>
-  </User>
-  <User ID="16" DateCreated="Tuesday, September 11, 2012">
-    <FirstName>nil</FirstName>
-    <LastName>ustundag ates</LastName>
-    <DateOfBirth>Tuesday, March 17, 1987</DateOfBirth>
-    <Disability>None</Disability>
-    <TestGroup>B</TestGroup>
-  </User>
-  <User ID="17" DateCreated="Tuesday, September 11, 2012">
-    <FirstName>halim cagri</FirstName>
-    <LastName>ates</LastName>
-    <DateOfBirth>Tuesday, October 13, 1987</DateOfBirth>
-    <Disability>None</Disability>
+    <ArmLength>25</ArmLength>
+    <Height>70</Height>
+    <DominantArm>Left</DominantArm>
+    <Study>Camp Abilities Study</Study>
     <TestGroup>A</TestGroup>
   </User>
 </Users>

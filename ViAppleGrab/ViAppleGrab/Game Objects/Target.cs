@@ -61,21 +61,26 @@ namespace ViAppleGrab
 
                 string text = reader.ReadLine();
 
-                if (text != ((ControlType)Settings.Default.CONTROL_TYPE).ToString())
-                {
-                    reader.Close();
-                    GenerateNewTargets();
-                }
-                else
-                {
-                    text = reader.ReadLine();
-
+                //if (text != ((ControlType)Settings.Default.CONTROL_TYPE).ToString())
+                //{
+                //    reader.Close();
+                //    GenerateNewTargets();
+                //}
+                //else
+                //{
                     List<string[]> targetList = new List<string[]>();
+
+                    text = reader.ReadLine(); //Start with the first line for the right hand
+                    if (Settings.Default.SINGLE_TARGET && Settings.Default.DOMINANT_ARM == "left")
+                        text = reader.ReadLine(); //Start with the second line for the left hand
 
                     while (text != null)
                     {
                         targetList.Add(text.Split(new[] { ' ' }));
                         text = reader.ReadLine();
+
+                        if(Settings.Default.SINGLE_TARGET) //Only read every other line
+                            text = reader.ReadLine();
                     }
 
                     _totalTargets = targetList.Count;
@@ -97,7 +102,7 @@ namespace ViAppleGrab
                     reader.Close();
 
                     _uniqueTargetID = 0;
-                }
+                //}
             }
             else
             {

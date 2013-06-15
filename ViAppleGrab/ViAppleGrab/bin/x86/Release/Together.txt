@@ -1,0 +1,21 @@
+Together
+110 164 True
+110 240 False
+530 164 False
+390 316 True
+390 240 False
+390 392 False
+110 316 False
+530 88 True
+250 316 False
+110 392 True
+250 88 False
+250 164 True
+530 240 False
+530 316 True
+250 240 True
+250 392 False
+390 88 False
+390 164 False
+530 392 False
+110 88 False

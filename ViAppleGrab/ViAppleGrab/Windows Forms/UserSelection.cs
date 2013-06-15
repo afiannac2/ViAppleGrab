@@ -151,6 +151,8 @@ namespace ViAppleGrab
 
                     cmbDominantArm.SelectedIndex = (su.DominantArm == "Left" ? 0 : 1);
                     cmbStage.SelectedIndex = 0;
+
+                    UpdateSettings();
                 }
                 else
                 {
@@ -378,7 +380,12 @@ namespace ViAppleGrab
 
         private void cmbStage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch(cmbStage.SelectedIndex)
+            UpdateSettings();
+        }
+
+        private void UpdateSettings()
+        {
+            switch (cmbStage.SelectedIndex)
             {
                 //Warmup
                 case 0:
@@ -387,6 +394,7 @@ namespace ViAppleGrab
                     Settings.Default.SIMULTANEOUS_TARGETS = false;
                     Settings.Default.DOMINANT_ARM = (cmbDominantArm.SelectedIndex == 0 ? "left" : "right");
                     Settings.Default.CONTROL_TYPE = (int)ControlType.Alternating;
+                    Settings.Default.MAX_LEVELS = 1;
                     break;
 
                 //Single targets (settings: alternating and single)
@@ -396,6 +404,7 @@ namespace ViAppleGrab
                     Settings.Default.SIMULTANEOUS_TARGETS = false;
                     Settings.Default.DOMINANT_ARM = (cmbDominantArm.SelectedIndex == 0 ? "left" : "right");
                     Settings.Default.CONTROL_TYPE = (int)ControlType.Alternating;
+                    Settings.Default.MAX_LEVELS = 4;
                     break;
 
                 //simultaneous targets (settings: together and simultaneous)
@@ -404,6 +413,7 @@ namespace ViAppleGrab
                     Settings.Default.SINGLE_TARGET = false;
                     Settings.Default.SIMULTANEOUS_TARGETS = true;
                     Settings.Default.SIMULTANEOUS_FILE = "Simultaneous.txt";
+                    Settings.Default.MAX_LEVELS = 4;
                     break;
             }
         }

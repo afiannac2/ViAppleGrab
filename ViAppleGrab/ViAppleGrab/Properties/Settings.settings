@@ -78,7 +78,7 @@
       <Value Profile="(Default)">72</Value>
     </Setting>
     <Setting Name="CONTROL_TYPE" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">1</Value>
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="GAME_TYPE" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -141,7 +141,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="SIMULTANEOUS_TARGETS" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="SINGLE_TARGET" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>

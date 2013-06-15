@@ -292,7 +292,7 @@ namespace ViAppleGrab.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int CONTROL_TYPE {
             get {
                 return ((int)(this["CONTROL_TYPE"]));
@@ -532,7 +532,7 @@ namespace ViAppleGrab.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool SIMULTANEOUS_TARGETS {
             get {
                 return ((bool)(this["SIMULTANEOUS_TARGETS"]));
