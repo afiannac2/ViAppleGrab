@@ -24,6 +24,9 @@ namespace ViAppleGrab.Windows_Forms
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
+            VerifyIP vIP = new VerifyIP();
+            vIP.ShowDialog();
+
             //Warn the user to setup the playstation Move.Me server before continuing
             string message = "Before this game attempts to connect to the "
             + "Playstation 3, please ensure that the computer is networked to the "
@@ -42,8 +45,8 @@ namespace ViAppleGrab.Windows_Forms
                     {
                         DateTime now = DateTime.Now;
 
-                        try
-                        {
+                        //try
+                        //{
                             //Create the results trace file
                             string fname = now.Month.ToString("D2") + now.Day.ToString("D2") + now.ToString("yy");
 
@@ -54,30 +57,30 @@ namespace ViAppleGrab.Windows_Forms
                             XMLTrace.CreateTraceFile(fname);
 
                             game.Run();
-                        }
-                        catch (Exception ex)
-                        {
-                            ((ViAppleGrabInput)game.Components[0]).Controllers.StopRumbles();
+                        //}
+                        //catch (Exception ex)
+                        //{
+                        //    ((ViAppleGrabInput)game.Components[0]).Controllers.StopRumbles();
 
-                            Console.WriteLine(ex.Message);
+                        //    Console.WriteLine(ex.Message);
 
-                            if (ex.InnerException != null)
-                                Console.WriteLine("Inner Exception: " + ex.InnerException.Message);
+                        //    if (ex.InnerException != null)
+                        //        Console.WriteLine("Inner Exception: " + ex.InnerException.Message);
 
-                            throw new Exception("Something is screwed up...!");
-                        }
-                        finally
-                        {
-                            XMLTrace.Save();
+                        //    throw new Exception("Something is screwed up...!");
+                        //}
+                        //finally
+                        //{
+                        //    XMLTrace.Save();
 
-                            if (Settings.Default.DISPLAY_RESULTS_AT_END)
-                                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
-                                {
-                                    FileName = Directory.GetCurrentDirectory() + @"\Results",
-                                    UseShellExecute = true,
-                                    Verb = "open"
-                                });
-                        }
+                        //    if (Settings.Default.DISPLAY_RESULTS_AT_END)
+                        //        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                        //        {
+                        //            FileName = Directory.GetCurrentDirectory() + @"\Results",
+                        //            UseShellExecute = true,
+                        //            Verb = "open"
+                        //        });
+                        //}
                     }
 
                 }));

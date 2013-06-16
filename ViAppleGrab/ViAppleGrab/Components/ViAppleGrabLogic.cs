@@ -1235,7 +1235,8 @@ namespace ViAppleGrab
 
         public void NewGame()
         {
-            Score = 0;
+            Score = 0; 
+            scorePerApple = _settings.INITIAL_SCORE_PER_APPLE;
             State = GameState.Loading;
         }
 

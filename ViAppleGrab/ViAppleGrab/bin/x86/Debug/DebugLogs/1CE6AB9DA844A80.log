@@ -1,0 +1,74 @@
+[Start Time] - 6/16/2013 10:49:30 AM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-714 Y:422}
+Calibration: LowerLeft - {X:-731 Y:-577}
+Calibration: UpperRight - {X:788 Y:423}
+Calibration: LowerRight - {X:705 Y:-726}
+Calibration: RightShoulder - {X:179 Y:-37}
+Level 1 background music is now playing
+
+[New Target] - -1 - Right Hand - 6/16/2013 10:50:01 AM
+Target collected sound played.
+Score increased sound played.
+Score: 8
+
+[New Target] - -1 - Right Hand - 6/16/2013 10:50:09 AM
+Target collected sound played.
+Score increased sound played.
+Score: 17
+
+[New Target] - -1 - Right Hand - 6/16/2013 10:50:15 AM
+Target collected sound played.
+Score increased sound played.
+Score: 27
+
+[New Target] - -1 - Right Hand - 6/16/2013 10:50:19 AM
+Target collected sound played.
+Score increased sound played.
+Score: 37
+
+[New Target] - -1 - Right Hand - 6/16/2013 10:50:24 AM
+Target collected sound played.
+Score increased sound played.
+Score: 47
+Level 2 background music is now playing
+
+[New Target] - -1 - Right Hand - 6/16/2013 10:50:29 AM
+Game over
+Sad 'Game Over' music is now playing...
+Score decreased sound played.
+Score: 0
+Level 1 background music is now playing
+
+
+[New Target] - 0 - Right Hand - 6/16/2013 10:50:45 AM
+
+[New Target] - 1 - Left Hand - 6/16/2013 10:50:45 AM
+Target collected sound played.
+Target collected sound played.
+Score increased sound played.
+Score: 13
+
+
+[New Target] - 2 - Right Hand - 6/16/2013 10:50:51 AM
+
+[New Target] - 3 - Left Hand - 6/16/2013 10:50:51 AM
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

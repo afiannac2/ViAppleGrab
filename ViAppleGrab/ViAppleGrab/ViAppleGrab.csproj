@@ -140,6 +140,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Components\ViAppleGrabSound.cs" />
+    <Compile Include="Windows Forms\VerifyIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows Forms\VerifyIP.Designer.cs">
+      <DependentUpon>VerifyIP.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Documentation\DEV_NOTES.txt" />
@@ -214,16 +220,19 @@
     <EmbeddedResource Include="Windows Forms\UserSelection.resx">
       <DependentUpon>UserSelection.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Windows Forms\VerifyIP.resx">
+      <DependentUpon>VerifyIP.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="Users.xml">
       <Visible>False</Visible>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
   </ItemGroup>
