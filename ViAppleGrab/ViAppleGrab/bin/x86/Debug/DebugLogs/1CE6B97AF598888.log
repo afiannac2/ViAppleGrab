@@ -1,0 +1,187 @@
+[Start Time] - 6/17/2013 1:17:26 PM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-818 Y:354}
+Calibration: LowerLeft - {X:-724 Y:-600}
+Calibration: UpperRight - {X:773 Y:432}
+Calibration: LowerRight - {X:599 Y:-758}
+Calibration: RightShoulder - {X:182 Y:-64}
+Level 1 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:17:51 PM
+Target collected sound played.
+Score increased sound played.
+Score: 9
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:17:58 PM
+Target collected sound played.
+Score increased sound played.
+Score: 19
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:18:03 PM
+Target collected sound played.
+Score increased sound played.
+Score: 29
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:18:08 PM
+Target collected sound played.
+Score increased sound played.
+Score: 39
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:18:13 PM
+Target collected sound played.
+Score increased sound played.
+Score: 49
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:18:18 PM
+Target collected sound played.
+Score increased sound played.
+Score: 59
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:18:22 PM
+Target collected sound played.
+Score increased sound played.
+Score: 69
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:18:27 PM
+Target collected sound played.
+Score increased sound played.
+Score: 79
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:18:32 PM
+Target collected sound played.
+Score increased sound played.
+Score: 89
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:18:36 PM
+Target collected sound played.
+Score increased sound played.
+Score: 99
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Level 1 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:19:05 PM
+Target collected sound played.
+Score increased sound played.
+Score: 10
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:19:11 PM
+Target collected sound played.
+Score increased sound played.
+Score: 20
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:19:16 PM
+Target collected sound played.
+Score increased sound played.
+Score: 30
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:19:20 PM
+Target collected sound played.
+Score increased sound played.
+Score: 40
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:19:25 PM
+Target collected sound played.
+Score increased sound played.
+Score: 50
+Level 2 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:19:31 PM
+Target collected sound played.
+Score increased sound played.
+Score: 65
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:19:35 PM
+Target collected sound played.
+Score increased sound played.
+Score: 79
+
+[New Target] - -1 - Left Hand - 6/17/2013 1:19:40 PM
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Level 1 background music is now playing
+
+
+[New Target] - 0 - Right Hand - 6/17/2013 1:20:25 PM
+
+[New Target] - 1 - Left Hand - 6/17/2013 1:20:25 PM
+Target collected sound played.
+Target collected sound played.
+Score increased sound played.
+Score: 9
+
+
+[New Target] - 2 - Right Hand - 6/17/2013 1:20:32 PM
+
+[New Target] - 3 - Left Hand - 6/17/2013 1:20:32 PM
+Target collected sound played.
+Target collected sound played.
+Score increased sound played.
+Score: 17
+
+
+[New Target] - 4 - Right Hand - 6/17/2013 1:20:40 PM
+
+[New Target] - 5 - Left Hand - 6/17/2013 1:20:40 PM
+Target collected sound played.
+Target collected sound played.
+Score increased sound played.
+Score: 25
+
+
+[New Target] - 6 - Right Hand - 6/17/2013 1:20:50 PM
+
+[New Target] - 7 - Left Hand - 6/17/2013 1:20:50 PM
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

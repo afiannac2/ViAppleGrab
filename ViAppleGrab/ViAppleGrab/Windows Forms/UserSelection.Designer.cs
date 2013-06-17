@@ -60,6 +60,7 @@
             this.cmbDominantArm = new System.Windows.Forms.ComboBox();
             this.lblStage = new System.Windows.Forms.Label();
             this.cmbStage = new System.Windows.Forms.ComboBox();
+            this.btnExit = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -254,7 +255,7 @@
             this.purgeResultsToolStripMenuItem,
             this.purgeDebugLogsToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // purgeResultsToolStripMenuItem
@@ -274,7 +275,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -387,11 +388,23 @@
             this.cmbStage.Visible = false;
             this.cmbStage.SelectedIndexChanged += new System.EventHandler(this.cmbStage_SelectedIndexChanged);
             // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(12, 504);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(292, 55);
+            this.btnExit.TabIndex = 38;
+            this.btnExit.Text = "Return to Main Menu";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // UserSelection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 510);
+            this.ClientSize = new System.Drawing.Size(317, 571);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.cmbStage);
             this.Controls.Add(this.lblStage);
             this.Controls.Add(this.cmbDominantArm);
@@ -419,6 +432,7 @@
             this.Controls.Add(this.cmbUsers);
             this.Controls.Add(this.btnStartGame);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "UserSelection";
             this.Text = "User Information";
@@ -463,5 +477,6 @@
         private System.Windows.Forms.ComboBox cmbDominantArm;
         private System.Windows.Forms.Label lblStage;
         private System.Windows.Forms.ComboBox cmbStage;
+        private System.Windows.Forms.Button btnExit;
     }
 }

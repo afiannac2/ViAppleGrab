@@ -31,6 +31,9 @@ namespace ViAppleGrab
             Debug.AutoFlush = true;
             Debug.WriteLine("[Start Time] - " + System.DateTime.Now.ToString());
 
+            VerifyIP vIP = new VerifyIP();
+            vIP.ShowDialog();
+
             InitMenu form = new InitMenu();
             form.ShowDialog();
 

@@ -1,0 +1,77 @@
+[Start Time] - 6/17/2013 9:44:34 AM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-778 Y:416}
+Calibration: LowerLeft - {X:-748 Y:-612}
+Calibration: UpperRight - {X:745 Y:447}
+Calibration: LowerRight - {X:651 Y:-774}
+Calibration: RightShoulder - {X:161 Y:-42}
+Level 1 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:45:06 AM
+Target collected sound played.
+Score increased sound played.
+Score: 9
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:45:13 AM
+Target collected sound played.
+Score increased sound played.
+Score: 18
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:45:20 AM
+Target collected sound played.
+Score increased sound played.
+Score: 28
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:45:26 AM
+Target collected sound played.
+Score increased sound played.
+Score: 38
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:45:31 AM
+Target collected sound played.
+Score increased sound played.
+Score: 48
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:45:36 AM
+Target collected sound played.
+Score increased sound played.
+Score: 58
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:45:40 AM
+Target collected sound played.
+Score increased sound played.
+Score: 68
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:45:45 AM
+Target collected sound played.
+Score increased sound played.
+Score: 78
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:45:50 AM
+Target collected sound played.
+Score increased sound played.
+Score: 88
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:45:55 AM
+Target collected sound played.
+Score increased sound played.
+Score: 98
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

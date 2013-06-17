@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.IO;
+using ViAppleGrab;
+using ViAppleGrab.Properties;
 
 namespace ViAppleGrab.Windows_Forms
 {
@@ -112,6 +114,9 @@ namespace ViAppleGrab.Windows_Forms
 
         private void returnToMainMenuToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (CurrentID != Settings.Default.CURRENT_USER_ID)
+                Settings.Default.CURRENT_USER_ID = CurrentID;
+
             SaveXDoc();
 
             ExitPrompt = false;
@@ -155,6 +160,7 @@ namespace ViAppleGrab.Windows_Forms
 
         private void btnDone_Click(object sender, EventArgs e)
         {
+            Settings.Default.CURRENT_USER_ID = CurrentID;
             SaveXDoc();
 
             ExitPrompt = false;

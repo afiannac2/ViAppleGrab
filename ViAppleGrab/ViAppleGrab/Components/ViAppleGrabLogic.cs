@@ -558,12 +558,26 @@ namespace ViAppleGrab
             XmlNode node = XMLTrace.AppendElement("GameInfo", "");
 
             string f;
-            if((ControlType)_settings.CONTROL_TYPE == ControlType.Alternating)
+            if ((ControlType)_settings.CONTROL_TYPE == ControlType.Alternating && !_settings.SINGLE_TARGET)
+            {
                 f = Path.GetFileNameWithoutExtension(_settings.ALTERNATING_FILE);
+                f = f.Substring(0, f.IndexOf('_'));
+            }
+            else if ((ControlType)_settings.CONTROL_TYPE == ControlType.Alternating && _settings.SINGLE_TARGET)
+            {
+                f = Path.GetFileNameWithoutExtension(_settings.SINGLE_FILE);
+            }
+            else if ((ControlType)_settings.CONTROL_TYPE == ControlType.Together && _settings.SIMULTANEOUS_TARGETS)
+            {
+                f = Path.GetFileNameWithoutExtension(_settings.SIMULTANEOUS_FILE);
+            }
             else
+            {
                 f = Path.GetFileNameWithoutExtension(_settings.TOGETHER_FILE);
+                f = f.Substring(0, f.IndexOf('_'));
+            }
 
-            f = f.Substring(0, f.IndexOf('_'));
+
 
             if (_settings.TIMED_GAME)
             {
@@ -582,14 +596,43 @@ namespace ViAppleGrab
             }
             else
             {
-                XMLTrace.AddAttributes(node, new Dictionary<string, string> 
-                {                     
-                    { "MaxControllers", _settings.MAX_CONTROLLERS.ToString() },
-                    { "GameType", ((GameType)_settings.GAME_TYPE).ToString() },
-                    { "ControlType", ((ControlType)_settings.CONTROL_TYPE).ToString() },
-                    { "IsWarmup", (f == "Warmup") ? "True" : "False" },
-                    { "TimeToCollectTarget", _settings.TIME_TO_COLLECT_TARGET.ToString() }
-                });
+                if (_settings.SINGLE_TARGET || _settings.SIMULTANEOUS_TARGETS)
+                {
+                    string stage;
+
+                    if(f == "Warmup")
+                    {
+                        stage = "Warmup";
+                    }
+                    else
+                    {
+                        if(_settings.SINGLE_TARGET)
+                        {
+                            stage = "Single";
+                        }
+                        else
+                        {
+                            stage = "Simultaneous";
+                        }
+                    }
+
+                    XMLTrace.AddAttributes(node, new Dictionary<string, string> 
+                    {       
+                        { "Study", "Camp Abilities Study"},
+                        { "Stage", stage }
+                    });
+                }
+                else
+                {
+                    XMLTrace.AddAttributes(node, new Dictionary<string, string> 
+                    {                     
+                        { "MaxControllers", _settings.MAX_CONTROLLERS.ToString() },
+                        { "GameType", ((GameType)_settings.GAME_TYPE).ToString() },
+                        { "ControlType", ((ControlType)_settings.CONTROL_TYPE).ToString() },
+                        { "IsWarmup", (f == "Warmup") ? "True" : "False" },
+                        { "TimeToCollectTarget", _settings.TIME_TO_COLLECT_TARGET.ToString() }
+                    });
+                }
             }
 
             XmlNode child = XMLTrace.AppendSubchild(node, "TimeStarted", "");

@@ -5,6 +5,14 @@ using System.Text;
 
 namespace ViAppleGrab
 {
+    public enum StudyStages
+    {
+        None = 0,
+        Warmup = 1,
+        Single = 2,
+        Simultaneous = 3
+    }
+
     public class Point3
     {
         public int x;

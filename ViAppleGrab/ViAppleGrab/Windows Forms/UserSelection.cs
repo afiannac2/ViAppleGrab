@@ -23,6 +23,7 @@ namespace ViAppleGrab
 
         XDocument users;
         const string usersfile = "Users.xml";
+        string current_study;
 
         public UserSelection(ViAppleGrabGame g)
         {
@@ -41,8 +42,62 @@ namespace ViAppleGrab
             }
 
             users = XDocument.Load(usersfile);
-            LoadUsers();
-            cmbTypeOfPlay.SelectedIndex = 0;
+
+            if ((StudyStages)Settings.Default.STAGE != StudyStages.None)
+            {
+                LoadUsers(Settings.Default.CURRENT_USER_ID);
+                cmbStage.SelectedIndex = Settings.Default.STAGE - 1;
+                cmbStage.Enabled = false;
+            }
+            else
+            {
+                LoadUsers();
+                cmbTypeOfPlay.SelectedIndex = 0;
+            }
+        }
+
+        private void LoadUsers(int p)
+        {
+            cmbUsers.Items.Clear();
+
+            var q = users.Descendants().Elements("User").Select(user => new
+            {
+                ID = user.Attribute("ID").Value,
+                Name = user.Element("LastName").Value + ", " + user.Element("FirstName").Value,
+                FirstName = user.Element("FirstName").Value,
+                LastName = user.Element("LastName").Value,
+                Gender = user.Element("Gender").Value,
+                Date = user.Element("DateOfBirth").Value,
+                Disability = user.Element("Disability").Value,
+                TestGroup = user.Element("TestGroup").Value,
+                Study = user.Element("Study").Value
+            });
+
+            cmbUsers.DataSource = q.ToList();
+            cmbUsers.DisplayMember = "Name";
+            cmbUsers.ValueMember = "ID";
+            cmbUsers.SelectedIndex = cmbUsers.Items.Count - 1;
+
+            var q2 = users.Descendants().Elements("User")
+                .Where(user => user.Attribute("ID").Value == p.ToString())
+                .Select(user => new
+                {
+                    ID = user.Attribute("ID").Value,
+                    Name = user.Element("LastName").Value + ", " + user.Element("FirstName").Value,
+                    FirstName = user.Element("FirstName").Value,
+                    LastName = user.Element("LastName").Value,
+                    Gender = user.Element("Gender").Value,
+                    Date = user.Element("DateOfBirth").Value,
+                    Disability = user.Element("Disability").Value,
+                    TestGroup = user.Element("TestGroup").Value,
+                    Study = user.Element("Study").Value
+                })
+                .FirstOrDefault();
+
+            cmbUsers.SelectedIndex = cmbUsers.Items.IndexOf(q2);
+
+            cmbUsers.Update();
+            cmbUsers.Enabled = false;
         }
 
         public void LoadUsers()
@@ -79,6 +134,8 @@ namespace ViAppleGrab
 
         private void btnStartGame_Click(object sender, EventArgs e)
         {
+            //TODO - Reset the settings file here to see if it will fix the issue between levels
+
             if (CameraForm != null)
             {
                 //btnEditUser.Enabled = false;
@@ -113,15 +170,6 @@ namespace ViAppleGrab
                 .Where(u => u.Attribute("ID").Value == cmbUsers.SelectedValue.ToString())
                 .Select(u => new
                 {
-                    ID = u.Attribute("ID").Value,
-                    Name = u.Element("LastName").Value + ", " + u.Element("FirstName").Value,
-                    FirstName = u.Element("FirstName").Value,
-                    LastName = u.Element("LastName").Value,
-                    Gender = u.Element("Gender").Value,
-                    Date = u.Element("DateOfBirth").Value,
-                    Disability = u.Element("Disability").Value,
-                    ArmLength = u.Element("ArmLength").Value,
-                    Height = u.Element("Height").Value,
                     DominantArm = u.Element("DominantArm").Value,
                     TestGroup = u.Element("TestGroup").Value,
                     Study = u.Element("Study").Value
@@ -130,6 +178,8 @@ namespace ViAppleGrab
 
                 if (su.Study == "Camp Abilities Study")
                 {
+                    current_study = "Camp Abilities Study";
+
                     cbSelectStudy.SelectedIndex = 0;
                     cbSelectStudy.Enabled = false;
 
@@ -156,6 +206,8 @@ namespace ViAppleGrab
                 }
                 else
                 {
+                    current_study = "Original GI 2013 Study";
+
                     cbSelectStudy.SelectedIndex = 1;
 
                     lblTestGroup.Visible = true;
@@ -385,6 +437,16 @@ namespace ViAppleGrab
 
         private void UpdateSettings()
         {
+            if (cbQuickCalibration.Checked)
+                Settings.Default.QUICK_CALIBRATION = true;
+            else
+                Settings.Default.QUICK_CALIBRATION = false;
+
+            if (cbDisplayResults.Checked)
+                Settings.Default.DISPLAY_RESULTS_AT_END = true;
+            else
+                Settings.Default.DISPLAY_RESULTS_AT_END = false;
+
             switch (cmbStage.SelectedIndex)
             {
                 //Warmup
@@ -416,6 +478,13 @@ namespace ViAppleGrab
                     Settings.Default.MAX_LEVELS = 4;
                     break;
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            ViAppleGrabInput.GameHasFocus = true;
+            ((ViAppleGrabLogic)game.Components[1]).ShutDown();
+            this.Close();
         }
     }
 }

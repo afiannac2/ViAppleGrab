@@ -313,7 +313,7 @@
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(172, 23);
             this.btnDone.TabIndex = 18;
-            this.btnDone.Text = "Save and Exit";
+            this.btnDone.Text = "Save Selection and Return";
             this.btnDone.UseVisualStyleBackColor = true;
             this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
             // 
@@ -480,6 +480,7 @@
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lbUsers);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "EditUsers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

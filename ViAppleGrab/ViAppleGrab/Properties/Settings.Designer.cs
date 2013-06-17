@@ -601,5 +601,41 @@ namespace ViAppleGrab.Properties {
                 this["DISPLAY_RESULTS_AT_END"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool MOVE_BUTTONS_ACTIVE {
+            get {
+                return ((bool)(this["MOVE_BUTTONS_ACTIVE"]));
+            }
+            set {
+                this["MOVE_BUTTONS_ACTIVE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int STAGE {
+            get {
+                return ((int)(this["STAGE"]));
+            }
+            set {
+                this["STAGE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-1")]
+        public int CURRENT_USER_ID {
+            get {
+                return ((int)(this["CURRENT_USER_ID"]));
+            }
+            set {
+                this["CURRENT_USER_ID"] = value;
+            }
+        }
     }
 }

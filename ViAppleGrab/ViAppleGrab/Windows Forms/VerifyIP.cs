@@ -12,6 +12,8 @@ namespace ViAppleGrab.Windows_Forms
 {
     public partial class VerifyIP : Form
     {
+        string original = Settings.Default.IP_ADDRESS;
+
         public VerifyIP()
         {
             InitializeComponent();
@@ -27,6 +29,10 @@ namespace ViAppleGrab.Windows_Forms
         private void btnOK_Click(object sender, EventArgs e)
         {
             Settings.Default.IP_ADDRESS = tbIP.Text;
+
+            if(tbIP.Text != original)
+                Settings.Default.Save();
+
             this.Close();
         }
     }

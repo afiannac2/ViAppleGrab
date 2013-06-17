@@ -1,0 +1,196 @@
+[Start Time] - 6/17/2013 9:16:22 AM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-800 Y:386}
+Calibration: LowerLeft - {X:-807 Y:-567}
+Calibration: UpperRight - {X:745 Y:436}
+Calibration: LowerRight - {X:665 Y:-721}
+Calibration: RightShoulder - {X:184 Y:-33}
+Level 1 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:17:20 AM
+Target collected sound played.
+Score increased sound played.
+Score: 9
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:17:28 AM
+Target collected sound played.
+Score increased sound played.
+Score: 18
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:17:36 AM
+Target collected sound played.
+Score increased sound played.
+Score: 28
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:17:41 AM
+Target collected sound played.
+Score increased sound played.
+Score: 38
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:17:47 AM
+Target collected sound played.
+Score increased sound played.
+Score: 48
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:17:52 AM
+Target collected sound played.
+Score increased sound played.
+Score: 58
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:17:58 AM
+Target collected sound played.
+Score increased sound played.
+Score: 67
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:18:04 AM
+Target collected sound played.
+Score increased sound played.
+Score: 76
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:18:11 AM
+Target collected sound played.
+Score increased sound played.
+Score: 84
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:18:18 AM
+Target collected sound played.
+Score increased sound played.
+Score: 94
+Game over
+Sad 'Game Over' music is now playing...
+Score decreased sound played.
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-782 Y:427}
+Calibration: LowerLeft - {X:-741 Y:-596}
+Calibration: UpperRight - {X:706 Y:480}
+Calibration: LowerRight - {X:627 Y:-776}
+Calibration: RightShoulder - {X:186 Y:-49}
+Level 1 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:18:48 AM
+Target collected sound played.
+Score increased sound played.
+Score: 10
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:18:53 AM
+Target collected sound played.
+Score increased sound played.
+Score: 20
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:18:57 AM
+Target collected sound played.
+Score increased sound played.
+Score: 30
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:03 AM
+Target collected sound played.
+Score increased sound played.
+Score: 40
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:07 AM
+Target collected sound played.
+Score increased sound played.
+Score: 50
+Level 2 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:14 AM
+Target collected sound played.
+Score increased sound played.
+Score: 65
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:19 AM
+Target collected sound played.
+Score increased sound played.
+Score: 80
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:24 AM
+Target collected sound played.
+Score increased sound played.
+Score: 95
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:29 AM
+Target collected sound played.
+Score increased sound played.
+Score: 110
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:34 AM
+Target collected sound played.
+Score increased sound played.
+Score: 125
+Level 3 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:40 AM
+Target collected sound played.
+Score increased sound played.
+Score: 144
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:46 AM
+Target collected sound played.
+Score increased sound played.
+Score: 163
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:50 AM
+Target collected sound played.
+Score increased sound played.
+Score: 183
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:54 AM
+Target collected sound played.
+Score increased sound played.
+Score: 202
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:19:59 AM
+Target collected sound played.
+Score increased sound played.
+Score: 221
+Level 4 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:20:05 AM
+Target collected sound played.
+Score increased sound played.
+Score: 245
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:20:11 AM
+Target collected sound played.
+Score increased sound played.
+Score: 269
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:20:15 AM
+Target collected sound played.
+Score increased sound played.
+Score: 294
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:20:20 AM
+Target collected sound played.
+Score increased sound played.
+Score: 318
+
+[New Target] - -1 - Left Hand - 6/17/2013 9:20:24 AM
+Target collected sound played.
+Score increased sound played.
+Score: 342
+Game over
+Sad 'Game Over' music is now playing...
+Score decreased sound played.
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-696 Y:459}
+Calibration: LowerLeft - {X:-702 Y:-608}
+Calibration: UpperRight - {X:743 Y:473}
+Calibration: LowerRight - {X:588 Y:-821}
+Calibration: RightShoulder - {X:194 Y:-36}
+Game over

@@ -119,6 +119,26 @@ namespace ViAppleGrab
             Debug.WriteLine("Sound content has been loaded");
         }
 
+        public void UnloadContent()
+        {
+            _backgrounds.Clear();
+            _calInstructions.Clear();
+            _welcomeSequence.Clear();
+            _tutorial.Clear();
+            _levels.Clear(); 
+            _backgroundSound = null;
+            _previousBackground = null;
+            _timeAlertSound = null;
+            _scoreDecreasedSound = null;
+            _scoreIncreasedSound = null;
+            _targetFound = null;
+            _rottenFound = null;
+            _targetLost = null;
+            _targetCollected = null;
+            _targetMissed = null;
+            _nextTarget = null;
+        }
+
         /// <summary>
         /// Allows the game component to update itself.
         /// </summary>

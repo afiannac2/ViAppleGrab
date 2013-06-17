@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TraceData CreatedDate="2013-06-17T13:17:29.779412-07:00">
+  <User ID="1" DateCreated="Tuesday, August 14, 2012">
+    <FirstName>Alexander</FirstName>
+    <LastName>Fiannaca</LastName>
+    <DateOfBirth>Monday, November 06, 1989</DateOfBirth>
+    <Gender>M</Gender>
+    <Disability>None</Disability>
+    <ArmLength>25</ArmLength>
+    <Height>71</Height>
+    <DominantArm>Right</DominantArm>
+    <Study>Camp Abilities Study</Study>
+    <TestGroup>A</TestGroup>
+  </User>
+  <GameInfo Study="Camp Abilities Study" Stage="Warmup">
+    <TimeStarted>2013-06-17T13:17:50.4883409-07:00</TimeStarted>
+    <TimeEnded>2013-06-17T13:18:41.9501942-07:00</TimeEnded>
+    <Score>99</Score>
+  </GameInfo>
+  <Targets>
+    <TargetData ID="0" Controller="RightHand" Time="2013-06-17T13:17:51.9781919-07:00" X="596" Y="254" IsRotten="False">
+      <RightController>
+        <Position X="411" Y="285" ElapsedTime="135.5563" ID="0" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="411" Y="285" ElapsedTime="500" ID="1" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="411" Y="285" ElapsedTime="113.2937" ID="2" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="411" Y="284" ElapsedTime="100.0603" ID="3" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="411" Y="285" ElapsedTime="116.5458" ID="4" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="410" Y="285" ElapsedTime="116.6684" ID="5" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="416" Y="284" ElapsedTime="117.0428" ID="6" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="434" Y="280" ElapsedTime="116.2922" ID="7" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="453" Y="275" ElapsedTime="100.37" ID="8" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="472" Y="270" ElapsedTime="116.3619" ID="9" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="489" Y="265" ElapsedTime="116.5542" ID="10" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="506" Y="261" ElapsedTime="116.5913" ID="11" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="522" Y="258" ElapsedTime="116.6247" ID="12" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="533" Y="257" ElapsedTime="100.0342" ID="13" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="543" Y="258" ElapsedTime="116.8972" ID="14" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="552" Y="258" ElapsedTime="116.4781" ID="15" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="559" Y="259" ElapsedTime="116.6062" ID="16" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="567" Y="258" ElapsedTime="100.0912" ID="17" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="575" Y="257" ElapsedTime="116.5211" ID="18" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="582" Y="257" ElapsedTime="116.6787" ID="19" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="585" Y="257" ElapsedTime="116.6666" ID="20" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="587" Y="256" ElapsedTime="116.8526" ID="21" TriggerState="StillPressed" TargetState="Collecting" />
+      </RightController>
+      <LevelData Level="1" PotentialPoints="10" />
+      <ScanningTime Units="seconds">1.6418358</ScanningTime>
+      <RecognitionTime Units="seconds">0.6339366</RecognitionTime>
+      <TotalAliveTime Units="seconds" FinalStatus="collected">2.2767723</TotalAliveTime>
+    </TargetData>
+    <TargetData ID="1" Controller="RightHand" Time="2013-06-17T13:17:58.8345062-07:00" X="351" Y="80" IsRotten="False">
+      <RightController>
+        <Position X="430" Y="284" ElapsedTime="572.6525" ID="0" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="430" Y="283" ElapsedTime="115.4216" ID="1" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="430" Y="282" ElapsedTime="116.3688" ID="2" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="430" Y="282" ElapsedTime="100.0042" ID="3" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="430" Y="280" ElapsedTime="116.6109" ID="4" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="425" Y="267" ElapsedTime="100.0176" ID="5" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="407" Y="238" ElapsedTime="116.6129" ID="6" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="392" Y="208" ElapsedTime="122.4076" ID="7" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="376" Y="168" ElapsedTime="110.9047" ID="8" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="365" Y="142" ElapsedTime="100.1264" ID="9" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="354" Y="115" ElapsedTime="116.8267" ID="10" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="345" Y="95" ElapsedTime="100.2596" ID="11" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="341" Y="85" ElapsedTime="82.8953" ID="12" TriggerState="StillPressed" TargetState="Collecting" />
+      </RightController>
+      <LevelData Level="1" PotentialPoints="10" />
+      <ScanningTime Units="seconds">1.0668933</ScanningTime>
+      <RecognitionTime Units="seconds">0.2339766</RecognitionTime>
+      <TotalAliveTime Units="seconds" FinalStatus="collected">1.3008699</TotalAliveTime>
+    </TargetData>
+    <TargetData ID="2" Controller="RightHand" Time="2013-06-17T13:18:03.8920004-07:00" X="407" Y="366" IsRotten="False">
+      <RightController>
+        <Position X="415" Y="276" ElapsedTime="517.1818" ID="0" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="415" Y="275" ElapsedTime="106.4872" ID="1" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="415" Y="275" ElapsedTime="100.0784" ID="2" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="415" Y="275" ElapsedTime="116.6003" ID="3" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="415" Y="274" ElapsedTime="116.6225" ID="4" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="415" Y="277" ElapsedTime="100.0054" ID="5" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="414" Y="293" ElapsedTime="116.8623" ID="6" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="413" Y="324" ElapsedTime="116.3447" ID="7" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="413" Y="353" ElapsedTime="116.8358" ID="8" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="411" Y="366" ElapsedTime="116.4884" ID="9" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="412" Y="366" ElapsedTime="33.3287" ID="10" TriggerState="StillPressed" TargetState="Collecting" />
+      </RightController>
+      <LevelData Level="1" PotentialPoints="10" />
+      <ScanningTime Units="seconds">0.7589241</ScanningTime>
+      <RecognitionTime Units="seconds">0.2829717</RecognitionTime>
+      <TotalAliveTime Units="seconds" FinalStatus="collected">1.0418958</TotalAliveTime>
+    </TargetData>
+    <TargetData ID="3" Controller="RightHand" Time="2013-06-17T13:18:08.6735222-07:00" X="409" Y="212" IsRotten="False">
+      <RightController>
+        <Position X="406" Y="278" ElapsedTime="517.1399" ID="0" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="406" Y="277" ElapsedTime="107.2287" ID="1" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="406" Y="277" ElapsedTime="121.4501" ID="2" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="407" Y="277" ElapsedTime="111.7644" ID="3" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="406" Y="274" ElapsedTime="116.6332" ID="4" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="404" Y="260" ElapsedTime="100.1393" ID="5" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="401" Y="237" ElapsedTime="117.0325" ID="6" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="400" Y="220" ElapsedTime="116.1788" ID="7" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="400" Y="213" ElapsedTime="99.9251" ID="8" TriggerState="StillPressed" TargetState="Collecting" />
+      </RightController>
+      <LevelData Level="1" PotentialPoints="10" />
+      <ScanningTime Units="seconds">0.5579442</ScanningTime>
+      <RecognitionTime Units="seconds">0.3349665</RecognitionTime>
+      <TotalAliveTime Units="seconds" FinalStatus="collected">0.8929107</TotalAliveTime>
+    </TargetData>
+    <TargetData ID="4" Controller="RightHand" Time="2013-06-17T13:18:13.2530642-07:00" X="475" Y="380" IsRotten="False">
+      <RightController>
+        <Position X="397" Y="259" ElapsedTime="570.4957" ID="0" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="396" Y="260" ElapsedTime="110.8339" ID="1" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="396" Y="259" ElapsedTime="116.2926" ID="2" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="397" Y="258" ElapsedTime="102.5636" ID="3" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="398" Y="260" ElapsedTime="114.0194" ID="4" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="402" Y="268" ElapsedTime="100.0584" ID="5" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="411" Y="288" ElapsedTime="100.0137" ID="6" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="424" Y="317" ElapsedTime="116.5675" ID="7" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="436" Y="338" ElapsedTime="116.6497" ID="8" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="444" Y="350" ElapsedTime="100.0584" ID="9" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="454" Y="360" ElapsedTime="100.1748" ID="10" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="464" Y="369" ElapsedTime="116.6965" ID="11" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="473" Y="376" ElapsedTime="116.3942" ID="12" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="477" Y="379" ElapsedTime="100.0043" ID="13" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="479" Y="379" ElapsedTime="66.6112" ID="14" TriggerState="StillPressed" TargetState="Collecting" />
+      </RightController>
+      <LevelData Level="1" PotentialPoints="10" />
+      <ScanningTime Units="seconds">0.8619138</ScanningTime>
+      <RecognitionTime Units="seconds">0.6169383</RecognitionTime>
+      <TotalAliveTime Units="seconds" FinalStatus="collected">1.4788521</TotalAliveTime>
+    </TargetData>
+    <TargetData ID="5" Controller="RightHand" Time="2013-06-17T13:18:18.2925602-07:00" X="424" Y="249" IsRotten="False">
+      <RightController>
+        <Position X="415" Y="262" ElapsedTime="536.5027" ID="0" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="415" Y="262" ElapsedTime="103.2655" ID="1" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="415" Y="262" ElapsedTime="100.0013" ID="2" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="415" Y="262" ElapsedTime="100.1157" ID="3" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="416" Y="261" ElapsedTime="116.5435" ID="4" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="415" Y="259" ElapsedTime="116.6702" ID="5" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="414" Y="257" ElapsedTime="116.8933" ID="6" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="415" Y="257" ElapsedTime="116.4079" ID="7" TriggerState="StillPressed" TargetState="Collecting" />
+      </RightController>
+      <LevelData Level="1" PotentialPoints="10" />
+      <ScanningTime Units="seconds">0.0019998</ScanningTime>
+      <RecognitionTime Units="seconds">0.769923</RecognitionTime>
+      <TotalAliveTime Units="seconds" FinalStatus="collected">0.7719228</TotalAliveTime>
+    </TargetData>
+    <TargetData ID="6" Controller="RightHand" Time="2013-06-17T13:18:22.3021592-07:00" X="471" Y="415" IsRotten="False">
+      <RightController>
+        <Position X="417" Y="256" ElapsedTime="584.564" ID="0" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="417" Y="256" ElapsedTime="109.1654" ID="1" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="417" Y="256" ElapsedTime="116.6938" ID="2" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="417" Y="256" ElapsedTime="116.9544" ID="3" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="418" Y="257" ElapsedTime="116.3667" ID="4" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="420" Y="264" ElapsedTime="100.0574" ID="5" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="427" Y="287" ElapsedTime="100.0234" ID="6" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="443" Y="323" ElapsedTime="116.5737" ID="7" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="456" Y="354" ElapsedTime="116.5561" ID="8" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="466" Y="380" ElapsedTime="100.0396" ID="9" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="470" Y="398" ElapsedTime="116.6658" ID="10" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="470" Y="404" ElapsedTime="116.6841" ID="11" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="471" Y="408" ElapsedTime="116.8704" ID="12" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="470" Y="409" ElapsedTime="100.0154" ID="13" TriggerState="StillPressed" TargetState="Collecting" />
+        <Position X="468" Y="407" ElapsedTime="103.7463" ID="14" TriggerState="StillPressed" TargetState="Collected" />
+      </RightController>
+      <LevelData Level="1" PotentialPoints="10" />
+      <ScanningTime Units="seconds">0.9449055</ScanningTime>
+      <RecognitionTime Units="seconds">0.49995</RecognitionTime>
+      <TotalAliveTime Units="seconds" FinalStatus="collected">1.4448555</TotalAliveTime>
+    </TargetData>
+    <TargetData ID="7" Controller="RightHand" Time="2013-06-17T13:18:27.3416552-07:00" X="527" Y="322" IsRotten="False">
+      <RightController>
+        <Position X="437" Y="265" ElapsedTime="500" ID="0" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="438" Y="264" ElapsedTime="102.3517" ID="1" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="438" Y="264" ElapsedTime="116.3566" ID="2" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="439" Y="264" ElapsedTime="100.0952" ID="3" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="438" Y="263" ElapsedTime="116.5978" ID="4" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="435" Y="260" ElapsedTime="116.5845" ID="5" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="437" Y="261" ElapsedTime="100.0864" ID="6" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="448" Y="273" ElapsedTime="116.5498" ID="7" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="463" Y="289" ElapsedTime="116.6925" ID="8" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="479" Y="301" ElapsedTime="100.0336" ID="9" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="496" Y="308" ElapsedTime="116.8646" ID="10" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="514" Y="309" ElapsedTime="116.4086" ID="11" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="525" Y="308" ElapsedTime="100.0482" ID="12" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="533" Y="307" ElapsedTime="116.6302" ID="13" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="533" Y="308" ElapsedTime="66.7816" ID="14" TriggerState="StillPressed" TargetState="Collecting" />
+      </RightController>
+      <LevelData Level="1" PotentialPoints="10" />
+      <ScanningTime Units="seconds">1.0538946</ScanningTime>
+      <RecognitionTime Units="seconds">0.449955</RecognitionTime>
+      <TotalAliveTime Units="seconds" FinalStatus="collected">1.5038496</TotalAliveTime>
+    </TargetData>
+    <TargetData ID="8" Controller="RightHand" Time="2013-06-17T13:18:32.3211572-07:00" X="512" Y="97" IsRotten="False">
+      <RightController>
+        <Position X="438" Y="260" ElapsedTime="516.6462" ID="0" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="438" Y="259" ElapsedTime="105.0227" ID="1" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="438" Y="259" ElapsedTime="100.0416" ID="2" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="437" Y="258" ElapsedTime="116.9405" ID="3" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="437" Y="254" ElapsedTime="116.3006" ID="4" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="444" Y="241" ElapsedTime="100.051" ID="5" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="461" Y="219" ElapsedTime="100.0457" ID="6" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="487" Y="189" ElapsedTime="116.5573" ID="7" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="500" Y="169" ElapsedTime="100.0033" ID="8" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="506" Y="145" ElapsedTime="116.6748" ID="9" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="506" Y="126" ElapsedTime="116.6868" ID="10" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="499" Y="111" ElapsedTime="116.5987" ID="11" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="497" Y="106" ElapsedTime="50.03" ID="12" TriggerState="StillPressed" TargetState="Collecting" />
+      </RightController>
+      <LevelData Level="1" PotentialPoints="10" />
+      <ScanningTime Units="seconds">0.9729027</ScanningTime>
+      <RecognitionTime Units="seconds">0.2839716</RecognitionTime>
+      <TotalAliveTime Units="seconds" FinalStatus="collected">1.2568743</TotalAliveTime>
+    </TargetData>
+    <TargetData ID="9" Controller="RightHand" Time="2013-06-17T13:18:36.9006992-07:00" X="332" Y="311" IsRotten="False">
+      <RightController>
+        <Position X="409" Y="249" ElapsedTime="570.0021" ID="0" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="412" Y="249" ElapsedTime="107.5652" ID="1" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="412" Y="249" ElapsedTime="100.0332" ID="2" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="412" Y="249" ElapsedTime="116.5939" ID="3" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="412" Y="249" ElapsedTime="117.0124" ID="4" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="408" Y="253" ElapsedTime="116.318" ID="5" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="388" Y="269" ElapsedTime="117.0304" ID="6" TriggerState="NotPressed" TargetState="Active" />
+        <Position X="370" Y="283" ElapsedTime="116.2628" ID="7" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="357" Y="289" ElapsedTime="100.0295" ID="8" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="347" Y="295" ElapsedTime="100.0174" ID="9" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="339" Y="300" ElapsedTime="116.5915" ID="10" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="336" Y="302" ElapsedTime="100.0231" ID="11" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="337" Y="301" ElapsedTime="116.6881" ID="12" TriggerState="NotPressed" TargetState="Found" />
+        <Position X="336" Y="299" ElapsedTime="100.114" ID="13" TriggerState="StillPressed" TargetState="Collecting" />
+      </RightController>
+      <LevelData Level="1" PotentialPoints="10" />
+      <ScanningTime Units="seconds">0.7929207</ScanningTime>
+      <RecognitionTime Units="seconds">0.6329367</RecognitionTime>
+      <TotalAliveTime Units="seconds" FinalStatus="collected">1.4268573</TotalAliveTime>
+    </TargetData>
+  </Targets>
+</TraceData>

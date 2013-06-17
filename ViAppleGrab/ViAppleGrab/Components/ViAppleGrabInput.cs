@@ -259,7 +259,10 @@ namespace ViAppleGrab
                 || _justPressed(PSMoveSharpConstants.ctrlSelect, ControllerIndex.RightHand)
                 || _justPressed(PSMoveSharpConstants.ctrlSelect, ControllerIndex.LeftHand))
             {
-                _logic.EndGame();
+                if(_logic.State != GameState.GameOver)
+                    _logic.EndGame();
+
+                _logic.ShutDown();
             }
 
             //[HOME] has been pressed: Start the calibration sequence...
@@ -275,7 +278,7 @@ namespace ViAppleGrab
             //[SPACE] has been pressed
             else if (_justPressed(Keys.Space)
                 || _justPressed(PSMoveSharpConstants.ctrlTick, ControllerIndex.RightHand)
-                ||_justPressed(PSMoveSharpConstants.ctrlTick, ControllerIndex.LeftHand))
+                || _justPressed(PSMoveSharpConstants.ctrlTick, ControllerIndex.LeftHand))
             {
                 //If the game is over or we have encountered a fatal error, then
                 //  shut down the program
@@ -290,7 +293,7 @@ namespace ViAppleGrab
                 {
                     if (!_settings.USE_KEYBOARD_ONLY && _moveClient != null)
                     {
-                        if(_justPressed(Keys.Space)) _moveClient.Pause();
+                        if (_justPressed(Keys.Space)) _moveClient.Pause();
                         Controllers[ControllerIndex.RightHand].Target.Pause();
                         Controllers[ControllerIndex.LeftHand].Target.Pause();
                     }
@@ -299,7 +302,7 @@ namespace ViAppleGrab
                 }
 
                 //Otherwise the game must be paused so unpause it
-                else if(_logic.State == GameState.Paused)
+                else if (_logic.State == GameState.Paused)
                 {
                     if (!_settings.USE_KEYBOARD_ONLY && _moveClient != null)
                     {
@@ -732,7 +735,7 @@ namespace ViAppleGrab
         /// <param name="key">Move button to check - PSMoveSharpConstants</param>
         private bool _justPressed(int button, ControllerIndex ci)
         {
-            if (_moveClient != null)
+            if (_moveClient != null && Settings.Default.MOVE_BUTTONS_ACTIVE)
             {
                 ushort lastButtons = _previousMoveButtons[(int)ci];
                 ushort buttons = _currentMoveState.gemStates[(int)ci].pad.digitalbuttons;
@@ -773,7 +776,7 @@ namespace ViAppleGrab
         /// <param name="key">Move button to check - PSMoveSharpConstants</param>
         private bool _stillPressed(int button, ControllerIndex ci)
         {
-            if (_moveClient != null)
+            if (_moveClient != null && Settings.Default.MOVE_BUTTONS_ACTIVE)
             {
                 ushort lastButtons = _previousMoveButtons[(int)ci];
                 ushort buttons = _currentMoveState.gemStates[(int)ci].pad.digitalbuttons;

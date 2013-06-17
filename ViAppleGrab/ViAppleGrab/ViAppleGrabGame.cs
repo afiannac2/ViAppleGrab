@@ -162,6 +162,14 @@ namespace ViAppleGrab
             Debug.WriteLine("All content loaded");
         }
 
+        protected override void UnloadContent()
+        {
+            this.Content.Unload();
+            _sound.UnloadContent();
+
+            base.UnloadContent();
+        }
+
         /// <summary>
         /// Allows the game to run logic such as updating the world,
         /// checking for collisions, gathering input, and playing audio.
@@ -585,7 +593,7 @@ namespace ViAppleGrab
             //Only draw a message that the game is over
             spriteBatch.DrawString(largeFont, "GAME OVER", new Vector2(0, 0), Color.Black);
             spriteBatch.DrawString(largeFont, "Final Score: " + _logic.Score, new Vector2(0, 50), Color.Black);
-            spriteBatch.DrawString(largeFont, "Press [MOVE] to quit...", new Vector2(0, 100), Color.Black);
+            spriteBatch.DrawString(largeFont, "Press [ESC] or [MOVE] to quit...", new Vector2(0, 100), Color.Black);
         }
 
         private void DrawError()
