@@ -73,26 +73,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ViAppleGrab.exe" size="148480">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ViAppleGrab.exe" size="150528">
       <assemblyIdentity name="ViAppleGrab" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>8QH3j4YBRr1Q5J0kmAoXskB/ogw=</dsig:DigestValue>
+        <dsig:DigestValue>Sj98cUoBJIOBDxoZeKsLUqDnyF8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ViToolkit.dll" size="30720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ViToolkit.dll" size="38400">
       <assemblyIdentity name="ViToolkit" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QKvGmfgZJsQ9aBpxuIJW3TF/qSs=</dsig:DigestValue>
+        <dsig:DigestValue>/2vANW2jKJ9WSHF/2KSGldH7WoU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -158,7 +158,7 @@
             this.tbLastName.Location = new System.Drawing.Point(410, 259);
             this.tbLastName.Name = "tbLastName";
             this.tbLastName.Size = new System.Drawing.Size(229, 20);
-            this.tbLastName.TabIndex = 5;
+            this.tbLastName.TabIndex = 4;
             // 
             // lblGender
             // 
@@ -177,7 +177,7 @@
             this.pnlGender.Location = new System.Drawing.Point(410, 285);
             this.pnlGender.Name = "pnlGender";
             this.pnlGender.Size = new System.Drawing.Size(229, 34);
-            this.pnlGender.TabIndex = 7;
+            this.pnlGender.TabIndex = 5;
             // 
             // rbtnFemale
             // 
@@ -208,7 +208,7 @@
             this.tbBirthDate.Location = new System.Drawing.Point(410, 329);
             this.tbBirthDate.Name = "tbBirthDate";
             this.tbBirthDate.Size = new System.Drawing.Size(229, 20);
-            this.tbBirthDate.TabIndex = 8;
+            this.tbBirthDate.TabIndex = 6;
             this.tbBirthDate.Text = "mm/dd/yy";
             this.tbBirthDate.Enter += new System.EventHandler(this.tbBirthDate_Enter);
             this.tbBirthDate.Leave += new System.EventHandler(this.tbBirthDate_Leave);
@@ -240,7 +240,7 @@
             this.tbDisability.Multiline = true;
             this.tbDisability.Name = "tbDisability";
             this.tbDisability.Size = new System.Drawing.Size(229, 100);
-            this.tbDisability.TabIndex = 11;
+            this.tbDisability.TabIndex = 10;
             this.tbDisability.Text = "Describe the level of the user\'s disabilities, both visual and physical...";
             this.tbDisability.Enter += new System.EventHandler(this.tbDisability_Enter);
             this.tbDisability.Leave += new System.EventHandler(this.tbDisability_Leave);
@@ -254,7 +254,7 @@
             this.cmbStudy.Location = new System.Drawing.Point(410, 103);
             this.cmbStudy.Name = "cmbStudy";
             this.cmbStudy.Size = new System.Drawing.Size(229, 21);
-            this.cmbStudy.TabIndex = 12;
+            this.cmbStudy.TabIndex = 1;
             this.cmbStudy.SelectedIndexChanged += new System.EventHandler(this.cmbStudy_SelectedIndexChanged);
             // 
             // lblStudy
@@ -284,7 +284,7 @@
             this.cmbGroup.Location = new System.Drawing.Point(410, 132);
             this.cmbGroup.Name = "cmbGroup";
             this.cmbGroup.Size = new System.Drawing.Size(229, 21);
-            this.cmbGroup.TabIndex = 15;
+            this.cmbGroup.TabIndex = 2;
             this.cmbGroup.Text = "First Select a Study...";
             // 
             // btnAddUpdate
@@ -292,7 +292,7 @@
             this.btnAddUpdate.Location = new System.Drawing.Point(281, 589);
             this.btnAddUpdate.Name = "btnAddUpdate";
             this.btnAddUpdate.Size = new System.Drawing.Size(180, 23);
-            this.btnAddUpdate.TabIndex = 16;
+            this.btnAddUpdate.TabIndex = 11;
             this.btnAddUpdate.Text = "Add/Update";
             this.btnAddUpdate.UseVisualStyleBackColor = true;
             this.btnAddUpdate.Click += new System.EventHandler(this.btnAddUpdate_Click);
@@ -302,7 +302,7 @@
             this.btnClear.Location = new System.Drawing.Point(281, 32);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(180, 23);
-            this.btnClear.TabIndex = 17;
+            this.btnClear.TabIndex = 0;
             this.btnClear.Text = "New User (Clear Form)";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -312,7 +312,7 @@
             this.btnDone.Location = new System.Drawing.Point(467, 589);
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(172, 23);
-            this.btnDone.TabIndex = 18;
+            this.btnDone.TabIndex = 13;
             this.btnDone.Text = "Save Selection and Return";
             this.btnDone.UseVisualStyleBackColor = true;
             this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
@@ -322,7 +322,7 @@
             this.btnDelete.Location = new System.Drawing.Point(467, 32);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(172, 23);
-            this.btnDelete.TabIndex = 19;
+            this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Delete User Record";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -355,6 +355,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 619);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(651, 22);
+            this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 22;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -406,14 +407,14 @@
             this.tbArmLength.Location = new System.Drawing.Point(410, 368);
             this.tbArmLength.Name = "tbArmLength";
             this.tbArmLength.Size = new System.Drawing.Size(229, 20);
-            this.tbArmLength.TabIndex = 26;
+            this.tbArmLength.TabIndex = 7;
             // 
             // tbHeight
             // 
             this.tbHeight.Location = new System.Drawing.Point(410, 405);
             this.tbHeight.Name = "tbHeight";
             this.tbHeight.Size = new System.Drawing.Size(229, 20);
-            this.tbHeight.TabIndex = 27;
+            this.tbHeight.TabIndex = 8;
             // 
             // rbtnRight
             // 
@@ -421,7 +422,7 @@
             this.rbtnRight.Location = new System.Drawing.Point(6, 6);
             this.rbtnRight.Name = "rbtnRight";
             this.rbtnRight.Size = new System.Drawing.Size(50, 17);
-            this.rbtnRight.TabIndex = 28;
+            this.rbtnRight.TabIndex = 0;
             this.rbtnRight.TabStop = true;
             this.rbtnRight.Text = "Right";
             this.rbtnRight.UseVisualStyleBackColor = true;
@@ -432,7 +433,7 @@
             this.rbtnLeft.Location = new System.Drawing.Point(62, 5);
             this.rbtnLeft.Name = "rbtnLeft";
             this.rbtnLeft.Size = new System.Drawing.Size(43, 17);
-            this.rbtnLeft.TabIndex = 29;
+            this.rbtnLeft.TabIndex = 1;
             this.rbtnLeft.TabStop = true;
             this.rbtnLeft.Text = "Left";
             this.rbtnLeft.UseVisualStyleBackColor = true;
@@ -444,7 +445,7 @@
             this.pnlArm.Location = new System.Drawing.Point(407, 435);
             this.pnlArm.Name = "pnlArm";
             this.pnlArm.Size = new System.Drawing.Size(118, 31);
-            this.pnlArm.TabIndex = 30;
+            this.pnlArm.TabIndex = 9;
             // 
             // EditUsers
             // 

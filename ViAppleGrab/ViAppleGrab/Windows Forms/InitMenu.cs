@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System;
 using ViAppleGrab.Properties;
 using ViToolkit.Logging;
+using ViToolkit.FileUtilities;
 using System.IO;
 using System.Diagnostics;
 using System.Threading;
@@ -21,7 +22,12 @@ namespace ViAppleGrab.Windows_Forms
     {
         bool Stage1Complete = false;
         bool Stage2Complete = false;
-        bool Stage3Complete = false;
+
+        string Stage1File = "";
+        string Stage2File = "";
+        string Stage3File = "";
+
+        bool ShowResultsWarning = true;
 
         public InitMenu()
         {
@@ -48,7 +54,7 @@ namespace ViAppleGrab.Windows_Forms
             {
                 Settings.Default.STAGE = (int)StudyStages.Warmup;
 
-                StartGameThread();
+                Stage1File = Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread();
 
                 btnPlay.Text = "Stage #1 Complete";
                 btnPlay.Enabled = false;
@@ -67,7 +73,7 @@ namespace ViAppleGrab.Windows_Forms
                 {
                     Settings.Default.STAGE = (int)StudyStages.Single;
 
-                    StartGameThread();
+                    Stage2File = Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread();
 
                     btnPlay2.Text = "Stage #2 Complete";
                     btnPlay2.Enabled = false;
@@ -78,7 +84,7 @@ namespace ViAppleGrab.Windows_Forms
             {
                 Settings.Default.STAGE = (int)StudyStages.Single;
 
-                StartGameThread();
+                Stage2File = Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread();
 
                 btnPlay2.Text = "Stage #2 Complete";
                 btnPlay2.Enabled = false;
@@ -96,60 +102,51 @@ namespace ViAppleGrab.Windows_Forms
                 {
                     Settings.Default.STAGE = (int)StudyStages.Simultaneous;
 
-                    StartGameThread();
+                    Stage3File = Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread();
 
                     btnPlay3.Text = "Stage #3 Complete";
                     btnPlay3.Enabled = false;
-                    Stage3Complete = true;
                 }
             }
             else
             {
                 Settings.Default.STAGE = (int)StudyStages.Simultaneous;
 
-                StartGameThread();
+                Stage3File = Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread();
 
                 btnPlay3.Text = "Stage #3 Complete";
                 btnPlay3.Enabled = false;
-                Stage3Complete = true;
             }
         }
 
-        private void StartGameThread()
+        private string StartGameThread()
         {
-            Thread t = new Thread(new ThreadStart(() =>
-            {
+            //Generate the output filename
+            DateTime now = DateTime.Now;
 
+            string fname = now.Month.ToString("D2") + now.Day.ToString("D2") + now.ToString("yy");
+
+            string[] files = Directory.GetFiles("Results", fname + "_*.*", SearchOption.AllDirectories);
+
+            fname += "_" + files.Length.ToString() + ".xml";
+
+            //Start the game thread
+            Thread t = new Thread(new ParameterizedThreadStart((object file) =>
+            {
                 using (ViAppleGrabGame game = new ViAppleGrabGame())
                 {
-                    DateTime now = DateTime.Now;
-
                     try
                     {
-                        //Create the results trace file
-                        string fname = now.Month.ToString("D2") + now.Day.ToString("D2") + now.ToString("yy");
-
-                        string[] files = Directory.GetFiles("Results", fname + "_*.*", SearchOption.AllDirectories);
-
-                        fname += "_" + files.Length.ToString() + ".xml";
-
-                        XMLTrace.CreateTraceFile(fname);
+                        XMLTrace.CreateTraceFile((string)file);
 
                         game.Run();
                     }
                     catch (Exception ex)
                     {
+                        //Turn off the controllers
                         ((ViAppleGrabInput)game.Components[0]).Controllers.StopRumbles();
 
-                        Console.WriteLine(ex.Message);
-
-                        if (ex.InnerException != null)
-                            Console.WriteLine("Inner Exception: " + ex.InnerException.Message);
-
-                        MessageBox.Show("A fatal error has occurred. Please restart the program.");
-                    }
-                    finally
-                    {
+                        //Save any results data
                         XMLTrace.Save();
 
                         if (Settings.Default.DISPLAY_RESULTS_AT_END)
@@ -159,21 +156,63 @@ namespace ViAppleGrab.Windows_Forms
                                 UseShellExecute = true,
                                 Verb = "open"
                             });
+
+                        //Output the error information
+                        Console.WriteLine(ex.Message);
+
+                        if (ex.InnerException != null)
+                            Console.WriteLine("Inner Exception: " + ex.InnerException.Message);
+
+                        MessageBox.Show("A fatal error has occurred. Please restart the program.");
                     }
                 }
 
             }));
-            t.Start();
+            t.Start(fname);
+
+            return fname;
         }
 
         private void btnViewResults_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+            if (ShowResultsWarning)
             {
-                FileName = Directory.GetCurrentDirectory() + @"\Results",
-                UseShellExecute = true,
-                Verb = "open"
-            });
+                DialogResult res = MessageBox.Show(
+                    "File Explorer will now open up and the results files for this "
+                    + "user will automatically be selected. Please copy these files "
+                    + "to a backup location for safe keeping! \n\n"
+                    + "Would you like to view this warning message again in the future?",
+                    "Save These Results Files!",
+                    MessageBoxButtons.YesNoCancel);
+
+                if (res == System.Windows.Forms.DialogResult.No)
+                    ShowResultsWarning = false;
+                else if (res == System.Windows.Forms.DialogResult.Cancel)
+                    return;
+            }
+
+            IEnumerable<string> paths = new List<string>();
+
+            if (Stage1File != "")
+                ((List<string>)paths).Add(Stage1File);
+
+            if (Stage2File != "")
+                ((List<string>)paths).Add(Stage2File);
+
+            if (Stage3File != "")
+                ((List<string>)paths).Add(Stage3File);
+
+            //Either show the selected files, or show the results folder without any selections
+            if (((List<string>)paths).Count > 0)
+                ShowSelectedInExplorer.FilesOrFolders(paths);
+            else
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = Directory.GetCurrentDirectory() + @"\Results",
+                    UseShellExecute = true,
+                    Verb = "open"
+                });
+            
         }
 
         private void btnEditUsers_Click(object sender, EventArgs e)
@@ -214,30 +253,56 @@ namespace ViAppleGrab.Windows_Forms
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult res = MessageBox.Show(
+                "Before exiting the system, please make sure you have copied any "
+                + "results files for the previous user to a backup location! \n\n"
+                + "Are you sure you wish to close the program? \n\n"
+                + "Press YES to close the program \n"
+                + "Press NO to go back and save the results files",
+                "Have you saved the results yet?",
+                MessageBoxButtons.YesNo);
+
+            if(res == System.Windows.Forms.DialogResult.Yes)
+                this.Close();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            Stage1Complete = false;
-            Stage2Complete = false;
-            Stage3Complete = false;
+            DialogResult res = MessageBox.Show(
+                "Before resetting the system, please make sure you have copied any "
+                + "results files for the previous user to a backup location! \n\n"
+                + "Are you sure you wish to reset the system? \n\n"
+                + "Press YES to reset the system \n"
+                + "Press NO to go back and save the results files",
+                "Warning!", 
+                MessageBoxButtons.YesNo);
 
-            btnPlay.Enabled = true;
-            btnPlay.Text = "2. Run Stage #1: Warmup";
-            btnPlay2.Enabled = true;
-            btnPlay2.Text = "3. Run Stage #2: Singles";
-            btnPlay3.Enabled = true;
-            btnPlay3.Text = "4. Run Stage #3: Simultaneous";
+            if (res == System.Windows.Forms.DialogResult.Yes)
+            {
+                Stage1Complete = false;
+                Stage2Complete = false;
 
-            lblCurrentUserLbl.Text = "No user is currently selected!";
-            lblCurrentUser.Text = "";
+                btnPlay.Enabled = true;
+                btnPlay.Text = "2. Run Stage #1: Warmup";
+                Stage1File = "";
 
-            btnPlay.Enabled = false;
-            btnPlay2.Enabled = false;
-            btnPlay3.Enabled = false;
+                btnPlay2.Enabled = true;
+                btnPlay2.Text = "3. Run Stage #2: Singles";
+                Stage2File = "";
 
-            Settings.Default.Reload();
+                btnPlay3.Enabled = true;
+                btnPlay3.Text = "4. Run Stage #3: Simultaneous";
+                Stage3File = "";
+
+                lblCurrentUserLbl.Text = "No user is currently selected!";
+                lblCurrentUser.Text = "";
+
+                btnPlay.Enabled = false;
+                btnPlay2.Enabled = false;
+                btnPlay3.Enabled = false;
+
+                Settings.Default.Reload();
+            }
         }
     }
 }
