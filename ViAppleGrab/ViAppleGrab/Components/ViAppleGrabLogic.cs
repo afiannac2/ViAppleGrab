@@ -475,7 +475,12 @@ namespace ViAppleGrab
                             RemainingAliveTime = AliveTime;
                         }
                         else
-                            RemainingTargets--;
+                        {
+                            if (_settings.SIMULTANEOUS_TARGETS)
+                                RemainingTargets = RemainingTargets - 2;
+                            else
+                                RemainingTargets--;
+                        }
                     }
                     else if (_input.Controllers.WasTargetMissed)
                     {
@@ -494,7 +499,9 @@ namespace ViAppleGrab
                             RemainingAliveTime = AliveTime;
                         }
                         else
+                        {
                             RemainingTargets--;
+                        }
                     }
                     else if (IsCollecting) //Have any of the controllers collected the target?
                     {

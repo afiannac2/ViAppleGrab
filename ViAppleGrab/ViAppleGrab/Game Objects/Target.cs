@@ -549,7 +549,7 @@ namespace ViAppleGrab
             }
         }
 
-        private void Missed()
+        public void Missed()
         {
             if (_state != TargetState.Missed)
             {

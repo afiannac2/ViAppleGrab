@@ -486,6 +486,7 @@ namespace ViAppleGrab
                         if (_triggerVal > 200)
                         {
                             //TODO: Play a target missed sound
+                            //Target.Missed();
                         }
                     }
                 }

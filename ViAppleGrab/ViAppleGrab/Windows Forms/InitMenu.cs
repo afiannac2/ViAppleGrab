@@ -140,6 +140,17 @@ namespace ViAppleGrab.Windows_Forms
                         XMLTrace.CreateTraceFile((string)file);
 
                         game.Run();
+
+                        //Save any results data
+                        XMLTrace.Save();
+
+                        if (Settings.Default.DISPLAY_RESULTS_AT_END)
+                            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                            {
+                                FileName = Directory.GetCurrentDirectory() + @"\Results",
+                                UseShellExecute = true,
+                                Verb = "open"
+                            });
                     }
                     catch (Exception ex)
                     {
