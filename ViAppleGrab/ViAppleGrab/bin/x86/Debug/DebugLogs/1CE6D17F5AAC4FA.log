@@ -1,0 +1,81 @@
+[Start Time] - 6/19/2013 11:08:11 AM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-716 Y:448}
+Calibration: LowerLeft - {X:-721 Y:-552}
+Calibration: UpperRight - {X:785 Y:465}
+Calibration: LowerRight - {X:697 Y:-721}
+Calibration: RightShoulder - {X:171 Y:-23}
+Level 1 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:08:44 AM
+Target collected sound played.
+Score increased sound played.
+Score: 10
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:08:50 AM
+Target collected sound played.
+Score increased sound played.
+Score: 20
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:08:56 AM
+The background music is now paused...
+'Game Paused' music is now playing...
+The 'Game Paused' music is now off...
+The background music is now playing...
+Target collected sound played.
+Score increased sound played.
+Score: 29
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:09:02 AM
+Target collected sound played.
+Score increased sound played.
+Score: 39
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:09:07 AM
+Target collected sound played.
+Score increased sound played.
+Score: 49
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:09:12 AM
+Target collected sound played.
+Score increased sound played.
+Score: 59
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:09:17 AM
+Target collected sound played.
+Score increased sound played.
+Score: 69
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:09:22 AM
+Target collected sound played.
+Score increased sound played.
+Score: 79
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:09:27 AM
+Target collected sound played.
+Score increased sound played.
+Score: 89
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:09:32 AM
+Target collected sound played.
+Score increased sound played.
+Score: 99
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

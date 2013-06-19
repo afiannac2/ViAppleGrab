@@ -134,7 +134,7 @@ namespace ViAppleGrab
 
         private void btnStartGame_Click(object sender, EventArgs e)
         {
-            //TODO - Reset the settings file here to see if it will fix the issue between levels
+            btnStartGame.Enabled = false;
 
             if (CameraForm != null)
             {

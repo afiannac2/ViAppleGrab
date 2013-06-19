@@ -484,7 +484,7 @@ namespace ViAppleGrab
                     }
                     else if (_input.Controllers.WasTargetMissed)
                     {
-                        Score -= scorePerApple;
+                        //Score -= scorePerApple;
 
                         if (TargetMissed != null) TargetMissed();
 
@@ -500,7 +500,13 @@ namespace ViAppleGrab
                         }
                         else
                         {
-                            RemainingTargets--;
+                            //RemainingTargets--;
+
+                            if (_input.Controllers[ControllerIndex.RightHand].Target.State == TargetState.Missed)
+                                _input.Controllers[ControllerIndex.RightHand].Target.Activate();
+
+                            if (_input.Controllers[ControllerIndex.LeftHand].Target.State == TargetState.Missed)
+                                _input.Controllers[ControllerIndex.LeftHand].Target.Activate();
                         }
                     }
                     else if (IsCollecting) //Have any of the controllers collected the target?

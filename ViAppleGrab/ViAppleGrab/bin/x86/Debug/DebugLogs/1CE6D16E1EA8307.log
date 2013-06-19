@@ -1,0 +1,75 @@
+[Start Time] - 6/19/2013 11:00:28 AM
+Input component created
+Logic component created
+Sound component created
+Game created
+PsMoveSharp Message: Initial recieve buffer size: 8192
+PsMoveSharp Message: Expanded recieve buffer size: 655360
+Input component initialized
+Logic component initialized
+Sound content has been loaded
+Sound component initialized
+All content loaded
+Game Initialized...
+Score: 0
+Game calibrating sound is now playing...
+Calibration: UpperLeft - {X:-744 Y:453}
+Calibration: LowerLeft - {X:-734 Y:-540}
+Calibration: UpperRight - {X:802 Y:439}
+Calibration: LowerRight - {X:721 Y:-690}
+Calibration: RightShoulder - {X:150 Y:-47}
+Level 1 background music is now playing
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:00:59 AM
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target collected sound played.
+Score increased sound played.
+Score: 8
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:01:08 AM
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target missed sound played.
+Target collected sound played.
+Score increased sound played.
+Score: 14
+
+[New Target] - -1 - Left Hand - 6/19/2013 11:01:21 AM
+Game over
+Sad 'Game Over' music is now playing...
+Game shut down
+Input component shut down
+Sound component shut down
+Logic component shut down

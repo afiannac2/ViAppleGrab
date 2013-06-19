@@ -19,7 +19,7 @@
     <ApplicationIcon>Icons\Game.ico</ApplicationIcon>
     <Thumbnail>Icons\GameThumbnail.png</Thumbnail>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Alex\Desktop\ViAppleGrab_Publish\</PublishUrl>
+    <PublishUrl>C:\Users\Alex\Documents\GitHub\ViAppleGrab\Publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -31,8 +31,9 @@
     <MapFileExtensions>true</MapFileExtensions>
     <SupportUrl>http://www.eelke.com</SupportUrl>
     <ProductName>ViAppleGrab</ProductName>
-    <PublisherName>Player Game Interaction Lab - University of Nevada</PublisherName>
-    <ApplicationRevision>5</ApplicationRevision>
+    <PublisherName>University of Nevada, Reno</PublisherName>
+    <SuiteName>Player Game Interaction Lab</SuiteName>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -155,7 +156,10 @@
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
     <Content Include="Documentation\README.txt" />
+    <Content Include="Simultaneous.txt" />
+    <Content Include="Single.txt" />
     <Content Include="Users.xml" />
+    <Content Include="Warmup.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ViToolkit\ViToolkit.csproj">
@@ -225,7 +229,37 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <PublishFile Include="Simultaneous.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Single.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
     <PublishFile Include="Users.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Warmup.txt">
       <Visible>False</Visible>
       <Group>
       </Group>

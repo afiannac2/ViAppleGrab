@@ -60,6 +60,8 @@ namespace ViAppleGrab.Windows_Forms
                 btnPlay.Enabled = false;
 
                 Stage1Complete = true;
+
+                btnRedoWarmup.Visible = true;
             }
         }
 
@@ -314,6 +316,16 @@ namespace ViAppleGrab.Windows_Forms
 
                 Settings.Default.Reload();
             }
+        }
+
+        private void btnRedoWarmup_Click(object sender, EventArgs e)
+        {
+            btnPlay.Text = "2. Run Stage #1: Warmup";
+            btnPlay.Enabled = true;
+
+            Stage1Complete = false;
+
+            btnRedoWarmup.Visible = false;
         }
     }
 }

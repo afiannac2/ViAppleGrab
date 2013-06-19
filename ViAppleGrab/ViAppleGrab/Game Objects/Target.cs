@@ -555,20 +555,20 @@ namespace ViAppleGrab
             {
                 _state = TargetState.Missed;
 
-                _TotalAliveTime = DateTime.Now - _targetSpawnTime;
+                //_TotalAliveTime = DateTime.Now - _targetSpawnTime;
 
-                string c = (_isDuplicate) ? "LeftHand" : "RightHand";
+                //string c = (_isDuplicate) ? "LeftHand" : "RightHand";
 
-                XmlNode node = XMLTrace.FindTargetDataNode(_targetID);
-                node.Attributes["Controller"].Value = c;
+                //XmlNode node = XMLTrace.FindTargetDataNode(_targetID);
+                //node.Attributes["Controller"].Value = c;
 
-                XmlNode child = XMLTrace.AppendSubchild(node, "TotalAliveTime", "");
-                XMLTrace.AddText(child, _TotalAliveTime.TotalSeconds.ToString());
-                XMLTrace.AddAttributes(child, new Dictionary<string, string> 
-                { 
-                    { "Units", "seconds" }, 
-                    { "FinalStatus", "missed" } 
-                });
+                //XmlNode child = XMLTrace.AppendSubchild(node, "TotalAliveTime", "");
+                //XMLTrace.AddText(child, _TotalAliveTime.TotalSeconds.ToString());
+                //XMLTrace.AddAttributes(child, new Dictionary<string, string> 
+                //{ 
+                //    { "Units", "seconds" }, 
+                //    { "FinalStatus", "missed" } 
+                //});
             }
         }
 

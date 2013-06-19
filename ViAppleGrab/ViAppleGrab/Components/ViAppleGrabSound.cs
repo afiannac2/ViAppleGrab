@@ -113,7 +113,8 @@ namespace ViAppleGrab
             _targetFound = new Sound(@"GameEvents\TargetFound", Game.Content, _defaultVol);
             _rottenFound = new Sound(@"GameEvents\YuckItsRotten", Game.Content, _defaultVol);
             _targetLost = new Sound(@"GameEvents\SadWhistle", Game.Content, _defaultVol);
-            _targetMissed = new Sound(@"GameEvents\OopsYouMissedIt", Game.Content, _defaultVol);
+            //_targetMissed = new Sound(@"GameEvents\OopsYouMissedIt", Game.Content, _defaultVol);
+            _targetMissed = new Sound(@"GameEvents\SadWhistle", Game.Content, _defaultVol);
             _nextTarget = new Sound(@"Levels\NextTarget", Game.Content, _defaultVol);
             
             Debug.WriteLine("Sound content has been loaded");
