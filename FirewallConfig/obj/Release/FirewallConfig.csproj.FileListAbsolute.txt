@@ -1,0 +1,5 @@
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\FirewallConfig\bin\Release\FirewallConfig.dll
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\FirewallConfig\bin\Release\FirewallConfig.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\FirewallConfig\bin\Release\Ionic.Zip.dll
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\FirewallConfig\obj\Release\FirewallConfig.dll
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\FirewallConfig\obj\Release\FirewallConfig.pdb

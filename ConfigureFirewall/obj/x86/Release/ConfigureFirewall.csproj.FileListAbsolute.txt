@@ -1,0 +1,4 @@
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ConfigureFirewall\bin\Release\ConfigureFirewall.exe
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ConfigureFirewall\bin\Release\ConfigureFirewall.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ConfigureFirewall\obj\x86\Release\ConfigureFirewall.exe
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ConfigureFirewall\obj\x86\Release\ConfigureFirewall.pdb
