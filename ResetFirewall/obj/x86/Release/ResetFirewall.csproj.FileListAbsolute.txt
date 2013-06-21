@@ -1,0 +1,4 @@
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ResetFirewall\bin\Release\ResetFirewall.exe
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ResetFirewall\bin\Release\ResetFirewall.pdb
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ResetFirewall\obj\x86\Release\ResetFirewall.exe
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\ResetFirewall\obj\x86\Release\ResetFirewall.pdb

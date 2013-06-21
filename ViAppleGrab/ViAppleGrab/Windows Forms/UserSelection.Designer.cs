@@ -255,7 +255,7 @@
             this.purgeResultsToolStripMenuItem,
             this.purgeDebugLogsToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // purgeResultsToolStripMenuItem
@@ -275,7 +275,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -378,9 +378,10 @@
             // 
             this.cmbStage.FormattingEnabled = true;
             this.cmbStage.Items.AddRange(new object[] {
-            "1. Warmup (10 targets)",
+            "1. Warmup #1 (10 targets)",
             "2. Single (20 targets on dominant)",
-            "3. Simultaneous (20 targets per arm)"});
+            "3. Warmup #2 (5 targets)",
+            "4. Simultaneous (20 targets per arm)"});
             this.cmbStage.Location = new System.Drawing.Point(105, 349);
             this.cmbStage.Name = "cmbStage";
             this.cmbStage.Size = new System.Drawing.Size(200, 21);

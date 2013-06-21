@@ -231,24 +231,33 @@ namespace ViAppleGrab
                         break;
 
                     case LoadingState.Calibration: //Does the user want to calibrate the game?
-                        if (_loadingSpeak)
+                        if (!_settings.SKIP_MENU)
                         {
-                            _sound.GameWelcome(1, false);
-                            _loadingSpeak = false;
-                            break;
-                        }
-
-                        if (_input.DetectMainMenuButtonPress(ref _wasMoveButton, ref _goBack))
-                        {
-                            _sound.GameWelcomeStop(1);
-                            _loadingStep = LoadingState.Instructions;
-                            _loadingSpeak = true;
-
-                            if (_wasMoveButton)
+                            if (_loadingSpeak)
                             {
-                                _settings.IS_CALIBRATED = false;
-                                _logic.PerformCalibration();
+                                _sound.GameWelcome(1, false);
+                                _loadingSpeak = false;
+                                break;
                             }
+
+                            if (_input.DetectMainMenuButtonPress(ref _wasMoveButton, ref _goBack))
+                            {
+                                _sound.GameWelcomeStop(1);
+                                _loadingStep = LoadingState.Instructions;
+                                _loadingSpeak = true;
+
+                                if (_wasMoveButton)
+                                {
+                                    _settings.IS_CALIBRATED = false;
+                                    _logic.PerformCalibration();
+                                }
+                            }
+                        }
+                        else
+                        {
+                            _settings.IS_CALIBRATED = false;
+                            _logic.PerformCalibration();
+                            _loadingStep = LoadingState.Completing;
                         }
                         break;
 

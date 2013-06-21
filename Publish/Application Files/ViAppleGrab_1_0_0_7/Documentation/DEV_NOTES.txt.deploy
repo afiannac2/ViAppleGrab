@@ -1,0 +1,13 @@
+﻿IMPORTANT: The interaction between the different components of the game is 
+done through an event based structure. It is important that any components
+which need to subscribe to an event of another component do so in their
+respective Initialize() methods. By subscribing in the Initialize() method,
+the order of the event methods invoked will always be 1. Input, 2. Logic, 
+3. Sound, 4. Main Game. If events are subscribed to outside of the Initialize
+method, it may cause errors due to the order of updates (a difficult to debug
+error!)
+
+TODO:
+
+1. Record the game instructions
+2. Record the Welcome3 file which should say, "Ok, here we go. Lets grab some apples!"

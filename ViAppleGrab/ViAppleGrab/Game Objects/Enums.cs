@@ -10,7 +10,8 @@ namespace ViAppleGrab
         None = 0,
         Warmup = 1,
         Single = 2,
-        Simultaneous = 3
+        Warmup2 = 3,
+        Simultaneous = 4
     }
 
     public class Point3

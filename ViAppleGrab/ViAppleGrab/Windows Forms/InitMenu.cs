@@ -15,6 +15,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Xml;
 using System.Xml.Linq;
+using Ionic.Zip;
 
 namespace ViAppleGrab.Windows_Forms
 {
@@ -22,10 +23,17 @@ namespace ViAppleGrab.Windows_Forms
     {
         bool Stage1Complete = false;
         bool Stage2Complete = false;
+        bool Stage3Complete = false;
 
-        string Stage1File = "";
-        string Stage2File = "";
-        string Stage3File = "";
+        //string Stage1File = "";
+        //string Stage2File = "";
+        //string Stage3File = "";
+        //string Stage4File = "";
+
+        IEnumerable<string> paths;
+
+        string CurrentFirst = "";
+        string CurrentLast = "";
 
         bool ShowResultsWarning = true;
 
@@ -36,6 +44,9 @@ namespace ViAppleGrab.Windows_Forms
             btnPlay.Enabled = false;
             btnPlay2.Enabled = false;
             btnPlay3.Enabled = false;
+            btnPlay4.Enabled = false;
+
+            paths = new List<string>();
         }
 
         private void btnPlay_Click(object sender, EventArgs e)
@@ -54,7 +65,7 @@ namespace ViAppleGrab.Windows_Forms
             {
                 Settings.Default.STAGE = (int)StudyStages.Warmup;
 
-                Stage1File = Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread();
+                ((List<string>)paths).Add(Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread());
 
                 btnPlay.Text = "Stage #1 Complete";
                 btnPlay.Enabled = false;
@@ -75,7 +86,7 @@ namespace ViAppleGrab.Windows_Forms
                 {
                     Settings.Default.STAGE = (int)StudyStages.Single;
 
-                    Stage2File = Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread();
+                    ((List<string>)paths).Add(Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread());
 
                     btnPlay2.Text = "Stage #2 Complete";
                     btnPlay2.Enabled = false;
@@ -86,7 +97,7 @@ namespace ViAppleGrab.Windows_Forms
             {
                 Settings.Default.STAGE = (int)StudyStages.Single;
 
-                Stage2File = Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread();
+                ((List<string>)paths).Add(Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread());
 
                 btnPlay2.Text = "Stage #2 Complete";
                 btnPlay2.Enabled = false;
@@ -98,26 +109,59 @@ namespace ViAppleGrab.Windows_Forms
         {
             if (!Stage2Complete)
             {
-                DialogResult res = MessageBox.Show("Are you sure you wish to run Stage 2 before Stage 1 has been completed?", "Warning!", MessageBoxButtons.YesNo);
+                DialogResult res = MessageBox.Show("Are you sure you wish to run Stage 3 before Stage 2 has been completed?", "Warning!", MessageBoxButtons.YesNo);
+
+                if (res == DialogResult.Yes)
+                {
+                    Settings.Default.STAGE = (int)StudyStages.Warmup2;
+
+                    ((List<string>)paths).Add(Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread());
+
+                    btnPlay3.Text = "Stage #3 Complete";
+                    btnPlay3.Enabled = false;
+                    Stage3Complete = true;
+
+                    btnRedoWarmup2.Visible = true;
+                }
+            }
+            else
+            {
+                Settings.Default.STAGE = (int)StudyStages.Warmup2;
+
+                ((List<string>)paths).Add(Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread());
+
+                btnPlay3.Text = "Stage #3 Complete";
+                btnPlay3.Enabled = false;
+                Stage3Complete = true;
+
+                btnRedoWarmup2.Visible = true;
+            }
+        }
+
+        private void btnPlay4_Click(object sender, EventArgs e)
+        {
+            if (!Stage3Complete)
+            {
+                DialogResult res = MessageBox.Show("Are you sure you wish to run Stage 4 before Stage 3 has been completed?", "Warning!", MessageBoxButtons.YesNo);
 
                 if (res == DialogResult.Yes)
                 {
                     Settings.Default.STAGE = (int)StudyStages.Simultaneous;
 
-                    Stage3File = Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread();
+                    ((List<string>)paths).Add(Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread());
 
-                    btnPlay3.Text = "Stage #3 Complete";
-                    btnPlay3.Enabled = false;
+                    btnPlay4.Text = "Stage #4 Complete";
+                    btnPlay4.Enabled = false;
                 }
             }
             else
             {
                 Settings.Default.STAGE = (int)StudyStages.Simultaneous;
 
-                Stage3File = Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread();
+                ((List<string>)paths).Add(Directory.GetCurrentDirectory() + @"\Results\" + StartGameThread());
 
-                btnPlay3.Text = "Stage #3 Complete";
-                btnPlay3.Enabled = false;
+                btnPlay4.Text = "Stage #4 Complete";
+                btnPlay4.Enabled = false;
             }
         }
 
@@ -204,16 +248,19 @@ namespace ViAppleGrab.Windows_Forms
                     return;
             }
 
-            IEnumerable<string> paths = new List<string>();
+            //IEnumerable<string> paths = new List<string>();
 
-            if (Stage1File != "")
-                ((List<string>)paths).Add(Stage1File);
+            //if (Stage1File != "")
+            //    ((List<string>)paths).Add(Stage1File);
 
-            if (Stage2File != "")
-                ((List<string>)paths).Add(Stage2File);
+            //if (Stage2File != "")
+            //    ((List<string>)paths).Add(Stage2File);
 
-            if (Stage3File != "")
-                ((List<string>)paths).Add(Stage3File);
+            //if (Stage3File != "")
+            //    ((List<string>)paths).Add(Stage3File);
+
+            //if (Stage4File != "")
+            //    ((List<string>)paths).Add(Stage4File);
 
             //Either show the selected files, or show the results folder without any selections
             if (((List<string>)paths).Count > 0)
@@ -240,6 +287,7 @@ namespace ViAppleGrab.Windows_Forms
                 btnPlay.Enabled = false;
                 btnPlay2.Enabled = false;
                 btnPlay3.Enabled = false;
+                btnPlay4.Enabled = false;
             }
             else
             {
@@ -252,15 +300,20 @@ namespace ViAppleGrab.Windows_Forms
                     .Where(u => u.Attribute("ID").Value == Settings.Default.CURRENT_USER_ID.ToString())
                     .Select(user => new
                     {
+                        First = user.Element("FirstName").Value,
+                        Last = user.Element("LastName").Value,
                         Name = user.Element("FirstName").Value + " " + user.Element("LastName").Value
                     })
                     .FirstOrDefault();
 
                 lblCurrentUser.Text = q.Name;
+                CurrentFirst = q.First;
+                CurrentLast = q.Last;
 
                 btnPlay.Enabled = true;
                 btnPlay2.Enabled = true;
                 btnPlay3.Enabled = true;
+                btnPlay4.Enabled = true;
             }
         }
 
@@ -296,16 +349,19 @@ namespace ViAppleGrab.Windows_Forms
                 Stage2Complete = false;
 
                 btnPlay.Enabled = true;
-                btnPlay.Text = "2. Run Stage #1: Warmup";
-                Stage1File = "";
+                btnPlay.Text = "2. Run Stage #1: Warmup #1";
 
                 btnPlay2.Enabled = true;
                 btnPlay2.Text = "3. Run Stage #2: Singles";
-                Stage2File = "";
 
                 btnPlay3.Enabled = true;
-                btnPlay3.Text = "4. Run Stage #3: Simultaneous";
-                Stage3File = "";
+                btnPlay3.Text = "4. Run Stage #3: Warmup #2";
+
+                btnPlay4.Enabled = true;
+                btnPlay4.Text = "5. Run Stage #4: Simultaneous";
+
+                CurrentFirst = "";
+                CurrentLast = "";
 
                 lblCurrentUserLbl.Text = "No user is currently selected!";
                 lblCurrentUser.Text = "";
@@ -313,6 +369,12 @@ namespace ViAppleGrab.Windows_Forms
                 btnPlay.Enabled = false;
                 btnPlay2.Enabled = false;
                 btnPlay3.Enabled = false;
+                btnPlay4.Enabled = false;
+
+                btnRedoWarmup.Visible = false;
+                btnRedoWarmup2.Visible = false;
+
+                paths = new List<string>();
 
                 Settings.Default.Reload();
             }
@@ -320,12 +382,134 @@ namespace ViAppleGrab.Windows_Forms
 
         private void btnRedoWarmup_Click(object sender, EventArgs e)
         {
-            btnPlay.Text = "2. Run Stage #1: Warmup";
+            btnPlay.Text = "2. Run Stage #1: Warmup #1";
             btnPlay.Enabled = true;
 
             Stage1Complete = false;
 
             btnRedoWarmup.Visible = false;
+        }
+
+
+        private void btnRedoWarmup2_Click(object sender, EventArgs e)
+        {
+            btnPlay3.Text = "4. Run Stage #3: Warmup #2";
+            btnPlay3.Enabled = true;
+
+            Stage3Complete = false;
+
+            btnRedoWarmup2.Visible = false;
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show(
+                "Before exiting the system, please make sure you have copied any "
+                + "results files for the previous user to a backup location! \n\n"
+                + "Are you sure you wish to close the program? \n\n"
+                + "Press YES to close the program \n"
+                + "Press NO to go back and save the results files",
+                "Have you saved the results yet?",
+                MessageBoxButtons.YesNo);
+
+            if (res == System.Windows.Forms.DialogResult.Yes)
+                this.Close();
+        }
+
+        private void createFirewallRuleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(Directory.GetCurrentDirectory() + @"\ConfigureFirewall.exe");
+            MessageBox.Show("The rule \"ViAppleGrab\" has been added to your Windows Firewall!");
+        }
+
+        private void removeFirewallRuleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("ResetFirewall.exe");
+            MessageBox.Show("The rule \"ViAppleGrab\" has been removed from your Windows Firewall!");
+        }
+
+        private void backupResultsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Zip up the results files just to be safe
+            if (Directory.EnumerateFiles(Directory.GetCurrentDirectory() +  @"\Results").Any())
+            {
+                using (ZipFile zip = new ZipFile())
+                {
+                    zip.AddDirectory(Directory.GetCurrentDirectory() + @"\Results");
+                    zip.Comment = "This archive contains all results files from ViAppleGrab";
+
+                    SaveFileDialog sfd = new SaveFileDialog();
+                    sfd.Filter = "Zip Archive|*.zip";
+                    sfd.Title = "Save an archive of all results files";
+                    sfd.FileName = "Results.zip";
+                    DialogResult result = STAShowDialog(sfd);
+
+                    if (result == DialogResult.OK && sfd.FileName != "")
+                    {
+                        Stream stream = sfd.OpenFile();
+                        zip.Save(stream);
+                        stream.Close();
+                    }
+
+                    MessageBox.Show("Results archive file saved!");
+                }
+            }
+        }
+
+        private DialogResult STAShowDialog(FileDialog dialog)
+        {
+            DialogState state = new DialogState();
+            state.dialog = dialog;
+
+            Thread t = new Thread(state.ThreadProcShowDialog);
+            t.SetApartmentState(ApartmentState.STA);
+            t.Start();
+            t.Join();
+
+            return state.result;
+        }
+
+        private void btnSaveResults_Click(object sender, EventArgs e)
+        {
+            if (((List<string>)paths).Count > 0)
+            {
+                using (ZipFile zip = new ZipFile())
+                {
+                    zip.AddFiles(paths, "Results");
+                    zip.Comment = "This archive contains all results files from ViAppleGrab for " + CurrentFirst + " " + CurrentLast;
+
+                    SaveFileDialog sfd = new SaveFileDialog();
+                    sfd.Filter = "Zip Archive|*.zip";
+                    sfd.Title = "Save an archive of all results files for " + CurrentFirst + " " + CurrentLast;
+                    sfd.FileName = CurrentFirst + CurrentLast + ".zip";
+                    DialogResult result = STAShowDialog(sfd);
+
+                    if (result == DialogResult.OK && sfd.FileName != "")
+                    {
+                        Stream stream = sfd.OpenFile();
+                        zip.Save(stream);
+                        stream.Close();
+                    }
+
+                    MessageBox.Show("Results archive file saved!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("This user must complete the study before there are any results to save!");
+            }
+        }
+    }
+
+    public class DialogState
+    {
+        public DialogResult result;
+        public FileDialog dialog;
+ 
+
+        public void ThreadProcShowDialog()
+        {
+            result = dialog.ShowDialog();
         }
     }
 }

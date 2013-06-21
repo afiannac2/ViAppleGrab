@@ -33,7 +33,7 @@
     <ProductName>ViAppleGrab</ProductName>
     <PublisherName>University of Nevada, Reno</PublisherName>
     <SuiteName>Player Game Interaction Lab</SuiteName>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>12</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -79,10 +79,11 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>.\Ionic.Zip.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
@@ -90,7 +91,6 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -152,6 +152,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConfigureFirewall.exe" />
     <Content Include="Documentation\DEV_NOTES.txt" />
     <Content Include="Documentation\INSTRUCTIONS.txt" />
     <Content Include="Icons\Game.ico" />
@@ -159,10 +160,12 @@
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
     <Content Include="Documentation\README.txt" />
+    <Content Include="ResetFirewall.exe" />
     <Content Include="Simultaneous.txt" />
     <Content Include="Single.txt" />
     <Content Include="Users.xml" />
     <Content Include="Warmup.txt" />
+    <Content Include="Warmup2.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ViToolkit\ViToolkit.csproj">
@@ -205,7 +208,6 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -233,6 +235,26 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <PublishFile Include="ConfigureFirewall.exe">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="ResetFirewall.exe">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
     <PublishFile Include="Simultaneous.txt">
       <Visible>False</Visible>
       <Group>
@@ -264,6 +286,16 @@
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="Warmup.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Warmup2.txt">
       <Visible>False</Visible>
       <Group>
       </Group>

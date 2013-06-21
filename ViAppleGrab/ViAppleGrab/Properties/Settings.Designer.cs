@@ -604,7 +604,7 @@ namespace ViAppleGrab.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool MOVE_BUTTONS_ACTIVE {
             get {
                 return ((bool)(this["MOVE_BUTTONS_ACTIVE"]));
@@ -635,6 +635,18 @@ namespace ViAppleGrab.Properties {
             }
             set {
                 this["CURRENT_USER_ID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool SKIP_MENU {
+            get {
+                return ((bool)(this["SKIP_MENU"]));
+            }
+            set {
+                this["SKIP_MENU"] = value;
             }
         }
     }

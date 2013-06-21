@@ -48,6 +48,14 @@ namespace ViAppleGrab
                 LoadUsers(Settings.Default.CURRENT_USER_ID);
                 cmbStage.SelectedIndex = Settings.Default.STAGE - 1;
                 cmbStage.Enabled = false;
+
+                if ((StudyStages)Settings.Default.STAGE == StudyStages.Single
+                    || (StudyStages)Settings.Default.STAGE == StudyStages.Simultaneous)
+                {
+                    cbQuickCalibration.Checked = true;
+                    cbQuickCalibration.Enabled = false;
+                    lblQuickCalibration.Enabled = false;
+                }
             }
             else
             {
@@ -449,7 +457,7 @@ namespace ViAppleGrab
 
             switch (cmbStage.SelectedIndex)
             {
-                //Warmup
+                //Warmup #1 (single targets)
                 case 0:
                     Settings.Default.SINGLE_FILE = "Warmup.txt";
                     Settings.Default.SINGLE_TARGET = true;
@@ -469,8 +477,17 @@ namespace ViAppleGrab
                     Settings.Default.MAX_LEVELS = 4;
                     break;
 
-                //simultaneous targets (settings: together and simultaneous)
+                //Warmup #2 (simultaneous targets)
                 case 2:
+                    Settings.Default.CONTROL_TYPE = (int)ControlType.Together;
+                    Settings.Default.SINGLE_TARGET = false;
+                    Settings.Default.SIMULTANEOUS_TARGETS = true;
+                    Settings.Default.SIMULTANEOUS_FILE = "Warmup2.txt";
+                    Settings.Default.MAX_LEVELS = 1;
+                    break;
+
+                //simultaneous targets (settings: together and simultaneous)
+                case 3:
                     Settings.Default.CONTROL_TYPE = (int)ControlType.Together;
                     Settings.Default.SINGLE_TARGET = false;
                     Settings.Default.SIMULTANEOUS_TARGETS = true;

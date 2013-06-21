@@ -227,7 +227,12 @@ namespace ViAppleGrab
                 if (value < _score && ScoreDecreased != null)
                     ScoreDecreased();
                 else if (value > _score && ScoreIncreased != null)
-                    ScoreIncreased(value - _score);
+                {
+                    if (_settings.SIMULTANEOUS_TARGETS)
+                        ScoreIncreased(value - _score, RemainingTargets - 2, GameLevel);
+                    else
+                        ScoreIncreased(value - _score, RemainingTargets - 1, GameLevel);
+                }
 
                 _score = value;
 
@@ -236,7 +241,7 @@ namespace ViAppleGrab
         }
         public delegate void ScoreDecreasedEventHandler();
         public event ScoreDecreasedEventHandler ScoreDecreased;
-        public delegate void ScoreIncreasedEventHandler(int increase);
+        public delegate void ScoreIncreasedEventHandler(int increase, int remainingTargets, int gamelevel);
         public event ScoreIncreasedEventHandler ScoreIncreased;
 
         #endregion
@@ -615,11 +620,15 @@ namespace ViAppleGrab
 
                     if(f == "Warmup")
                     {
-                        stage = "Warmup";
+                        stage = "Warmup1";
+                    }
+                    else if (f == "Warmup2")
+                    {
+                        stage = "Warmup2";
                     }
                     else
                     {
-                        if(_settings.SINGLE_TARGET)
+                        if (_settings.SINGLE_TARGET)
                         {
                             stage = "Single";
                         }
@@ -754,13 +763,7 @@ namespace ViAppleGrab
 
                     if (!_settings.QUICK_CALIBRATION)
                     {
-                        ////Gather the calibration data
-                        //text = "Imagine a box in front of you. Your arms should be "
-                        //            + "able to reach the corners of the box comfortably. "
-                        //            + "This will be the area in which you play the game.";
-                        //Speech.SpeakAsync(100, text);
-                        //Thread.Sleep(500);
-                        _sound.CalInstructions(0);
+                        _sound.CalInstructionsBlock(0);
                     }
 
                     _calibrationStage++;
@@ -769,16 +772,13 @@ namespace ViAppleGrab
                 case 1: //Upper Left Corner
                     if (_speak && !_settings.QUICK_CALIBRATION)
                     {
-                        //text = "Place the left hand controller in the upper left corner of "
-                        //     + "the box in front of you and pull the trigger.";
-                        //Speech.SpeakAsync(100, text);
-                        //Thread.Sleep(500);
                         _sound.CalInstructions(1);
                         _speak = false;
                     }
                     
                     if (_input.DetectCalibration(ControllerIndex.LeftHand, ref upperLeft))
                     {
+                        _sound.CalInstructionsStop(1);
                         Debug.WriteLine("Calibration: UpperLeft - " + upperLeft.ToString());
 
                         _calibrationStage++;
@@ -789,16 +789,13 @@ namespace ViAppleGrab
                 case 2: //Lower Left Corner
                     if (_speak && !_settings.QUICK_CALIBRATION)
                     {
-                        //text = "Place the left hand controller in the lower left corner of "
-                        //     + "the box in front of you and pull the trigger.";
-                        //Speech.SpeakAsync(100, text);
-                        //Thread.Sleep(500);
                         _sound.CalInstructions(2);
                         _speak = false;
                     }
 
                     if (_input.DetectCalibration(ControllerIndex.LeftHand, ref lowerLeft))
                     {
+                        _sound.CalInstructionsStop(2);
                         Debug.WriteLine("Calibration: LowerLeft - " + lowerLeft.ToString());
 
                         _calibrationStage++;
@@ -810,16 +807,13 @@ namespace ViAppleGrab
 
                     if (_speak && !_settings.QUICK_CALIBRATION)
                     {
-                        //text = "Place the right hand controller in the upper right corner of "
-                        //                 + "the box in front of you and pull the trigger.";
-                        //Speech.SpeakAsync(100, text);
-                        //Thread.Sleep(500);
                         _sound.CalInstructions(3);
                         _speak = false;
                     }
 
                     if (_input.DetectCalibration(ControllerIndex.RightHand, ref upperRight))
                     {
+                        _sound.CalInstructionsStop(3);
                         Debug.WriteLine("Calibration: UpperRight - " + upperRight.ToString());
 
                         _calibrationStage++;
@@ -830,16 +824,13 @@ namespace ViAppleGrab
                 case 4: //Lower Right Corner
                     if (_speak && !_settings.QUICK_CALIBRATION)
                     {
-                        //text = "Place the right hand controller in the lower right corner of "
-                        //     + "the box in front of you and pull the trigger.";
-                        //Speech.SpeakAsync(100, text);
-                        //Thread.Sleep(500);
                         _sound.CalInstructions(4);
                         _speak = false;
                     }
 
                     if (_input.DetectCalibration(ControllerIndex.RightHand, ref lowerRight))
                     {
+                        _sound.CalInstructionsStop(4);
                         Debug.WriteLine("Calibration: LowerRight - " + lowerRight.ToString());
 
                         _calibrationStage++;
@@ -851,16 +842,13 @@ namespace ViAppleGrab
                 case 5:
                     if (_speak && !_settings.QUICK_CALIBRATION)
                     {
-                        //text = "Place both arms out straight forward parallel "
-                        //     + "to the ground. Pull the right hand trigger.";
-                        //Speech.SpeakAsync(100, text);
-                        //Thread.Sleep(500);
                         _sound.CalInstructions(5);
                         _speak = false;
                     }
 
                     if (_input.DetectCalibration(ControllerIndex.RightHand, ref rightShoulder))
                     {
+                        _sound.CalInstructionsStop(5);
                         Debug.WriteLine("Calibration: RightShoulder - " + rightShoulder.ToString());
 
                         _calibrationStage++;
@@ -871,15 +859,14 @@ namespace ViAppleGrab
                 case 6:
                     if (_speak && !_settings.QUICK_CALIBRATION)
                     {
-                        //text = "Pull the left hand trigger.";
-                        //Speech.SpeakAsync(100, text);
-                        //Thread.Sleep(500);
                         _sound.CalInstructions(6);
                         _speak = false;
                     }
 
                     if (_input.DetectCalibration(ControllerIndex.LeftHand, ref leftShoulder))
                     {
+                        _sound.CalInstructionsStop(6);
+
                         //Calculate calibration values
                         _settings.CAL_X_MIN = (upperLeft.X + lowerLeft.X) / 2;
                         _settings.CAL_X_MAX = (upperRight.X + lowerRight.X) / 2;

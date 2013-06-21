@@ -264,7 +264,7 @@ namespace ViAppleGrab
             Debug.WriteLine("Score decreased sound played.");
         }
 
-        void ScoreIncreased(int increase)
+        void ScoreIncreased(int increase, int remainingtargets, int gamelevel)
         {
             if (_backgroundSound != null)
                 _backgroundSound.Volume = _backgroundVolLow;
@@ -273,7 +273,24 @@ namespace ViAppleGrab
 
             Speech.Speak(100, increase.ToString() + " points");
 
-            Speech.Speak(100, "Next Target");
+            if (remainingtargets > 0)
+            {
+                if (Settings.Default.SIMULTANEOUS_TARGETS)
+                    Speech.Speak(100, "Next two apples");
+                else
+                    Speech.Speak(100, "Next apple");
+            }
+            else
+            {
+                if (gamelevel < Settings.Default.MAX_LEVELS)
+                {
+                    Speech.Speak(100, "Level Complete. Next Level");
+                }
+                else
+                {
+                    Speech.Speak(100, "Good Job! This round is complete!");
+                }
+            }
 
             if (_backgroundSound != null)
                 _backgroundSound.Volume = _backgroundVolHigh;
@@ -403,7 +420,20 @@ namespace ViAppleGrab
 
         public void CalInstructions(int stage)
         {
+            //Allows for the calibration instructions to be played asynchronously and thereby stopped as soon as the user pulls the trigger
+            _calInstructions[stage].PlayOnce();
+            Thread.Sleep(500);
+        }
+
+        public void CalInstructionsBlock(int stage)
+        {
             _calInstructions[stage].BlockPlay();
+        }
+
+        public void CalInstructionsStop(int stage)
+        {
+            if (_calInstructions[stage].IsPlaying)
+                _calInstructions[stage].StopNoFade();
         }
 
         public void GameWelcome(int stage, bool playBlock)
