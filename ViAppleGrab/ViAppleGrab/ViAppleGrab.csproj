@@ -33,7 +33,7 @@
     <ProductName>ViAppleGrab</ProductName>
     <PublisherName>University of Nevada, Reno</PublisherName>
     <SuiteName>Player Game Interaction Lab</SuiteName>
-    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>

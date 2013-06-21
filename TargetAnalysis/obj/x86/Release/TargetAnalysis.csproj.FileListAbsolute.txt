@@ -139,9 +139,6 @@ C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\TargetAnalysis\o
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.csproj.GenerateResource.Cache
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.exe
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.pdb
-C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.TargetAnalysis.resources
-C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.Properties.Resources.resources
-C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.csproj.GenerateResource.Cache
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\bin\Release\Content\Fonts\OutputFont.xnb
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\bin\Release\Content\Fonts\OutputFontLarge.xnb
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\bin\Release\Content\Graphics\RottenApple.xnb
@@ -209,5 +206,8 @@ C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\bin\Release\Ionic.Zip.
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\bin\Release\ViAppleGrab.pdb
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\bin\Release\ViToolkit.pdb
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.TargetAnalysis.resources
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.Properties.Resources.resources
+C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.csproj.GenerateResource.Cache
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.exe
 C:\Users\Alex\Documents\GitHub\ViAppleGrab\TargetAnalysis\obj\x86\Release\TargetAnalysis.pdb

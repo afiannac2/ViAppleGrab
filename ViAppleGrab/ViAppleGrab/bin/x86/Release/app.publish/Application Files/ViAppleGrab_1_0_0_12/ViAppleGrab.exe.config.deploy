@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ViAppleGrab.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ViAppleGrab.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <applicationSettings>
+        <ViAppleGrab.Properties.Settings>
+            <setting name="MAX_CONTROLLERS" serializeAs="String">
+                <value>2</value>
+            </setting>
+            <setting name="BASE_ALIVE_TIME" serializeAs="String">
+                <value>20</value>
+            </setting>
+            <setting name="PORT" serializeAs="String">
+                <value>7899</value>
+            </setting>
+            <setting name="TIME_DECREASE_PER_LEVEL" serializeAs="String">
+                <value>10</value>
+            </setting>
+            <setting name="BASE_LEVEL_TIME" serializeAs="String">
+                <value>60</value>
+            </setting>
+            <setting name="ALIVE_TIME_DECREASE_PER_LEVEL" serializeAs="String">
+                <value>2</value>
+            </setting>
+            <setting name="KEYBOARD_CONTROLLER_INCREMENT" serializeAs="String">
+                <value>3</value>
+            </setting>
+            <setting name="UPDATE_INTERVAL" serializeAs="String">
+                <value>30</value>
+            </setting>
+            <setting name="SCREEN_WIDTH" serializeAs="String">
+                <value>640</value>
+            </setting>
+            <setting name="SCREEN_HEIGHT" serializeAs="String">
+                <value>480</value>
+            </setting>
+            <setting name="HAND_SPRITE_SIDE_LENGTH" serializeAs="String">
+                <value>72</value>
+            </setting>
+            <setting name="TARGET_SPRITE_SIDE_LENGTH" serializeAs="String">
+                <value>72</value>
+            </setting>
+            <setting name="PREDEFINED_TARGETS" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="TIME_TO_COLLECT_TARGET" serializeAs="String">
+                <value>3000</value>
+            </setting>
+            <setting name="IN_TESTING_MODE" serializeAs="String">
+                <value>True</value>
+            </setting>
+        </ViAppleGrab.Properties.Settings>
+    </applicationSettings>
+    <userSettings>
+        <ViAppleGrab.Properties.Settings>
+            <setting name="IP_ADDRESS" serializeAs="String">
+                <value>192.168.1.100</value>
+            </setting>
+            <setting name="MAX_LEVELS" serializeAs="String">
+                <value>4</value>
+            </setting>
+            <setting name="USE_KEYBOARD_ONLY" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="MAX_X" serializeAs="String">
+                <value>620</value>
+            </setting>
+            <setting name="MIN_X" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="MAX_Y" serializeAs="String">
+                <value>460</value>
+            </setting>
+            <setting name="MIN_Y" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="IS_CALIBRATED" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="CAL_X_MIN" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="CAL_X_MAX" serializeAs="String">
+                <value>640</value>
+            </setting>
+            <setting name="CAL_Y_MIN" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="CAL_Y_MAX" serializeAs="String">
+                <value>480</value>
+            </setting>
+            <setting name="CAL_X_RANGE" serializeAs="String">
+                <value>640</value>
+            </setting>
+            <setting name="CAL_Y_RANGE" serializeAs="String">
+                <value>480</value>
+            </setting>
+            <setting name="CONTROL_TYPE" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="GAME_TYPE" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="CAL_LEFT_SHOULDER_X" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="CAL_LEFT_SHOULDER_Y" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="CAL_RIGHT_SHOULDER_X" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="CAL_RIGHT_SHOULDER_Y" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="QUICK_CALIBRATION" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="SCORE_PER_APPLE_INCREASE" serializeAs="String">
+                <value>5</value>
+            </setting>
+            <setting name="INITIAL_SCORE_PER_APPLE" serializeAs="String">
+                <value>10</value>
+            </setting>
+            <setting name="BUZZ_DURATION" serializeAs="String">
+                <value>200</value>
+            </setting>
+            <setting name="RIGHT_GIVES_Y_FEEDBACK" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="SHOW_CAMERA" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="TIMED_GAME" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="TARGETS_PER_LEVEL" serializeAs="String">
+                <value>10</value>
+            </setting>
+            <setting name="TOGETHER_FILE" serializeAs="String">
+                <value>Targets_Together.txt</value>
+            </setting>
+            <setting name="ALTERNATING_FILE" serializeAs="String">
+                <value>Targets_Alternating.txt</value>
+            </setting>
+            <setting name="HIDE_OUTPUT" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="SIMULTANEOUS_TARGETS" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="SINGLE_TARGET" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="SINGLE_FILE" serializeAs="String">
+                <value>Targets_Single.txt</value>
+            </setting>
+            <setting name="SIMULTANEOUS_FILE" serializeAs="String">
+                <value>Targets_Simultaneous.txt</value>
+            </setting>
+            <setting name="DOMINANT_ARM" serializeAs="String">
+                <value>right</value>
+            </setting>
+            <setting name="DISPLAY_RESULTS_AT_END" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="MOVE_BUTTONS_ACTIVE" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="STAGE" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="CURRENT_USER_ID" serializeAs="String">
+                <value>-1</value>
+            </setting>
+            <setting name="SKIP_MENU" serializeAs="String">
+                <value>True</value>
+            </setting>
+        </ViAppleGrab.Properties.Settings>
+    </userSettings>
+</configuration>
